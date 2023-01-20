@@ -1,4 +1,4 @@
-// LRX SELL Shop
+﻿// LRX SELL Shop
 // by pSiKO
 
 createDialog "Sell_Shop";
@@ -80,4 +80,4 @@ while { dialog && alive player } do {
 	};
 	sleep 0.3;
 };
-gamelogic globalChat "Have a nice day...";
+gamelogic globalChat "祝你一天过得愉快...";

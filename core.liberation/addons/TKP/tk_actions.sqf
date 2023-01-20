@@ -1,4 +1,4 @@
-params ["_killer", "_unit"];
+﻿params ["_killer", "_unit"];
 
 if (player != _killer || ([] call is_admin)) exitWith {};
 private _kill = BTC_logic getVariable [getPlayerUID player, 0];
@@ -36,13 +36,13 @@ switch (true) do {
 		waitUntil { dialog };
 		player setpos [0,0,0];
 		_noesckey = (findDisplay 5651) displayAddEventHandler ["KeyDown", "if ((_this select 1) == 1) then { true }"];
-		ctrlSetText [4867, "YOU HAVE BEEN BANNED"];
+		ctrlSetText [4867, "你被禁封了"];
 		sleep 3;
-		ctrlSetText [4867, "FOR BAD GAMING..."];
+		ctrlSetText [4867, "由于恶意行为..."];
 		sleep 3;
-		ctrlSetText [4867, "...YOU ARE NOT"];
+		ctrlSetText [4867, "...你不再"];
 		sleep 3;
-		ctrlSetText [4867, "WELCOME ANYMORE."];
+		ctrlSetText [4867, "被允许进入."];
 		sleep 3;
 		ctrlSetText [4867, ""];
 		sleep 3;

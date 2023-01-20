@@ -1,4 +1,4 @@
-class liberation_tutorial {
+﻿class liberation_tutorial {
 	idd = 5353;
 	movingEnable = false;
 	controlsBackground[] = {};
@@ -59,7 +59,7 @@ class liberation_tutorial {
 		idc = 514;
 		x = (0.35 * safezoneW + safezoneX) + ( 4 * BORDERSIZE);
 		w = (0.45 * safezoneW) - (2 * BORDERSIZE);
-		text = "1. Introduction";
+		text = "1. 介绍";
 	};
 	class TutorialList : StdListBox {
 		idc = 513;

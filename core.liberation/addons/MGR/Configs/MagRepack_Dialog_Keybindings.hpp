@@ -1,4 +1,4 @@
-
+﻿
 class MagRepack_Dialog_Keybindings
 {
 	idd = -1;
@@ -22,7 +22,7 @@ class MagRepack_Dialog_Keybindings
 		class KB_MainTitle: outlw_MR_RscText
 		{
 			idc = 1000;
-			text = "Mag Repack: Keybindings";
+			text = "Mag Repack: 按键绑定";
 			
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
 			y = 9.375 * GUI_GRID_H + GUI_GRID_Y;
@@ -33,7 +33,7 @@ class MagRepack_Dialog_Keybindings
 		class KB_ButtonCancel: outlw_MR_RscButtonMenu
 		{
 			idc = 2400;
-			text = "Cancel";
+			text = "取消";
 			action = "closeDialog 0";
 			
 			x = 22.5 * GUI_GRID_W + GUI_GRID_X;
@@ -61,7 +61,7 @@ class MagRepack_Dialog_Keybindings
 		class KB_ButtonApply: outlw_MR_RscButtonMenu
 		{
 			idc = 2401;
-			text = "Apply";
+			text = "应用";
 			action = "[[outlw_KB_cShift, outlw_KB_cCtrl, outlw_KB_cAlt, outlw_KB_cKey]] call outlw_MR_applyKeybinding;";
 			
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
@@ -250,7 +250,7 @@ class MagRepack_Dialog_Keybindings
 		class KB_KeyDescription: outlw_MR_RscStructuredText
 		{
 			idc = 2572;
-			text = "Keybinding:";
+			text = "按键绑定:";
 			
 			x = 10.875 * GUI_GRID_W + GUI_GRID_X;
 			y = 11.375 * GUI_GRID_H + GUI_GRID_Y;
@@ -265,7 +265,7 @@ class MagRepack_Dialog_Keybindings
 		class KB_ModDescription: outlw_MR_RscStructuredText
 		{
 			idc = 2573;
-			text = "Modifiers:";
+			text = "修改:";
 			
 			x = 10.875 * GUI_GRID_W + GUI_GRID_X;
 			y = 12.625 * GUI_GRID_H + GUI_GRID_Y;

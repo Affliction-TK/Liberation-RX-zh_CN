@@ -1,4 +1,4 @@
-
+﻿
 class MagRepack_Dialog_About
 {
 	idd = -1;
@@ -18,7 +18,7 @@ class MagRepack_Dialog_About
 		class A_MainTitle: outlw_MR_RscText
 		{
 			idc = 1000;
-			text = "Mag Repack: About";
+			text = "Mag Repack：关于";
 			x = 10 * GUI_GRID_W + GUI_GRID_X;
 			y = 9.375 * GUI_GRID_H + GUI_GRID_Y;
 			w = 20 * GUI_GRID_W;
@@ -28,7 +28,7 @@ class MagRepack_Dialog_About
 		class A_ButtonCancel: outlw_MR_RscButtonMenu
 		{
 			idc = 2400;
-			text = "OK";
+			text = "确定";
 			action = "closeDialog 0";
 			x = 22.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 14.625 * GUI_GRID_H + GUI_GRID_Y;
@@ -64,7 +64,7 @@ class MagRepack_Dialog_About
 		class A_Author: outlw_MR_RscText
 		{
 			idc = 1002;
-			text = "Author: Outlawled";
+			text = "作者: Outlawled";
 			x = 10.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 10.75 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19 * GUI_GRID_W;
@@ -75,7 +75,7 @@ class MagRepack_Dialog_About
 		class A_Version: outlw_MR_RscText
 		{
 			idc = 1001;
-			text = "Version:";
+			text = "版本:";
 			x = 10.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 11.55 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19 * GUI_GRID_W;
@@ -86,7 +86,7 @@ class MagRepack_Dialog_About
 		class A_Date: outlw_MR_RscText
 		{
 			idc = 1003;
-			text = "Updated:";
+			text = "更新:";
 			x = 10.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 12.35 * GUI_GRID_H + GUI_GRID_Y;
 			w = 19 * GUI_GRID_W;
@@ -97,7 +97,7 @@ class MagRepack_Dialog_About
 		class A_ForumLink: outlw_MR_RscText
 		{
 			idc = 1004;
-			text = "BI Forum URL:";
+			text = "BI论坛URL:";
 			x = 10.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 13.15 * GUI_GRID_H + GUI_GRID_Y;
 			w = 10 * GUI_GRID_W;
@@ -107,7 +107,7 @@ class MagRepack_Dialog_About
 		class A_ButtonCopy: outlw_MR_RscButtonMenu
 		{
 			idc = 1005;
-			text = "Copy";
+			text = "复制";
 			action = "copyToClipboard 'http://forums.bistudio.com/showthread.php?151402-Mag-Repack';";
 			x = 16.25 * GUI_GRID_W + GUI_GRID_X;
 			y = 13.25 * GUI_GRID_H + GUI_GRID_Y;

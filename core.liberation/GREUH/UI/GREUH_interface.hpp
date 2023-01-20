@@ -1,4 +1,4 @@
-// Control types
+﻿// Control types
 #define CT_STATIC           0
 #define CT_BUTTON           1
 #define CT_EDIT             2
@@ -340,7 +340,7 @@ class GREUH_Menu {
 		y = ((BASE_Y + 0.01) * safezoneH) + safezoneY;
 		w = 0.2 * safezoneW + ( 2 * BORDERSIZE);
 		h = 0.05 * safezoneH - (BORDERSIZE);
-		text = "Extended Options";
+		text = "扩展选项";
 		colorBackground[] = COLOR_LIGHTGRAY;
 	};
 	class GREUH_ButtonGeneric {
@@ -387,7 +387,7 @@ class GREUH_Menu {
 		w = 0.2 * safezoneW;
 		colorText[] = COLOR_LIGHTGRAY;
 		colorBackground[] = COLOR_RED_DISABLED;
-		text = "- disabled -";
+		text = "- 禁用 -";
 	};
 	class GREUH_RegularLabel : GREUH_Label {
 		colorBackground[] = COLOR_NOALPHA;
@@ -409,7 +409,7 @@ class GREUH_Menu {
 	class GREUH_SquadLabel : GREUH_Label {
 		idc = 510;
 		y = ((BASE_Y + 0.07) * safezoneH) + safezoneY;
-		text = "Squad Management";
+		text = "班组管理";
 	};
 	class GREUH_SquadList : RscListBox {
 		idc = 515;
@@ -424,31 +424,31 @@ class GREUH_Menu {
 	};
 	class GREUH_ButtonJoin : GREUH_ButtonSquad {
 		idc = 511;
-		text = "Join";
+		text = "加入";
 		action = "squadaction = 'join';";
 		y = ((BASE_Y + 0.11) * safezoneH) + safezoneY;
 	};
 	class GREUH_ButtonNew : GREUH_ButtonSquad {
 		idc = 512;
-		text = "Leave";
+		text = "离开";
 		action = "squadaction = 'leave';";
 		y = ((BASE_Y + 0.15) * safezoneH) + safezoneY;
 	};
 	class GREUH_ButtonRename : GREUH_ButtonSquad {
 		idc = 513;
-		text = "Rename";
+		text = "重命名";
 		action = "squadaction = 'rename';";
 		y = ((BASE_Y + 0.19) * safezoneH) + safezoneY;
 	};
 	class GREUH_ButtonLeader : GREUH_ButtonSquad {
 		idc = 514;
-		text = "Leader";
+		text = "队长";
 		action = "squadaction = 'leader';";
 		y = ((BASE_Y + 0.23) * safezoneH) + safezoneY;
 	};
 	class GREUH_ButtonLock : GREUH_ButtonSquad {
 		idc = 516;
-		text = "Lock";
+		text = "上锁";
 		action = "squadaction = 'lock';";
 		y = ((BASE_Y + 0.27) * safezoneH) + safezoneY;
 	};
@@ -483,13 +483,13 @@ class GREUH_Menu {
 	class GREUH_ButtonName_Rename : GREUH_ButtonName {
 		idc = 525;
 		x = 0.4875 * safezoneW + safezoneX;
-		text = "Rename";
+		text = "重命名";
 		action = "squadname = ctrlText 527;";
 	};
 	class GREUH_ButtonName_Abort : GREUH_ButtonName {
 		idc = 526;
 		x = (0.4875 * safezoneW + safezoneX) + ((0.2 * safezoneW) / 5);
-		text = "Cancel";
+		text = "取消";
 		action = "squadaction = '';";
 	};
 	class GREUH_Squad_TextField : GREUH_ButtonName {
@@ -536,13 +536,13 @@ class GREUH_Menu {
 	class GREUH_ButtonLeader_Choose : GREUH_ButtonLeaderGen {
 		idc = 565;
 		x = 0.4875 * safezoneW + safezoneX;
-		text = "Choose";
+		text = "选择";
 		action = "choose_squadleader = lbCurSel 567;";
 	};
 	class GREUH_ButtonLeader_Abort : GREUH_ButtonLeaderGen {
 		idc = 566;
 		x = (0.4875 * safezoneW + safezoneX) + ((0.2 * safezoneW) / 5);
-		text = "Cancel";
+		text = "取消";
 		action = "squadaction = ''";
 	};
 	class GREUH_Squad_Combo : RscCombo {
@@ -560,7 +560,7 @@ class GREUH_Menu {
 	class GREUH_PlatoonLabel : GREUH_Label {
 		idc = 610;
 		y = ((BASE_Y + 0.31) * safezoneH) + safezoneY;
-		text = "Platoon & Squad Awareness";
+		text = "小队意识";
 	};
 	class GREUH_LabelPlatoon : GREUH_RegularLabel {
 		idc = 611;
@@ -571,7 +571,7 @@ class GREUH_Menu {
 		idc = 612;
 		style = ST_RIGHT;
 		colorText[] = COLOR_BRIGHTGREEN;
-		text = "active";
+		text = "启用";
 		x = 0.2 * safezoneW + safezoneX;
 		w = 0.1 * safezoneW;
 		y = ((BASE_Y + 0.35) * safezoneH) + safezoneY;
@@ -581,7 +581,7 @@ class GREUH_Menu {
 		w = ((0.08 * safezoneW) / 4);
 		y = ((BASE_Y + 0.35) * safezoneH) + safezoneY;
 		x = 0.305 * safezoneW + safezoneX;
-		text = "Yes";
+		text = "是";
 		action = "show_platoon = true";
 	};
 	class GREUH_PlatoonNo : GREUH_ButtonGeneric {
@@ -589,7 +589,7 @@ class GREUH_Menu {
 		w = ((0.08 * safezoneW) / 4);
 		y = ((BASE_Y + 0.35) * safezoneH) + safezoneY;
 		x = (0.32 + BORDERSIZE) * safezoneW + safezoneX;
-		text = "No";
+		text = "否";
 		action = "show_platoon = false";
 	};
 	class GREUH_ViewZone : GREUH_DefaultZone {
@@ -600,7 +600,7 @@ class GREUH_Menu {
 	class GREUH_ViewDistance : GREUH_Label {
 		idc = 711;
 		y = ((BASE_Y + 0.47) * safezoneH) + safezoneY;
-		text = "Adjust View Distance";
+		text = "调整视野距离";
 	};
 	class GREUH_Slider {
 		idc = 712;
@@ -610,7 +610,7 @@ class GREUH_Menu {
 		w = 0.12 * safezoneW;
 		y = ((BASE_Y + 0.515) * safezoneH) + safezoneY;
 		h = 0.025 * safezoneH;
-		text = "View Distance";
+		text = "视野距离";
 		color[] = { 1, 1, 1, 1 };
 		coloractive[] = { 1, 1, 1, 1 };
 		onSliderPosChanged = "desiredviewdistance_inf = (sliderPosition 712)";
@@ -633,7 +633,7 @@ class GREUH_Menu {
 		y = ((BASE_Y + 0.505) * safezoneH) + safezoneY;
 		h = 0.03 * safezoneH;
 		colorBackground[] = COLOR_NOALPHA;
-		text = "Infantry";
+		text = "步行";
 	};
 	class GREUH_SliderVeh {
 		idc = 722;
@@ -643,7 +643,7 @@ class GREUH_Menu {
 		w = 0.12 * safezoneW;
 		y = ((BASE_Y + 0.545) * safezoneH) + safezoneY;
 		h = 0.025 * safezoneH;
-		text = "View Distance";
+		text = "视野距离";
 		color[] = { 1, 1, 1, 1 };
 		coloractive[] = { 1, 1, 1, 1 };
 		onSliderPosChanged = "desiredviewdistance_veh = (sliderPosition 722)";
@@ -666,7 +666,7 @@ class GREUH_Menu {
 		y = ((BASE_Y + 0.535) * safezoneH) + safezoneY;
 		h = 0.03 * safezoneH;
 		colorBackground[] = COLOR_NOALPHA;
-		text = "Vehicles";
+		text = "载具";
 	};
 	class GREUH_SliderObj {
 		idc = 732;
@@ -676,7 +676,7 @@ class GREUH_Menu {
 		w = 0.12 * safezoneW;
 		y = ((BASE_Y + 0.575) * safezoneH) + safezoneY;
 		h = 0.025 * safezoneH;
-		text = "View Distance";
+		text = "视野距离";
 		color[] = { 1, 1, 1, 1 };
 		coloractive[] = { 1, 1, 1, 1 };
 		onSliderPosChanged = "desiredviewdistance_obj = (sliderPosition 732)";
@@ -699,7 +699,7 @@ class GREUH_Menu {
 		y = ((BASE_Y + 0.565) * safezoneH) + safezoneY;
 		h = 0.03 * safezoneH;
 		colorBackground[] = COLOR_NOALPHA;
-		text = "Objects";
+		text = "物体";
 	};
 	class GREUH_FPSLabel : GREUH_Label {
 		idc = 724;
@@ -710,7 +710,7 @@ class GREUH_Menu {
 		h = 0.03 * safezoneH;
 		colorBackground[] = COLOR_NOALPHA;
 		sizeEx = 0.018 * safezoneH;
-		text = "Adjust view distance to keep FPS above";
+		text = "调整视距以保持FPS高于：";
 	};
 	class GREUH_FPSEdit {
 		idc = 960;
@@ -739,7 +739,7 @@ class GREUH_Menu {
 	class GREUH_WorldQuality : GREUH_Label {
 		idc = 810;
 		y = ((BASE_Y + 0.66) * safezoneH) + safezoneY;
-		text = "Adjust Terrain Details";
+		text = "调整地形细节";
 	};
 	class GREUH_ButtonWorld : GREUH_ButtonGeneric {
 		w = ((0.2 * safezoneW) / 4) - BORDERSIZE;
@@ -748,25 +748,25 @@ class GREUH_Menu {
 	class GREUH_ButtonWorldVeryLow : GREUH_ButtonWorld {
 		idc = 812;
 		x = 0.15 * safezoneW + safezoneX;
-		text = "Low";
+		text = "低";
 		action = "setTerrainGrid 50; hint 'Terrain details set to Low'";
 	};
 	class GREUH_ButtonWorldLow : GREUH_ButtonWorld {
 		idc = 813;
 		x = (0.15 * safezoneW + safezoneX) + (((0.2 * safezoneW) / 4) * 1);
-		text = "Normal";
+		text = "正常";
 		action = "setTerrainGrid 25; hint 'Terrain details set to Normal'";
 	};
 	class GREUH_ButtonWorldNormal : GREUH_ButtonWorld {
 		idc = 814;
 		x = (0.15 * safezoneW + safezoneX) + (((0.2 * safezoneW) / 4) * 2);
-		text = "High";
+		text = "高";
 		action = "setTerrainGrid 12.5; hint 'Terrain details set to High'";
 	};
 	class GREUH_ButtonWorldHigh : GREUH_ButtonWorld {
 		idc = 815;
 		x = (0.15 * safezoneW + safezoneX) + (((0.2 * safezoneW) / 4) * 3);
-		text = "Ultra";
+		text = "极致";
 		action = "setTerrainGrid 3.125; hint 'Terrain details set to Ultra'";
 	};
 	class GREUH_MarkersZone : GREUH_DefaultZone {
@@ -777,13 +777,13 @@ class GREUH_Menu {
 	class GREUH_LabelNametags : GREUH_RegularLabel {
 		idc = 961;
 		y = ((BASE_Y + 0.39) * safezoneH) + safezoneY;
-		text = "Show player nametags : ";
+		text = "显示玩家姓名标签: ";
 	};
 	class GREUH_NametagsActive : GREUH_RegularLabel {
 		idc = 962;
 		style = ST_RIGHT;
 		colorText[] = COLOR_BRIGHTGREEN;
-		text = "active";
+		text = "启用";
 		x = 0.2 * safezoneW + safezoneX;
 		w = 0.1 * safezoneW;
 		y = ((BASE_Y + 0.39) * safezoneH) + safezoneY;
@@ -793,7 +793,7 @@ class GREUH_Menu {
 		w = ((0.08 * safezoneW) / 4);
 		y = ((BASE_Y + 0.39) * safezoneH) + safezoneY;
 		x = 0.305 * safezoneW + safezoneX;
-		text = "Yes";
+		text = "是";
 		action = "show_nametags = true";
 	};
 	class GREUH_NametagsNo : GREUH_ButtonGeneric {
@@ -801,19 +801,19 @@ class GREUH_Menu {
 		w = ((0.08 * safezoneW) / 4);
 		y = ((BASE_Y + 0.39) * safezoneH) + safezoneY;
 		x = (0.32 + BORDERSIZE) * safezoneW + safezoneX;
-		text = "No";
+		text = "否";
 		action = "show_nametags = false";
 	};
 	class GREUH_LabelMarkers : GREUH_RegularLabel {
 		idc = 911;
 		y = ((BASE_Y + 0.43) * safezoneH) + safezoneY;
-		text = "Show teammates on map : ";
+		text = "在地图上显示队友: ";
 	};
 	class GREUH_LabelMarkersActive : GREUH_RegularLabel {
 		idc = 912;
 		style = ST_RIGHT;
 		colorText[] = COLOR_BRIGHTGREEN;
-		text = "active";
+		text = "启用";
 		x = 0.2 * safezoneW + safezoneX;
 		w = 0.1 * safezoneW;
 		y = ((BASE_Y + 0.43) * safezoneH) + safezoneY;
@@ -823,7 +823,7 @@ class GREUH_Menu {
 		w = ((0.08 * safezoneW) / 4);
 		y = ((BASE_Y + 0.43) * safezoneH) + safezoneY;
 		x = 0.305 * safezoneW + safezoneX;
-		text = "Yes";
+		text = "是";
 		action = "show_teammates = true";
 	};
 	class GREUH_TeammatesNo : GREUH_ButtonGeneric {
@@ -831,13 +831,13 @@ class GREUH_Menu {
 		w = ((0.08 * safezoneW) / 4);
 		y = ((BASE_Y + 0.43) * safezoneH) + safezoneY;
 		x = (0.32 + BORDERSIZE) * safezoneW + safezoneX;
-		text = "No";
+		text = "否";
 		action = "show_teammates = false";
 	};
 	class GREUH_earplug : GREUH_Label {
 		idc = 1101;
 		y = ((BASE_Y + 0.742) * safezoneH) + safezoneY;
-		text = "Adjust Ear Plug Volume";
+		text = "调整耳塞音量";
 	};
 	class GREUH_Slider2 {
 		idc = 1102;
@@ -847,7 +847,7 @@ class GREUH_Menu {
 		w = 0.12 * safezoneW;
 		y = ((BASE_Y + 0.782) * safezoneH) + safezoneY;
 		h = 0.025 * safezoneH;
-		text = "Volume";
+		text = "音量";
 		color[] = { 1, 1, 1, 1 };
 		coloractive[] = { 1, 1, 1, 1 };
 		onSliderPosChanged = "desired_vehvolume = (sliderPosition 1102)";
@@ -870,7 +870,7 @@ class GREUH_Menu {
 		y = ((BASE_Y + 0.772) * safezoneH) + safezoneY;
 		h = 0.03 * safezoneH;
 		colorBackground[] = COLOR_NOALPHA;
-		text = "Volume";
+		text = "音量";
 	};
 };
 
@@ -919,7 +919,7 @@ class GREUH_respawn {
 		y = 0.75 * safezoneH + safezoneY;
 		w = 0.1 * safezoneW;
 		h = 0.04 * safezoneH;
-		text = "Respawn";
+		text = "重生";
 		action = "[player] spawn PAR_fn_death";
 		colorDisabled[] = { 1, 1, 1, 1 };
 	};
@@ -930,7 +930,7 @@ class GREUH_respawn {
 		y = 0.80 * safezoneH + safezoneY;
 		w = 0.1 * safezoneW;
 		h = 0.04 * safezoneH;
-		text = "Recall Medic";
+		text = "呼叫医生";
 		action = "[] spawn PAR_fn_medicRecall";
 		colorDisabled[] = { 1, 1, 1, 1 };
 	};

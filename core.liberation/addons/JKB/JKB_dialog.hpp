@@ -1,4 +1,4 @@
-class JKB_dialog {
+﻿class JKB_dialog {
   	idd = 2306;
 	name = "JKB_dialog";
 	movingEnable = false;
@@ -79,7 +79,7 @@ class JKB_dialog {
             align = "center";
 			colorText[] = {1, 1, 1};
 			size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-			text = "Now listening: ";
+			text = " 正在播放： ";
  		};
         class VehText2: StdText {
 			idc = 230;
@@ -110,7 +110,7 @@ class JKB_dialog {
             align = "center";
 			colorText[] = {1, 1, 1};
 			size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
-			text = "Music in Jukebox: ";
+			text = "总计音乐： ";
  		};
         class VehText4: StdText {
 			idc = 232;
@@ -125,7 +125,7 @@ class JKB_dialog {
  		};
 		class AutoplayCB: RscCheckbox {
 			idc = 233;
-			text = "Auto play";
+			text = "自动播放";
 			x = (0.210 * safezoneW + safezoneX);
 			y = 0.3540 * safezoneH + safezoneY;
 			w = 0.0125 * safezoneW;
@@ -146,7 +146,7 @@ class JKB_dialog {
 		};
 		class RandomCB: RscCheckbox {
 			idc = 234;
-			text = "Random";
+			text = "随机";
 			x = (0.300 * safezoneW + safezoneX);
 			y = 0.3540 * safezoneH + safezoneY;
 			w = 0.0125 * safezoneW;
@@ -159,7 +159,7 @@ class JKB_dialog {
 		};
 		class RandomCBText: GREUH_RscStructuredText	{
 			idc = -1;
-			text = "<t size='0.7'>Random</t>";
+			text = "<t size='0.7'>随机</t>";
 			x = (0.316 * safezoneW + safezoneX);
 			y = 0.3540 * safezoneH + safezoneY;
 			w = 0.05 * safezoneW;

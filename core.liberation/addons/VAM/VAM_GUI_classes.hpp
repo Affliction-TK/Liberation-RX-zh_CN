@@ -1,4 +1,4 @@
-////////////////////////////////////////////////////////
+﻿////////////////////////////////////////////////////////
 // GUI EDITOR OUTPUT START (by UNITnormal, v1.063, #Vurive)
 ////////////////////////////////////////////////////////
 //missionConfigFile >> "VAM_GUI"
@@ -99,7 +99,7 @@ class VAM_GUI
 	{
 		idc = 4950;
 		sizeEx = 0.03;
-		text = "<Placeholder>";
+		text = "<预留位置>";
 		x = 0.427812 * safezoneW + safezoneX;
 		y = 0.654 * safezoneH + safezoneY;
 		w = 0.124687 * safezoneW;

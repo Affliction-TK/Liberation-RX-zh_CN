@@ -1,4 +1,4 @@
-diag_log "--- Client Init start ---";
+﻿diag_log "--- Client Init start ---";
 
 waitUntil {sleep 0.1;!isNull findDisplay 46};
 R3F_LOG_joueur_deplace_objet = objNull;
@@ -6,33 +6,33 @@ GRLIB_player_spawned = false;
 
 waitUntil {!isNil "abort_loading" };
 if (abort_loading) exitWith {
-	private _msg = format ["Sorry, An error occured on Server startup.\nPlease check the error logs.\n\n%1", abort_loading_msg];
+	private _msg = format ["抱歉，服务器启动时出错.\n请检查错误日志.\n\n%1", abort_loading_msg];
 	titleText [_msg, "BLACK FADED", 100];
 	diag_log abort_loading_msg;
-	uisleep 10;
+	uisleep 20;
 	endMission "LOSER";
 };
 
 PAR_Grp_ID = getPlayerUID player;
 if (PAR_Grp_ID == "" || !(isPlayer player)) exitWith {
-	private _msg = format ["ARMA3 Multiplayer Initialization Error!\nPlease reconnect to the server..."];
+	private _msg = format ["ARMA3多人游戏初始化错误!\n请重新连接到服务器..."];
 	titleText [_msg, "BLACK FADED", 100];
-	uisleep 10;
+	uisleep 20;
 	endMission "LOSER";
 };
 
 if (!isMultiplayer) exitWith {
-	private _msg = format ["Sorry, Liberation RX is a Multiplayer Mission Only..."];
+	private _msg = format ["对不起，解放RX是一个多人任务..."];
 	titleText [_msg, "BLACK FADED", 100];
-	uisleep 10;
+	uisleep 20;
 	endMission "LOSER";
 };
 
 private _exclusive_check = [player] call compileFinal preprocessFileLineNUmbers "scripts\client\commander\exclusive_whitelist.sqf";
 if (!_exclusive_check) exitWith {
-	private _msg = format ["Sorry, Invalid SteamID!\nDue to server configuration, you MUST be authorized to connect.\nPlease contact the server owner. "];
+	private _msg = format ["对不起，SteamID无效!\n由于白名单已启用，您必须获得连接授权.\n请联系服务器所有者. "];
 	titleText [_msg, "BLACK FADED", 100];
-	uisleep 10;
+	uisleep 20;
 	endMission "LOSER";
 };
 

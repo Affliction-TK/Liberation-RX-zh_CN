@@ -1,4 +1,4 @@
-class RscTitles
+﻿class RscTitles
 {
    class intro1
    {
@@ -21,7 +21,7 @@ class RscTitles
 		w = 0.4 * safezoneW;
 		y = 0.65 * safezoneH + safezoneY;
 		h = 0.1 * safezoneH;
-		text = "Based on a [GREUH] story,";
+		text = "基于一个〔GREUH〕任务";
 		shadow = 1;
 	  };
 	  class GenericLabelShadow : GenericLabel2{
@@ -50,7 +50,7 @@ class RscTitles
 		w = 0.4 * safezoneW;
 		y = 0.65 * safezoneH + safezoneY;
 		h = 0.1 * safezoneH;
-		text = "now, Revived and eXtended to the best...";
+		text = "现在，重构和扩展到最好。。。";
 		shadow = 1;
 	  };
 	  class GenericLabelShadow : GenericLabel2{
@@ -78,7 +78,7 @@ class RscTitles
 		w = 0.4 * safezoneW;
 		y = 0.65 * safezoneH + safezoneY;
 		h = 0.1 * safezoneH;
-		text = "[AKH pSiKO] is proud to presents:";
+		text = "[AKH pSiKO] 荣誉出品:";
 		shadow = 1;
 	  };
 	  class GenericLabelShadow : GenericLabel2{

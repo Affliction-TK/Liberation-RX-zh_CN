@@ -1,4 +1,4 @@
-params ["_unit"];
+﻿params ["_unit"];
 // Cleanup
 {_unit removeAllEventHandlers _x} count [
 	"GetInMan",
@@ -32,7 +32,7 @@ _unit addEventHandler ["InventoryClosed", {
 	params ["_unit"];
 	[_unit] call F_filterLoadout;
 	if (_unit == player) then {
-		hintSilent format ["Inventory value:\n%1 AMMO.", ([_unit] call F_loadoutPrice)];
+		hintSilent format ["存货价值:\n%1 弹药.", ([_unit] call F_loadoutPrice)];
 	};
 }];
 
@@ -94,7 +94,7 @@ if (_unit == player) then {
 		private _ret = false;
 		if (_this select 3 == 'DisAssemble') then { _ret = true };
 		if (_this select 3 == 'Rearm' && !([_this select 1, _this select 0] call is_owner || [_this select 0] call is_public)) then { _ret = true };
-		if (_ret) then { hintSilent 'You are not allowed to do this' };
+		if (_ret) then { hintSilent '你不被允许这样做' };
 		_ret;
 	"];
 

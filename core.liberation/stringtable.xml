@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project name="Liberation">
 	<Package name="Liberation">
 		<Key ID="STR_MISSION_TITLE">
@@ -627,62 +627,6 @@
 			<Portuguese>Limite da unidade</Portuguese>
 			<Czech>Limit Jednotky</Czech>
 		</Key>
-		<Key ID="STR_WIPE_TITLE">
-			<Original>Wipe savegame</Original>
-			<French>Effacer la sauvegarde</French>
-			<German>Spielstand loeschen</German>
-			<Spanish>Borrar partida guardada</Spanish>
-			<Russian>Удалить сохранённый прогресс</Russian>
-			<Chinesesimp>清除存档</Chinesesimp>
-			<Chinese>清除存檔</Chinese>
-			<Japanese>セーブデータ消去</Japanese>
-			<Portuguese>Limpe o jogo salvo</Portuguese>
-			<Czech>Vymazat rozehranou hru</Czech>
-		</Key>
-		<Key ID="STR_WIPE_TITLE_2">
-			<Original>Confirm : wipe savegame</Original>
-			<French>Confirmer : effacer la sauvegarde</French>
-			<German>Bestätige: Spielstand loeschen</German>
-			<Spanish>Confirmar : Borrar partida guardada</Spanish>
-			<Russian>Подтвердить : Удалить сохранённый прогресс</Russian>
-			<Chinesesimp>确认: 清除存档</Chinesesimp>
-			<Chinese>確認: 清除存檔</Chinese>
-			<Japanese>確認：セーブデータ消去</Japanese>
-			<Portuguese>Limpe o jogo salvo</Portuguese>
-			<Czech>Potvrdit: vymazat uloženou hru</Czech>
-		</Key>
-		<Key ID="STR_WIPE_TITLE_3">
-			<Original>Keep Players datas</Original>
-			<French>Garder les infos des Joueurs</French>
-			<Chinesesimp>保存玩家数据</Chinesesimp>
-			<Chinese>保存玩家数据</Chinese>
-			<Portuguese>Manter os dados dos jogadores</Portuguese>
-			<Czech>Udržujte data hráčů</Czech>
-		</Key>
-		<Key ID="STR_WIPE_NO">
-			<Original>No</Original>
-			<French>Non</French>
-			<German>Nein</German>
-			<Spanish>No</Spanish>
-			<Russian>Нет</Russian>
-			<Chinesesimp>否</Chinesesimp>
-			<Chinese>否</Chinese>
-			<Japanese>いいえ</Japanese>
-			<Portuguese>Não</Portuguese>
-			<Czech>Ne</Czech>
-		</Key>
-		<Key ID="STR_WIPE_YES">
-			<Original>!! THE SAVEGAME WILL BE WIPED, NO RECOVERY POSSIBLE !!</Original>
-			<French>!! LA SAUVEGARDE SERA EFFACEE SANS RECUPERATION POSSIBLE !!</French>
-			<German>!! SPIELSTAND WIRD GELOESCHT, KEIN WIEDERHERSTELLEN MOEGLICH !!</German>
-			<Spanish>!! LA PARTIDA GUARDADA SERÁ BORRADA, SIN RECUPERACIÓN POSIBLE !!</Spanish>
-			<Russian>!! СОХРАНЁННЫЙ ПРОГРЕСС БУДЕТ УДАЛЕН, ВОССТАНОВИТЬ БУДЕТ НЕВОЗМОЖНО !!</Russian>
-			<Chinesesimp>！！游戏存档将被抹去，没有恢复的可能性！！</Chinesesimp>
-			<Chinese>！！遊戲存檔將被抹去，沒有恢復的可能性！！</Chinese>
-			<Japanese>!! セーブデータは消去されます、リカバリーは出来ません。 !!</Japanese>
-			<Portuguese>!! O JOGO SALVO SERÁ EXCLUÍDO, NÃO HÁ RECUPERAÇÃO POSSÍVEL!!</Portuguese>
-			<Czech>!! ULOŽENÁ HRA BUDE VYMAZANÁ, NENÍ MOŽNÉ OBNOVENÍ !!</Czech>
-		</Key>
 		<Key ID="STR_UNFLIP">
 			<Original>-- UNFLIP</Original>
 			<French>-- RETOURNER</French>
@@ -953,8 +897,8 @@
 			<German>Hohe Priorität - %1 ANGEGRIFFEN</German>
 			<Spanish>Alta Prioridad - %1 ATACADA</Spanish>
 			<Russian>Высокий Приоритет - %1 АТАКОВАНА</Russian>
-			<Chinesesimp>高优先级 - %1受到攻击</Chinesesimp>
-			<Chinese>高優先級 - %1受到攻擊</Chinese>
+			<Chinesesimp>最高优先级 - %1受到攻击</Chinesesimp>
+			<Chinese>最高優先級 - %1受到攻擊</Chinese>
 			<Japanese>優先目標 - %1 が攻撃されています。</Japanese>
 			<Portuguese>Alta Prioridade - %1 ATACADO</Portuguese>
 			<Czech>Vysoká priorita – %1 NAPADNUTO</Czech>
@@ -1547,314 +1491,6 @@
 			<Portuguese>(Pressione ESC para sair)</Portuguese>
 			<Czech>(Stiskněte ESC pro ukončení)</Czech>
 		</Key>
-		<Key ID="STR_PARAMS_MISSIONOPTIONS">
-			<Original>== MISSION OPTIONS ==</Original>
-			<French>== OPTIONS DE MISSION ==</French>
-			<German>== Missionseinstellungen ==</German>
-			<Spanish>== OPCIONES DE MISIÓN ==</Spanish>
-			<Russian>== ОПЦИИ МИССИИ ==</Russian>
-			<Chinesesimp>== 任务选项 ==</Chinesesimp>
-			<Chinese>== 任務選項 ==</Chinese>
-			<Japanese>== ミッションオプション ==</Japanese>
-			<Portuguese>== OPÇÕES DE MISSÃO ==</Portuguese>
-			<Czech>== MOŽNOSTI MISE ==</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_TECHNICALOPTIONS">
-			<Original>== TECHNICAL OPTIONS ==</Original>
-			<French>== OPTIONS TECHNIQUES ==</French>
-			<German>== Technische Einstellungen</German>
-			<Spanish>== OPCIONES TÉCNICAS ==</Spanish>
-			<Russian>== ТЕХНИЧЕСКИЕ ОПЦИИ ==</Russian>
-			<Chinesesimp>== 难度选项 ==</Chinesesimp>
-			<Chinese>== 难度選項 ==</Chinese>
-			<Japanese>== テクニカルオプション ==</Japanese>
-			<Portuguese>== OPÇÕES DE MISSÃO ==</Portuguese>
-			<Czech>== TECHNICKÉ MOŽNOSTI ==</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_DAYDURATION">
-			<Original>Day duration (multiplier)</Original>
-			<French>Durée du jour (multiplicateur)</French>
-			<Chinesesimp>日间时长（倍数，数值越大，游戏中时间越短）</Chinesesimp>
-			<Chinese>日間時長（倍數，數值越大，遊戲中時間越短）</Chinese>
-			<Portuguese>Duração do dia (multiplicador)</Portuguese>
-			<Czech>Délka dne (násobitel)</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_NIGHTDURATION">
-			<Original>Night duration (multiplier)</Original>
-			<French>Durée de la nuit (multiplicateur)</French>
-			<Chinesesimp>夜间时长（倍数，数值越大，游戏中时间越短）</Chinesesimp>
-			<Chinese>夜間時長（倍數，數值越大，遊戲中時間越短）</Chinese>
-			<Portuguese>Duração da noite (multiplicador)</Portuguese>
-			<Czech>Doba trvání noci (násobitel)</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_DIFFICULTY">
-			<Original>Difficulty</Original>
-			<French>Difficulté</French>
-			<German>Schwierigkeit</German>
-			<Spanish>Dificultad</Spanish>
-			<Russian>Сложность</Russian>
-			<Chinesesimp>难度</Chinesesimp>
-			<Chinese>難度</Chinese>
-			<Japanese>難易度</Japanese>
-			<Portuguese>Dificuldade</Portuguese>
-			<Czech>Obtížnost</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_DIFFICULTY1">
-			<Original>Tourist</Original>
-			<French>Touriste</French>
-			<German>Tourist</German>
-			<Spanish>Turista</Spanish>
-			<Russian>Турист</Russian>
-			<Chinesesimp>观光游</Chinesesimp>
-			<Chinese>觀光遊</Chinese>
-			<Japanese>ツーリスト</Japanese>
-			<Portuguese>Turista</Portuguese>
-			<Czech>Turistický</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_DIFFICULTY2">
-			<Original>Easy</Original>
-			<French>Facile</French>
-			<German>Einfach</German>
-			<Spanish>Fácil</Spanish>
-			<Russian>Легко</Russian>
-			<Chinesesimp>新兵入伍</Chinesesimp>
-			<Chinese>新兵入伍</Chinese>
-			<Japanese>イージー</Japanese>
-			<Portuguese>Fácil</Portuguese>
-			<Czech>Snadný</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_DIFFICULTY3">
-			<Original>Normal</Original>
-			<French>Normal</French>
-			<German>Normal</German>
-			<Spanish>Normal</Spanish>
-			<Russian>Нормально</Russian>
-			<Chinesesimp>行伍匹夫</Chinesesimp>
-			<Chinese>行伍匹夫</Chinese>
-			<Japanese>ノーマル</Japanese>
-			<Portuguese>Normal</Portuguese>
-			<Czech>Normální</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_DIFFICULTY4">
-			<Original>Moderate</Original>
-			<French>Modéré</French>
-			<German>Moderat</German>
-			<Spanish>Moderado</Spanish>
-			<Russian>Посложнее</Russian>
-			<Chinesesimp>久经沙场</Chinesesimp>
-			<Chinese>久經沙場</Chinese>
-			<Japanese>モデレート</Japanese>
-			<Portuguese>Moderado</Portuguese>
-			<Czech>Střední</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_DIFFICULTY5">
-			<Original>Hard</Original>
-			<French>Difficile</French>
-			<German>Schwer</German>
-			<Spanish>Difícil</Spanish>
-			<Russian>Сложно</Russian>
-			<Chinesesimp>百炼成钢</Chinesesimp>
-			<Chinese>百煉成鋼</Chinese>
-			<Japanese>ハード</Japanese>
-			<Portuguese>Difícil</Portuguese>
-			<Czech>Silný</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_DIFFICULTY6">
-			<Original>Extreme</Original>
-			<French>Extrême</French>
-			<German>Schwer</German>
-			<Spanish>Extremo</Spanish>
-			<Russian>Экстремально</Russian>
-			<Chinesesimp>很强很暴力</Chinesesimp>
-			<Chinese>很強很暴力</Chinese>
-			<Japanese>エクストリーム</Japanese>
-			<Portuguese>Extremo</Portuguese>
-			<Czech>Extrémní</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_DIFFICULTY7">
-			<Original>Ludicrous</Original>
-			<French>Affolant</French>
-			<German>grotesk</German>
-			<Spanish>Ridículo</Spanish>
-			<Russian>Весело</Russian>
-			<Chinesesimp>噩梦</Chinesesimp>
-			<Chinese>噩夢</Chinese>
-			<Japanese>クレイジー</Japanese>
-			<Portuguese>Ridículo</Portuguese>
-			<Czech>Smýšený</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_DIFFICULTY8">
-			<Original>Oh god oh god we're all gonna die</Original>
-			<French>Oh mon dieu, on va tous mourir</French>
-			<German>Mein Gott, wir werden alle sterben!</German>
-			<Spanish>Oh dios mío, vamos a morir!</Spanish>
-			<Russian>Боже мой, мы все умрём!</Russian>
-			<Chinesesimp>地狱噩梦</Chinesesimp>
-			<Chinese>地獄噩夢</Chinese>
-			<Japanese>おお神よ、我々は皆死ぬ。</Japanese>
-			<Portuguese>Oh deus oh deus todos nós vamos morrer</Portuguese>
-			<Czech>Oh bože, bože, všichni zemřeme</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_RESOURCESMULTIPLIER">
-			<Original>Resources multiplier</Original>
-			<French>Multiplicateur de resources</French>
-			<German>Ressourcenmultiplikator</German>
-			<Spanish>Multiplicador de recursos</Spanish>
-			<Russian>Множитель ресурсов</Russian>
-			<Chinesesimp>资源倍数</Chinesesimp>
-			<Chinese>資源倍數</Chinese>
-			<Japanese>リソース倍率</Japanese>
-			<Portuguese>Multiplicador de recursos</Portuguese>
-			<Czech>Zdroje</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_FATIGUE">
-			<Original>Stamina</Original>
-			<French>Endurance</French>
-			<German>Ausdauer</German>
-			<Spanish>Estamina</Spanish>
-			<Russian>Усталость</Russian>
-			<Chinesesimp>体力</Chinesesimp>
-			<Chinese>體力</Chinese>
-			<Japanese>スタミナ</Japanese>
-			<Portuguese>Energia</Portuguese>
-			<Czech>Výdrž</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_FATIGUE1">
-			<Original>Reduced - 4 times more stamina</Original>
-			<French>Réduits - 4 fois plus d'endurance</French>
-			<German>Reduziert - 4-mal mehr Ausdauer</German>
-			<Spanish>Reducido - 4 veces más estamina</Spanish>
-			<Russian>Понизить - в 4 раза усталость</Russian>
-			<Chinesesimp>削弱 - 4倍体力</Chinesesimp>
-			<Chinese>削弱 - 4倍體力</Chinese>
-			<Japanese>削減 - 4倍スタミナ</Japanese>
-			<Portuguese>Reduzido - 4 vezes mais energia</Portuguese>
-			<Czech>Snížená - 4krát větší výdrž</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_FATIGUE2">
-			<Original>Reduced - 3 times more stamina</Original>
-			<French>Réduits - 3 fois plus d'endurance</French>
-			<German>Reduziert - 3-mal mehr Ausdauer</German>
-			<Spanish>Reducido - 3 veces más estamina</Spanish>
-			<Russian>Понизить - в 3 раза усталость</Russian>
-			<Chinesesimp>削弱 - 3倍体力</Chinesesimp>
-			<Chinese>削弱 - 3倍體力</Chinese>
-			<Japanese>削減 - 3倍スタミナ</Japanese>
-			<Portuguese>Reduzido - 3 vezes mais energia</Portuguese>
-			<Czech>Snížená – 3x větší výdrž</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_FATIGUE3">
-			<Original>Reduced - 2 times more stamina</Original>
-			<French>Réduits - 2 fois plus d'endurance</French>
-			<German>Reduziert - 2-mal mehr Ausdauer</German>
-			<Spanish>Reducido - 2 veces más estamina</Spanish>
-			<Russian>Понизить - в 2 раза усталость</Russian>
-			<Chinesesimp>削弱 - 2倍体力</Chinesesimp>
-			<Chinese>削弱 - 2倍體力</Chinese>
-			<Japanese>削減 - 2倍スタミナ</Japanese>
-			<Portuguese>Reduzido - 2 vezes mais energia</Portuguese>
-			<Czech>Snížená – 2x větší výdrž</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_FATIGUE4">
-			<Original>Reduced - 1.5 times more stamina</Original>
-			<French>Réduits - 1,5 fois plus d'endurance</French>
-			<German>Reduziert - 1,5-mal mehr Ausdauer</German>
-			<Spanish>Reducido - 1,5 veces más estamina</Spanish>
-			<Russian>Понизить - в 1.5 раза усталость</Russian>
-			<Chinesesimp>削弱 - 1.5倍体力</Chinesesimp>
-			<Chinese>削弱 - 1.5倍體力</Chinese>
-			<Japanese>削減 - 1.5倍スタミナ</Japanese>
-			<Portuguese>Reduzido - 1.5 vezes mais energia</Portuguese>
-			<Czech>Snížená – 1,5krát větší výdrž</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_REVIVE">
-			<Original>PsiKO AI Revive</Original>
-			<French>PsiKO AI Résurection</French>
-			<German>PAR Revive (Wiederbelebungen)</German>
-			<Spanish>PAR Revive</Spanish>
-			<Russian>PAR Возрождение</Russian>
-			<Chinesesimp>PAR复活模式</Chinesesimp>
-			<Chinese>PAR復活模式</Chinese>
-			<Japanese>PsiKO AI 蘇生</Japanese>
-			<Portuguese>PsiKO AI Revive</Portuguese>
-			<Czech>PsiKO oživit AI</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_REVIVE1">
-			<Original>Enabled - Only medics can revive</Original>
-			<French>Activé - Seuls les medics peuvent ressusciter</French>
-			<German>Aktiv - Nur Sanitäter können wiederbeleben</German>
-			<Spanish>Activado - Sólo los médicos pueden revivir</Spanish>
-			<Russian>Включено - Только медики могут возрождать</Russian>
-			<Chinesesimp>启用 - 只有医生才能复活他人</Chinesesimp>
-			<Chinese>啟用 - 只有醫生才能複活他人</Chinese>
-			<Japanese>有効 - 衛生兵のみ蘇生可能</Japanese>
-			<Portuguese>Ativado - Apenas médicos podem reviver</Portuguese>
-			<Czech>Povoleno – Oživit mohou pouze medici</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_REVIVE2">
-			<Original>Enabled - Everyone can revive using a MedKit or FAK</Original>
-			<French>Activé - Tout le monde peut ressusciter avec un kit médical ou un kit soins</French>
-			<Chinesesimp>启用——每个人都可以使用医疗包或急救包进行复活</Chinesesimp>
-			<Chinese>启用——每个人都可以使用医疗包或急救包进行复活</Chinese>
-			<Portuguese>Ativado - Todos podem reviver usando um MedKit ou FAK</Portuguese>
-			<Czech>Povoleno - Každý může oživit pomocí MedKit nebo FAK</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_REVIVE3">
-			<Original>Enabled - Everyone can revive</Original>
-			<French>Activé - Tout le monde peut ressusciter</French>
-			<Chinesesimp>启用——每个人都可以随意复活</Chinesesimp>
-			<Chinese>启用——每个人都可以随意复活</Chinese>
-			<Portuguese>Ativado - Todos podem reviver</Portuguese>
-			<Czech>Povoleno – každý může oživit</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_INTRO">
-			<Original>Introduction</Original>
-			<French>Introduction</French>
-			<German>Einführung</German>
-			<Spanish>Introducción</Spanish>
-			<Russian>Введение</Russian>
-			<Chinesesimp>介绍</Chinesesimp>
-			<Chinese>介紹</Chinese>
-			<Japanese>イントロダクション</Japanese>
-			<Portuguese>Introduction</Portuguese>
-			<Czech>Úvod hry</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_DEPLOYMENTCAMERA">
-			<Original>Deployment cinematic</Original>
-			<French>Cinématique de déploiement</French>
-			<German>Zwischensequenz bei Einsatz</German>
-			<Spanish>Cinemática de comienzo</Spanish>
-			<Russian>Кино во время размещения</Russian>
-			<Chinesesimp>部署动画</Chinesesimp>
-			<Chinese>部署動畫</Chinese>
-			<Japanese>出撃動画</Japanese>
-			<Portuguese>Posição cinematográfica</Portuguese>
-			<Czech>Filmová scéna</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_ENABLED">
-			<Original>Enabled</Original>
-			<French>Activé</French>
-			<German>Aktiviert</German>
-			<Spanish>Activado</Spanish>
-			<Russian>Вкл</Russian>
-			<Chinesesimp>启用</Chinesesimp>
-			<Chinese>啟用</Chinese>
-			<Japanese>有効</Japanese>
-			<Portuguese>Habilitado</Portuguese>
-			<Czech>Povoleno</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_DISABLED">
-			<Original>Disabled</Original>
-			<French>Désactivé</French>
-			<German>Deaktiviert</German>
-			<Spanish>Desactivado</Spanish>
-			<Russian>Выкл</Russian>
-			<Chinesesimp>禁用</Chinesesimp>
-			<Chinese>禁用</Chinese>
-			<Japanese>無効</Japanese>
-			<Portuguese>Desabilitado</Portuguese>
-			<Czech>Zakázáno</Czech>
-		</Key>
 		<Key ID="STR_PARAMS_FIRSTFOB">
 			<Original>Start the campaign with the first FOB already built</Original>
 			<French>Commencer la campagne avec une FOB déjà construite</French>
@@ -1866,183 +1502,6 @@
 			<Japanese>FOBがすでに建設されている状態で開始</Japanese>
 			<Portuguese>Inicie a campanha com o primeiro FOB já construído</Portuguese>
 			<Czech>Začněte kampaň s již vytvořeným prvním FOB</Czech>
-		</Key>
-		<Key ID="STR_YES">
-			<Original>Yes</Original>
-			<French>Oui</French>
-			<German>Ja</German>
-			<Spanish>Si</Spanish>
-			<Russian>Да</Russian>
-			<Chinesesimp>是</Chinesesimp>
-			<Chinese>是</Chinese>
-			<Japanese>はい</Japanese>
-			<Portuguese>Sim</Portuguese>
-			<Czech>Ano</Czech>
-		</Key>
-		<Key ID="STR_NO">
-			<Original>No</Original>
-			<French>Non</French>
-			<German>Nein</German>
-			<Spanish>No</Spanish>
-			<Russian>Нет</Russian>
-			<Chinesesimp>否</Chinesesimp>
-			<Chinese>否</Chinese>
-			<Japanese>いいえ</Japanese>
-			<Portuguese>Não</Portuguese>
-			<Czech>Ne</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_UNITCAP">
-			<Original>Maximum amount of AI units</Original>
-			<French>Quantité maximale d'unités IA</French>
-			<German>Maximale Anzahl KI-Einheiten</German>
-			<Spanish>Cantidad máxima de unidades de IA</Spanish>
-			<Russian>Максимальное количество единиц AI</Russian>
-			<Chinesesimp>AI单位最大数量</Chinesesimp>
-			<Chinese>AI單位最大數量</Chinese>
-			<Japanese>AIユニット最大数</Japanese>
-			<Portuguese>Quantidade máxima de unidades AI</Portuguese>
-			<Czech>Maximální počet jednotek AI</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_UNITCAP1">
-			<Original>50% - Recommended for local hosting</Original>
-			<French>50% - Recommandé pour un hébergement local</French>
-			<German>50 % - Empfohlen für lokal gehostete Spiele</German>
-			<Spanish>50% - Recomendado para host local</Spanish>
-			<Russian>50% - Рекомендуется для локального хостинга</Russian>
-			<Chinesesimp>50% - 建议为本地托管</Chinesesimp>
-			<Chinese>50% - 建議為本地託管</Chinese>
-			<Japanese>50% - ローカルホスト向け</Japanese>
-			<Portuguese>50% - Recomendado para hospedagem local</Portuguese>
-			<Czech>50 % – Doporučeno pro místní hosting</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_UNITCAP2">
-			<Original>75% - Dedicated server recommended</Original>
-			<French>75% - Serveur dédié recommandé</French>
-			<German>75 % - Dezidierter Server empfohlen</German>
-			<Spanish>75% - Recomendado para servidor dedicado</Spanish>
-			<Russian>75% - Выделенный сервер рекомендуется</Russian>
-			<Chinesesimp>75% - 推荐为专用服务器</Chinesesimp>
-			<Chinese>75% - 推薦為專用服務器</Chinese>
-			<Japanese>75% - 専用サーバー向け</Japanese>
-			<Portuguese>75% - Servidor dedicado recomendado</Portuguese>
-			<Czech>75 % – doporučený dedikovaný server</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_UNITCAP3">
-			<Original>100% - Dedicated server recommended</Original>
-			<French>100% - Serveur dédié recommandé</French>
-			<German>100 % - Dezidierter Server empfohlen</German>
-			<Spanish>100% - Recomendado para servidor dedicado</Spanish>
-			<Russian>100% - Выделенный сервер рекомендуется</Russian>
-			<Chinesesimp>100% - 推荐专用服务器</Chinesesimp>
-			<Chinese>100% - 推薦專用服務器</Chinese>
-			<Japanese>100% - 専用サーバー向け</Japanese>
-			<Portuguese>100% - Servidor dedicado recomendado</Portuguese>
-			<Czech>100 % – doporučený dedikovaný server</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_UNITCAP4">
-			<Original>125% - Dedicated server with headless client recommended</Original>
-			<French>125% - Serveur dédié avec headless client recommandé</French>
-			<German>125 % - Dezidierter Server mit Headless Client empfohlen</German>
-			<Spanish>125% - Recomendado para servidor dedicado con cliente descabezado</Spanish>
-			<Russian>125% - Выделенный сервер вместе с headless client рекомендуется</Russian>
-			<Chinesesimp>125% - 推荐专用服务器和无头客户端</Chinesesimp>
-			<Chinese>125% - 推薦專用服務器和無頭客戶端</Chinese>
-			<Japanese>125% - ヘッドレスクライアント使用の専用サーバー向け</Japanese>
-			<Portuguese>125% - Servidor dedicado com cliente headless recomendado</Portuguese>
-			<Czech>125 % – doporučený dedikovaný server s headless klientem</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_UNITCAP5">
-			<Original>150% - Dedicated server with multiple headless clients recommended</Original>
-			<French>150% - Serveur dédié avec clients headless multiples recommandé</French>
-			<German>150 % - Dezidierter Server mit mehreren Headless Clients empfohlen</German>
-			<Spanish>150% - Recomendado para servidor dedicado con múltiples clientes descabezados</Spanish>
-			<Russian>150% - Выделенный сервер вместе с несколькими headless client рекомендуется</Russian>
-			<Chinesesimp>150% - 推荐使用具有多个无头客户端的专用服务器</Chinesesimp>
-			<Chinese>150% - 推薦使用具有多個無頭客戶端的專用服務器</Chinese>
-			<Japanese>150% - 複数のヘッドレスクライアント使用の専用サーバー向け</Japanese>
-			<Portuguese>150% - Servidor dedicado com vários clientes headless recomendados</Portuguese>
-			<Czech>150 % – Doporučujeme dedikovaný server s několika headless klienty</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_UNITCAP6">
-			<Original>200% - Dedicated server with multiple headless clients recommended</Original>
-			<French>200% - Serveur dédié avec clients headless multiples recommandé</French>
-			<German>200 % - Dezidierter Server mit mehreren Headless Clients empfohlen</German>
-			<Spanish>200% - Recomendado para servidor dedicado con múltiples clientes descabezados</Spanish>
-			<Russian>200% - Выделенный сервер вместе с несколькими headless client рекомендуется</Russian>
-			<Chinesesimp>200% - 推荐使用具有多个无头客户端的专用服务器</Chinesesimp>
-			<Chinese>200% - 推薦使用具有多個無頭客戶端的專用服務器</Chinese>
-			<Japanese>200% - 複数のヘッドレスクライアント使用の専用サーバー向け</Japanese>
-			<Portuguese>200% - Servidor dedicado com vários clientes headless recomendados</Portuguese>
-			<Czech>200% - Doporučujeme dedikovaný server s několika headless klienty</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_CIVILIANS">
-			<Original>Enable the Civilian Manager</Original>
-			<French>Activer le Gestionnaire de Civils</French>
-			<German>Zivile Aktivität</German>
-			<Spanish>Actividad civil</Spanish>
-			<Russian>Гражданская активность</Russian>
-			<Chinesesimp>平民活动</Chinesesimp>
-			<Chinese>平民活動</Chinese>
-			<Japanese>民間人の活動量</Japanese>
-			<Portuguese>Habilitar o Gerenciador Civil</Portuguese>
-			<Czech>Povolit civil</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_CIVILIANS1">
-			<Original>None</Original>
-			<French>Aucune</French>
-			<German>Keine</German>
-			<Spanish>Ninguna</Spanish>
-			<Russian>Нету</Russian>
-			<Chinesesimp>无</Chinesesimp>
-			<Chinese>無</Chinese>
-			<Japanese>なし</Japanese>
-			<Portuguese>Nenhum</Portuguese>
-			<Czech>Žádný</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_CIVILIANS2">
-			<Original>Reduced</Original>
-			<French>Réduite</French>
-			<German>Reduziert</German>
-			<Spanish>Reducida</Spanish>
-			<Russian>Снижена</Russian>
-			<Chinesesimp>稀少</Chinesesimp>
-			<Chinese>稀少</Chinese>
-			<Japanese>少なめ</Japanese>
-			<Portuguese>Reduzido</Portuguese>
-			<Czech>Snížená</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_CIVILIANS3">
-			<Original>Normal</Original>
-			<French>Normale</French>
-			<German>Normal</German>
-			<Spanish>Normal</Spanish>
-			<Russian>Нормальная</Russian>
-			<Chinesesimp>正常</Chinesesimp>
-			<Chinese>正常</Chinese>
-			<Japanese>通常</Japanese>
-			<Portuguese>Normal</Portuguese>
-			<Czech>Normální</Czech>
-		</Key>
-		<Key ID="STR_PARAMS_CIVILIANS4">
-			<Original>Increased</Original>
-			<French>Augmentée</French>
-			<German>Erhöht</German>
-			<Spanish>Aumentada</Spanish>
-			<Russian>Увеличенная</Russian>
-			<Chinesesimp>繁华</Chinesesimp>
-			<Chinese>繁華</Chinese>
-			<Japanese>多め</Japanese>
-			<Portuguese>Aumentado</Portuguese>
-			<Czech>Zvýšený</Czech>
-		</Key>
-		<Key ID="STR_PARAM_WILDLIFE">
-			<Original>Enable the Wildlife Manager</Original>
-			<French>Activer le Gestionnaire de Vie Sauvage</French>
-			<Chinesesimp>野生动物管理</Chinesesimp>
-			<Chinese>野生動物管理</Chinese>
-			<Japanese>野生動物</Japanese>
-			<Portuguese>Habilitar o Gerenciador de Vida Selvagem</Portuguese>
-			<Czech>Povolte divoké zvěře</Czech>
 		</Key>
 		<Key ID="STR_PARAM_PATROL">
 			<Original>Enable the Patrol Manager</Original>
@@ -2064,39 +1523,6 @@
 			<Japanese>警告: 友軍誤射</Japanese>
 			<Portuguese>Aviso: fogo amigo</Portuguese>
 			<Czech>Varování: friendly fire</Czech>
-		</Key>
-		<Key ID="STR_PARAM_ADAPT_TO_PLAYERCOUNT">
-			<Original>Hostile presence adapts to player count</Original>
-			<French>La présence hostile s'adapte au nombre de joueurs</French>
-			<German>Feindpräsenz passt sich der Spielerzahl an</German>
-			<Spanish>Adaptar presencia hostil según la cantidad de jugadores</Spanish>
-			<Russian>Вражеские силы адаптируются к количеству игроков</Russian>
-			<Chinesesimp>随玩家数量调整敌军活动</Chinesesimp>
-			<Chinese>隨玩家數量調整敵軍活動</Chinese>
-			<Japanese>プレイヤー数に合わせて敵兵の量を調節</Japanese>
-			<Portuguese>A presença hostil se adapta à contagem de jogadores</Portuguese>
-			<Czech>Nepřátelská přítomnost se přizpůsobuje počtu hráčů</Czech>
-		</Key>
-		<Key ID="STR_PARAM_SECTOR_RADIUS">
-			<Original>The size of a sector (radius)</Original>
-			<French>La taille d'un secteur (rayon)</French>
-			<Chinesesimp>一个战区的规模（半径）</Chinesesimp>
-			<Chinese>一個戰區的規模（半徑）</Chinese>
-			<Japanese>区域の大きさ(半径)</Japanese>
-			<Portuguese>O tamanho de um setor (raio)</Portuguese>
-			<Czech>Velikost sektoru (radius)</Czech>
-		</Key>
-		<Key ID="STR_PARAM_PASSIVE_INCOME">
-			<Original>Replace ammo boxes spawns with passive income</Original>
-			<French>Remplacer les caisses de munitions par un revenu passif</French>
-			<German>Ersetzt Munitionskisten durch passives Einkommen</German>
-			<Spanish>Reemplazar cajas de munición por ingresos pasivos</Spanish>
-			<Russian>Заменяет ящики с боеприпасами пассивным доходом</Russian>
-			<Chinesesimp>替换弹药箱以直接获取弹药收入</Chinesesimp>
-			<Chinese>替換彈藥箱以直接獲取彈藥收入</Chinese>
-			<Japanese>スポーンする弾薬箱をパッシブインカムに変更</Japanese>
-			<Portuguese>Substitua caixas de munição por renda passiva</Portuguese>
-			<Czech>Nahraďte spawny krabic s municí pasivním příjmem</Czech>
 		</Key>
 		<Key ID="STR_BUILD1">
 			<Original>Infantry units</Original>
@@ -2865,90 +2291,6 @@
 			<Portuguese>reembalado.</Portuguese>
 			<Czech>Rozebráno</Czech>
 		</Key>
-		<Key ID="STR_HALO_PARAM">
-			<Original>HALO jump</Original>
-			<French>Saut HALO</French>
-			<German>HALO-Sprung</German>
-			<Spanish>Salto HALO</Spanish>
-			<Russian>HALO прыжок</Russian>
-			<Chinesesimp>高空跳伞</Chinesesimp>
-			<Chinese>高空跳傘</Chinese>
-			<Japanese>HALO降下</Japanese>
-			<Portuguese>Salto HALO</Portuguese>
-			<Czech>HALO jump</Czech>
-		</Key>
-		<Key ID="STR_HALO_PARAM1">
-			<Original>Enabled - No cooldown</Original>
-			<French>Activé - Pas d'attente</French>
-			<German>Aktiviert - Keine Abklingzeit</German>
-			<Spanish>Activado - Sin tiempo de espera</Spanish>
-			<Russian>Вкл - без перерыва</Russian>
-			<Chinesesimp>启用 - 无冷却时间</Chinesesimp>
-			<Chinese>啟用 - 無冷卻時間</Chinese>
-			<Japanese>有効 - クールタイム無し</Japanese>
-			<Portuguese>Ativado - Sem cooldown</Portuguese>
-			<Czech>povolit - zakázat HALO jump</Czech>
-		</Key>
-		<Key ID="STR_HALO_PARAM2">
-			<Original>Enabled - 5 minutes cooldown</Original>
-			<French>Activé - Attente de 5 minutes</French>
-			<German>Aktiviert - 5 Minuten Abklingzeit</German>
-			<Spanish>Activado - 5 minutos de espera</Spanish>
-			<Russian>Вкл - 5 минут перерыв</Russian>
-			<Chinesesimp>启用 - 5分钟冷却间隔</Chinesesimp>
-			<Chinese>啟用 - 5分鐘冷卻間隔</Chinese>
-			<Japanese>有効 - クールタイム5分</Japanese>
-			<Portuguese>Ativado - 5 minutos de arrefecimento</Portuguese>
-			<Czech>Za 5 minut HALO jump</Czech>
-		</Key>
-		<Key ID="STR_HALO_PARAM3">
-			<Original>Enabled - 10 minutes cooldown</Original>
-			<French>Activé - Attente de 10 minutes</French>
-			<German>Aktiviert - 10 Minuten Abklingzeit</German>
-			<Spanish>Activado - 10 minutos de espera</Spanish>
-			<Russian>Вкл - 10 минут перерыв</Russian>
-			<Chinesesimp>启用 - 10分钟冷却间隔</Chinesesimp>
-			<Chinese>啟用 - 10分鐘冷卻間隔</Chinese>
-			<Japanese>有効 - クールタイム10分</Japanese>
-			<Portuguese>Ativado - 10 minutos de arrefecimento</Portuguese>
-			<Czech>Za 10 minut HALO jump</Czech>
-		</Key>
-		<Key ID="STR_HALO_PARAM4">
-			<Original>Enabled - 15 minutes cooldown</Original>
-			<French>Activé - Attente de 15 minutes</French>
-			<German>Aktiviert - 15 Minuten Abklingzeit</German>
-			<Spanish>Activado - 15 minutos de espera</Spanish>
-			<Russian>Вкл - 15 минут перерыв</Russian>
-			<Chinesesimp>启用 - 15分钟冷却间隔</Chinesesimp>
-			<Chinese>啟用 - 15分鐘冷卻間隔</Chinese>
-			<Japanese>有効 - クールタイム15分</Japanese>
-			<Portuguese>Ativado - 15 minutos de arrefecimento</Portuguese>
-			<Czech>Za 15 minut HALO jump</Czech>
-		</Key>
-		<Key ID="STR_HALO_PARAM5">
-			<Original>Enabled - 20 minutes cooldown</Original>
-			<French>Activé - Attente de 20 minutes</French>
-			<German>Aktiviert - 20 Minuten Abklingzeit</German>
-			<Spanish>Activado - 20 minutos de espera</Spanish>
-			<Russian>Вкл - 20 минут перерыв</Russian>
-			<Chinesesimp>启用 - 20分钟冷却间隔</Chinesesimp>
-			<Chinese>啟用 - 20分鐘冷卻間隔</Chinese>
-			<Japanese>有効 - クールタイム20分</Japanese>
-			<Portuguese>Ativado - 20 minutos de arrefecimentou</Portuguese>
-			<Czech>Za 20 minut HALO jump</Czech>
-		</Key>
-		<Key ID="STR_HALO_PARAM6">
-			<Original>Enabled - 30 minutes cooldown</Original>
-			<French>Activé - Attente de 30 minutes</French>
-			<German>Aktiviert - 30 Minuten Abklingzeut</German>
-			<Spanish>Activado - 30 minutos de espera</Spanish>
-			<Russian>Вкл - 30 минут перерыв</Russian>
-			<Chinesesimp>启用 - 30分钟冷却间隔</Chinesesimp>
-			<Chinese>啟用 - 30分鐘冷卻間隔</Chinese>
-			<Japanese>有効 - クールタイム30分</Japanese>
-			<Portuguese>Ativado - 30 minutos de arrefecimento</Portuguese>
-			<Czech>Za 30 minut HALO jump</Czech>
-		</Key>
 		<Key ID="STR_HALO_DENIED_COOLDOWN">
 			<Original>Can't perform HALO jump, you are on cooldown for %1 more minute(s).</Original>
 			<French>Impossible d'effectuer un saut Opérationnel, vous êtes en attente pour encore %1 minute(s).</French>
@@ -2997,22 +2339,6 @@
 			<Portuguese>Progresso da implantação</Portuguese>
 			<Czech>Probíhá nasazování...</Czech>
 		</Key>
-		<Key ID="STR_WHITELIST_PARAM">
-			<Original>Use the commander whitelist</Original>
-			<French>Utiliser la Whitelist pour le commandant</French>
-			<German>Nutze die Whitelist für den Kommandanten</German>
-			<Spanish>Utilizar la lista blanca para Comandantes</Spanish>
-			<Russian>Использование "белого" списка командиров</Russian>
-			<Chinesesimp>使用指挥官白名单</Chinesesimp>
-			<Chinese>使用指揮官白名單</Chinese>
-			<Japanese>指揮官ホワイトリストを使用してください</Japanese>
-			<Portuguese>Use a lista de permissões do comandante</Portuguese>
-			<Czech>Použijte commander whitelist</Czech>
-		</Key>
-		<Key ID="STR_EXCLUSIVE_PARAM">
-			<Original>Use the exclusive join whitelist</Original>
-			<French>Utiliser la Whitelist pour se connecter</French>
-		</Key>
 		<Key ID="STR_BUILD_ENEMIES_NEARBY">
 			<Original>Cannot build: hostile forces nearby.</Original>
 			<French>Impossible de construire: forces hostiles à proximité.</French>
@@ -3024,58 +2350,6 @@
 			<Japanese>ビルドできません: 敵が付近に居ます。</Japanese>
 			<Portuguese>Não pode construir: forças hostis próximas.</Portuguese>
 			<Czech>Nelze stavět: nepřátelské síly poblíž.</Czech>
-		</Key>
-		<Key ID="STR_CLEANUP_PARAM">
-			<Original>Cleanup abandonned vehicles outside FOBs</Original>
-			<French>Nettoyer les véhicules abandonnés loin d'une FOB</French>
-			<German>Räumt verlassene Fahrzeuge auserhalb von FOBs weg</German>
-			<Spanish>Limpieza de vehículos abandonados fuera de FOBs</Spanish>
-			<Russian>Удаление брошенной техники вне FOB.</Russian>
-			<Chinesesimp>清理FOB以外的被遗弃车辆</Chinesesimp>
-			<Chinese>清理FOB以外的被遺棄車輛</Chinese>
-			<Japanese>FOB外に放棄された車両を削除</Japanese>
-			<Portuguese>Limpeza de veículos abandonados fora dos FOBs</Portuguese>
-			<Czech>Čištění opuštěných vozidel mimo FOB</Czech>
-		</Key>
-		<Key ID="STR_CLEANUP_PARAM1">
-			<Original>15 minutes delay</Original>
-			<French> 15 minutes de délai</French>
-			<Chinesesimp>15分钟间隔</Chinesesimp>
-			<Chinese>15分钟间隔</Chinese>
-			<Portuguese>15 minutos de atraso</Portuguese>
-			<Czech>za 15 minut Vymazat</Czech>
-		</Key>
-		<Key ID="STR_CLEANUP_PARAM2">
-			<Original>30 minutes delay</Original>
-			<French> 30 minutes de délai</French>
-			<Chinesesimp>30分钟间隔</Chinesesimp>
-			<Chinese>30分钟间隔</Chinese>
-			<Portuguese>30 minutos de atraso</Portuguese>
-			<Czech>za 30 minut vymazat</Czech>
-		</Key>
-		<Key ID="STR_CLEANUP_PARAM3">
-			<Original>1 hour delay</Original>
-			<French>1 heure de délai</French>
-			<Chinesesimp>1小时间隔</Chinesesimp>
-			<Chinese>1小时间隔</Chinese>
-			<Portuguese>1 hora de atraso</Portuguese>
-			<Czech>za 1 hodinu vymazat</Czech>
-		</Key>
-		<Key ID="STR_CLEANUP_PARAM4">
-			<Original>2 hours delay</Original>
-			<French>2 heures de délai</French>
-			<Chinesesimp>2小时间隔</Chinesesimp>
-			<Chinese>2小时间隔</Chinese>
-			<Portuguese>1 horas de atraso</Portuguese>
-			<Czech>za 2 hodiny vymazat</Czech>
-		</Key>
-		<Key ID="STR_CLEANUP_PARAM5">
-			<Original>4 hours delay</Original>
-			<French>4 heures de délai</French>
-			<Chinesesimp>4小时间隔</Chinesesimp>
-			<Chinese>4小时间隔</Chinese>
-			<Portuguese>4 horas de atraso</Portuguese>
-			<Czech>za 4 hodiny vymazat</Czech>
 		</Key>
 		<Key ID="STR_SORRY">
 			<Original>Sorry!</Original>
@@ -3182,138 +2456,6 @@
 			<Portuguese>Local das instalações:</Portuguese>
 			<Czech>Místo nasazení:</Czech>
 		</Key>
-		<Key ID="STR_AGGRESSIVITY_PARAM">
-			<Original>OPFOR aggressivity</Original>
-			<French>Aggressivité de l'OPFOR</French>
-			<German>OPFOR Aggressivität</German>
-			<Spanish>Agresividad del OPFOR</Spanish>
-			<Russian>Уровень обеспокоенности OPFOR</Russian>
-			<Chinesesimp>OPFOR攻击性</Chinesesimp>
-			<Chinese>OPFOR攻擊性</Chinese>
-			<Japanese>敵のアグレッシブ度</Japanese>
-			<Portuguese>OPFOR agressividade</Portuguese>
-			<Czech>Agresivita Nepřátel</Czech>
-		</Key>
-		<Key ID="STR_AGGRESSIVITY_PARAM0">
-			<Original>Anemic</Original>
-			<French>Anémique</French>
-			<German>Mutlos</German>
-			<Spanish>Anémica</Spanish>
-			<Russian>Вяло</Russian>
-			<Chinesesimp>乏力</Chinesesimp>
-			<Chinese>乏力</Chinese>
-			<Japanese>とても弱い</Japanese>
-			<Portuguese>Anêmico</Portuguese>
-			<Czech>Měnící</Czech>
-		</Key>
-		<Key ID="STR_AGGRESSIVITY_PARAM1">
-			<Original>Weak</Original>
-			<French>Faible</French>
-			<German>Schwacht</German>
-			<Spanish>Floja</Spanish>
-			<Russian>Слабо</Russian>
-			<Chinesesimp>软弱</Chinesesimp>
-			<Chinese>軟弱</Chinese>
-			<Japanese>弱い</Japanese>
-			<Portuguese>Fraco</Portuguese>
-			<Czech>Slabý</Czech>
-		</Key>
-		<Key ID="STR_AGGRESSIVITY_PARAM2">
-			<Original>Normal</Original>
-			<French>Normale</French>
-			<German>Normal</German>
-			<Spanish>Normal</Spanish>
-			<Russian>Нормально</Russian>
-			<Chinesesimp>常规</Chinesesimp>
-			<Chinese>常規</Chinese>
-			<Japanese>通常</Japanese>
-			<Portuguese>Normal</Portuguese>
-			<Czech>Nomrální</Czech>
-		</Key>
-		<Key ID="STR_AGGRESSIVITY_PARAM3">
-			<Original>Strong</Original>
-			<French>Forte</French>
-			<German>Stark</German>
-			<Spanish>Fuerte</Spanish>
-			<Russian>Сильно</Russian>
-			<Chinesesimp>强劲</Chinesesimp>
-			<Chinese>強勁</Chinese>
-			<Japanese>強い</Japanese>
-			<Portuguese>Forte</Portuguese>
-			<Czech>Silný</Czech>
-		</Key>
-		<Key ID="STR_AGGRESSIVITY_PARAM4">
-			<Original>Extreme</Original>
-			<French>Extreme</French>
-			<German>Extrem</German>
-			<Spanish>Extrema</Spanish>
-			<Russian>Очень сильно</Russian>
-			<Chinesesimp>疯狂</Chinesesimp>
-			<Chinese>瘋狂</Chinese>
-			<Japanese>エクストリーム</Japanese>
-			<Portuguese>Extremo</Portuguese>
-			<Czech>Extrémní</Czech>
-		</Key>
-		<Key ID="STR_WEATHER_PARAM">
-			<Original>Weather</Original>
-			<French>Météo</French>
-			<German>Wetter</German>
-			<Spanish>Clima</Spanish>
-			<Russian>Погода</Russian>
-			<Chinesesimp>天气</Chinesesimp>
-			<Chinese>天氣</Chinese>
-			<Japanese>天候</Japanese>
-			<Portuguese>Tempo</Portuguese>
-			<Czech>Počasí</Czech>
-		</Key>
-		<Key ID="STR_WEATHER_PARAM1">
-			<Original>Always sunny</Original>
-			<French>Soleil permanent</French>
-			<German>Immer sonnig</German>
-			<Spanish>Siempre soleado</Spanish>
-			<Russian>Всегда солнечно</Russian>
-			<Chinesesimp>总是晴天</Chinesesimp>
-			<Chinese>總是晴天</Chinese>
-			<Japanese>常に晴れ</Japanese>
-			<Portuguese>Sempre ensolarado</Portuguese>
-			<Czech>Vždy slunečno</Czech>
-		</Key>
-		<Key ID="STR_WEATHER_PARAM2">
-			<Original>Random without rain</Original>
-			<French>Aléatoire sans pluie</French>
-			<German>Zufällig ohne Regen</German>
-			<Spanish>Aleatorio sin lluvia</Spanish>
-			<Russian>Случайно, без дождя</Russian>
-			<Chinesesimp>随机无雨</Chinesesimp>
-			<Chinese>隨機無雨</Chinese>
-			<Japanese>ランダム、雨無し。</Japanese>
-			<Portuguese>Aleatório sem chuva</Portuguese>
-			<Czech>Oblačno bez deště</Czech>
-		</Key>
-		<Key ID="STR_WEATHER_PARAM3">
-			<Original>Random Cloudy</Original>
-			<French>Aléatoire Nuageux</French>
-			<German>Zufällig trüb</German>
-			<Spanish>Aleatorio nublado</Spanish>
-			<Russian>Случайно, облачный</Russian>
-			<Chinesesimp>随机多云</Chinesesimp>
-			<Chinese>隨機多雲</Chinese>
-			<Japanese>ランダム、曇り。</Japanese>
-			<Portuguese>Aleatório Nublado</Portuguese>
-			<Czech>Náhodně zataženo</Czech>
-		</Key>
-		<Key ID="STR_WEATHER_PARAM4">
-			<Original>Random</Original>
-			<French>Aléatoire</French>
-			<German>Zufällig</German>
-			<Spanish>Aleatorio</Spanish>
-			<Russian>Случайно</Russian>
-			<Chinesesimp>随机</Chinesesimp>
-			<Chinese>隨機</Chinese>
-			<Japanese>ランダム</Japanese>
-			<Portuguese>Random</Portuguese>
-			<Czech>Náhodný</Czech>
-		</Key>
 		<Key ID="STR_REPAIRING">
 			<Original>Repairing</Original>
 			<French>Réparation</French>
@@ -3373,18 +2515,6 @@
 			<Japanese>-- セカンダリーミッション</Japanese>
 			<Portuguese>-- OBJETIVOS SECUNDÁRIOS</Portuguese>
 			<Czech>-- SEKUNDÁRNÍ CÍLE</Czech>
-		</Key>
-		<Key ID="STR_AMMO_BOUNTIES">
-			<Original>Ammunition bounties</Original>
-			<French>Primes de munitions</French>
-			<German>Munition als Kopfgelder</German>
-			<Spanish>Recompensas de munición</Spanish>
-			<Russian>Вознаграждение за уничтожение техники ВООРУЖЕНИЕ</Russian>
-			<Chinesesimp>弹药奖励</Chinesesimp>
-			<Chinese>彈藥獎勵</Chinese>
-			<Japanese>弾薬バウンティ</Japanese>
-			<Portuguese>Recompensas de munição</Portuguese>
-			<Czech>Munice jako Odměna</Czech>
 		</Key>
 		<Key ID="STR_BOUNTY_MESSAGE">
 			<Original>Bounty of %1 Ammunition for a %2 destroyed by %3</Original>
@@ -4930,46 +4060,6 @@
 		</Key>
 
 		<!-- Added in v0.922 -->
-		<Key ID="STR_PARAM_BLUFOR_DEFENDERS">
-			<Original>BLUFOR defenders in owned sectors</Original>
-			<French>Défenseurs BLUFOR dans les secteurs capturés</French>
-			<German>BLUFOR Verteidiger in besetzten Sektoren</German>
-			<Russian>BLUFOR защитники в захваченных зонах</Russian>
-			<Chinesesimp>BLUFOR所属地区的保护者</Chinesesimp>
-			<Chinese>BLUFOR所屬地區的保護者</Chinese>
-			<Japanese>友軍の守備隊が解放した街に常駐</Japanese>
-			<Portuguese>Defensores do BLUFOR em setores próprios</Portuguese>
-			<Czech>Obránci ve vlastněných sektorech</Czech>
-		</Key>
-		<Key ID="STR_PARAM_FOBS_COUNT">
-			<Original>Maximum number of FOBs allowed</Original>
-			<French>Nombre maximal de FOBs autorisées</French>
-			<German>Maximale Anzahl an erlaubten FOBs</German>
-			<Russian>Максимальное количество FOB</Russian>
-			<Chinesesimp>允许的最大FOB数</Chinesesimp>
-			<Chinese>允許的最大FOB數</Chinese>
-			<Japanese>最大建設可能FOB</Japanese>
-			<Portuguese>Número máximo de FOBs permitido</Portuguese>
-			<Czech>Maximální povolený počet FOB</Czech>
-		</Key>
-		<Key ID="STR_PARAM_FOB_TYPE">
-			<Original>Startup FOB Vehicle</Original>
-			<French>Type du vehicle de FOB</French>
-			<Chinesesimp>启动FOB车辆</Chinesesimp>
-			<Chinese>啟動FOB車輛</Chinese>
-			<Japanese>ミッション開始時のFOBタイプ</Japanese>
-			<Portuguese>Veículo FOBS de Inicialização</Portuguese>
-			<Czech>FOB Vozidlo</Czech>
-		</Key>
-		<Key ID="STR_PARAM_HURON_TYPE">
-			<Original>The type of Huron</Original>
-			<French>Le type de Huron</French>
-			<Chinesesimp>移动重生直升机类型</Chinesesimp>
-			<Chinese>移動重生直升機類型</Chinese>
-			<Japanese>Huronのタイプ</Japanese>
-			<Portuguese>O tipo de Huron</Portuguese>
-			<Czech>FOB Kontejnér</Czech>
-		</Key>
 		<Key ID="STR_HINT_FOBS_EXCEEDED">
 			<Original>You are not allowed to deploy more than %1 FOBs at the same time.</Original>
 			<French>Vous n'êtes pas autorisé à déployer plus de %1 FOBs en même temps.</French>
@@ -5125,16 +4215,6 @@
 		</Key>
 
 		<!-- Added in v0.924 -->
-		<Key ID="STR_CIV_PENALTIES">
-			<Original>Penalty for killing civilians</Original>
-			<French>Pénalité pour les pertes civiles</French>
-			<German>Strafe für zivile Verluste</German>
-			<Chinesesimp>屠杀平民的惩罚</Chinesesimp>
-			<Chinese>屠殺平民的懲罰</Chinese>
-			<Japanese>民間人殺害に対するペナルティ</Japanese>
-			<Portuguese>Pena por matar civis</Portuguese>
-			<Czech>Trest za zabití civilistů</Czech>
-		</Key>
 		<Key ID="STR_CIV_PENALTY_MESSAGE">
 			<Original>Penalty of %1 for killing of civilian named %2 by %3</Original>
 			<French>Pénalité de %1 pour avoir tué le civil %2 par %3</French>
@@ -5144,32 +4224,6 @@
 			<Japanese>民間人 %2 が %3 によって殺害されました。減点 %1 </Japanese>
 			<Portuguese>Penalidade de %1 por matar um civil chamado %2 por %3</Portuguese>
 			<Czech>Trest %1 za zabití civilisty jménem %2 hráčem - %3</Czech>
-		</Key>
-		<Key ID="STR_PARAM_SQUAD_SIZE_START">
-			<Original>AI per squad at startup.</Original>
-			<French>IA par escouade au début.</French>
-			<Chinesesimp>启动时每个小队的AI</Chinesesimp>
-			<Chinese>啟動時每個小隊的AI</Chinese>
-			<Japanese>ミッション開始時に扱える小隊内のAI数</Japanese>
-			<Portuguese>IA por esquadrão na inicialização.</Portuguese>
-			<Czech>AI Tým při startu.</Czech>
-		</Key>
-		<Key ID="STR_PARAM_SQUAD_SIZE">
-			<Original>AI recruitment limit per squad.</Original>
-			<French>Limite de recrutement d'IA par escouade.</French>
-			<Chinesesimp>每个小队AI招募限制。</Chinesesimp>
-			<Chinese>每個小隊AI招募限制。</Chinese>
-			<Japanese>AIの運用を小隊ごとに制限する。</Japanese>
-			<Portuguese>Limite de recrutamento de IA por esquadrão.</Portuguese>
-			<Czech>Limit náboru AI na tým.</Czech>
-		</Key>
-		<Key ID="STR_PARAM_SPAWN_MAX">
-			<Original>Spawn Point limit per player.</Original>
-			<French>Limite de point de respawn par joueur.</French>
-			<Chinesesimp>每个玩家的重生点限制。</Chinesesimp>
-			<Chinese>每個玩家的重生點限制。</Chinese>
-			<Portuguese>Ponto de renascimento limite por jogadores</Portuguese>
-			<Czech>Limit spawn Point na hráče.</Czech>
 		</Key>
 		<Key ID="STR_NOTIFICATION_SAR_STARTED">
 			<Original>Crashed helicopter near %1.</Original>
@@ -5386,99 +4440,6 @@
 			<Chinese>你有更多的人力資源。 &lt;br/&gt;貿易技能提高，商店價格更便宜。 &lt;br/&gt;空中支援的價格更便宜。</Chinese>
 			<Portuguese>Você tem mais Mão de Obra.&lt;br/&gt;A Loja do Comerciante é mais barata.&lt;br/&gt;O Apoio Aéreo é mais barato.</Portuguese>
 			<Czech>Máte více ManPower.&lt;br/&gt;Obchod Trader je levnější.&lt;br/&gt;Letecká podpora je levnější.&lt;br/&gt;Máte schopnost inženýra.</Czech>
-		</Key>
-
-		<!-- Added in v0.928 -->
-		<Key ID="STR_FANCY">
-			<Original>Fancy Information</Original>
-			<French>Information Colorée</French>
-			<Chinesesimp>花式信息</Chinesesimp>
-			<Chinese>花式信息</Chinese>
-			<Japanese>分かりやすい情報</Japanese>
-			<Portuguese>Informações extravagantes</Portuguese>
-			<Czech>Zajímavé informace</Czech>
-		</Key>
-		<Key ID="STR_OPFORMARK">
-			<Original>Hide Opfor sector markers</Original>
-			<French>Masquer les marqueurs de secteur OPFOR</French>
-			<Chinesesimp>隐藏Opfor地区标记</Chinesesimp>
-			<Chinese>隱藏Opfor地區標記</Chinese>
-			<Japanese>敵占領区域のマーカーを表示する</Japanese>
-			<Portuguese>Ocultar marcadores do setor Opfor</Portuguese>
-			<Czech>Skryjte značky sektorů Nepřítele</Czech>
-		</Key>
-		<Key ID="STR_ARSENAL">
-			<Original>Enable Virtual Arsenal</Original>
-			<French>Activer l'Arsenal Virtuel</French>
-			<Chinesesimp>虚拟武器库</Chinesesimp>
-			<Chinese>虛擬武器庫</Chinese>
-			<Japanese>バーチャルアーセナルを有効にする</Japanese>
-			<Portuguese>Habilitar Arsenal Virtual</Portuguese>
-			<Czech>Povolit virtuální arzenál</Czech>
-		</Key>
-		<Key ID="STR_LIMIT_ARSENAL">
-			<Original>Arsenal Filter Mode</Original>
-			<French>Mode de Filtrage de l'Arsenal</French>
-			<Chinesesimp>武器库过滤模式</Chinesesimp>
-			<Chinese>武器庫過濾模式</Chinese>
-			<Portuguese>Modo de Filtro do Arsenal</Portuguese>
-			<Czech>Režim Arsenal Filter</Czech>
-		</Key>
-		<Key ID="STR_LIMIT_ARSENAL_PARAM1">
-			<Original>Soft: The Arsenal only show your side gears, but the player can use other objects.</Original>
-			<Chinesesimp>松懈：武器库只显示玩家一方的装备，但是可以使用其他物品。</Chinesesimp>
-			<Chinese>鬆懈：武器庫只顯示玩家一方的裝備，但是可以使用其他物品。</Chinese>
-			<Portuguese>Soft: O Arsenal mostra apenas suas engrenagens laterais, mas o jogador pode usar outros objetos.</Portuguese>
-			<Czech>Soft: Arsenal zobrazuje pouze vaše vybavení, ale hráč může používat i jiné předměty.</Czech>
-		</Key>
-		<Key ID="STR_LIMIT_ARSENAL_PARAM2">
-			<Original>Strict: The player can ONLY use items present in the Arsenal.</Original>
-			<Chinesesimp>严谨：玩家只能使用当前武器库中的装备。</Chinesesimp>
-			<Chinese>嚴謹：玩家只能使用當前武器庫中的裝備。</Chinese>
-			<Portuguese>Rígido: O jogador SÓ pode usar itens presentes no Arsenal.</Portuguese>
-			<Czech>Strict: Hráč může používat POUZE předměty v arzenálu.</Czech>
-		</Key>
-		<Key ID="STR_LIMIT_ARSENAL_PARAM3">
-			<Original>Strict + MOD: The player can ONLY use items present in the Arsenal + items from the current Mod</Original>
-			<Chinesesimp>严谨+MOD：玩家只能使用当前武器库和MOD中的装备。</Chinesesimp>
-			<Chinese>嚴謹+MOD：玩家只能使用當前武器庫和MOD中的裝備。</Chinese>
-			<Portuguese>Strict + MOD: O jogador SÓ pode usar itens presentes no Arsenal + itens do Mod atual</Portuguese>
-			<Czech>Strict + MOD: Hráč může používat POUZE předměty v arzenálu + předměty z aktuálního modu</Czech>
-		</Key>
-		<Key ID="STR_VEH_LOCK">
-			<Original>Enable Vehicles Ownership</Original>
-			<French>Activer la Propriété des Véhicules </French>
-			<Chinesesimp>车辆所有权</Chinesesimp>
-			<Chinese>車輛所有權</Chinese>
-			<Japanese>乗り物の所有権</Japanese>
-			<Portuguese>Ativar propriedade de veículos</Portuguese>
-			<Czech>Povolit vlastnictví vozidel</Czech>
-		</Key>
-		<Key ID="STR_FORCE_LOADOUT">
-			<Original>Force default equipment</Original>
-			<French>Forcer l'équipement par défaut</French>
-			<Chinesesimp>强制默认装备</Chinesesimp>
-			<Chinese>強制默認裝備</Chinese>
-			<Japanese>デフォルト装備</Japanese>
-			<Portuguese>Forçar equipamento padrão</Portuguese>
-			<Czech>Vynutit výchozí vybavení</Czech>
-		</Key>
-		<Key ID="STR_THERMAL">
-			<Original>Enable Thermal equipments</Original>
-			<French>Activer les équipements Thermiques</French>
-			<Chinesesimp>热成像装备</Chinesesimp>
-			<Chinese>熱成像裝備</Chinese>
-			<Japanese>サーマル装備を有効にする</Japanese>
-			<Portuguese>Ativar equipamentos térmicos</Portuguese>
-			<Czech>Povolit Thermal zařízení</Czech>
-		</Key>
-		<Key ID="STR_DEATHCHAT">
-			<Original>Disable chat/voice if Wounded</Original>
-			<French>Désactiver le tchat/voie si Blessé</French>
-			<Chinesesimp>受伤时禁止聊天/语音</Chinesesimp>
-			<Chinese>受傷時禁止聊天/語音</Chinese>
-			<Portuguese>Desabilitar chat/voz se estiver ferido</Portuguese>
-			<Czech>V případě zranění deaktivujte chat/hlas</Czech>
 		</Key>
 
 		<!-- Permissions -->
@@ -7566,43 +6527,6 @@
 	</Package>
 
 	<!-- pSiKO TK Protect -->
-	<Package name="LRX_TK">
-		<Key ID="STR_TK_MODE">
-			<Original>TeamKill Mode</Original>
-			<French>TeamKill Mode</French>
-			<Chinesesimp>TK友伤模式</Chinesesimp>
-			<Chinese>TK友傷模式</Chinese>
-			<Japanese>チームキルモード</Japanese>
-			<Portuguese>Modo TeamKill</Portuguese>
-			<Czech>TeamKill Mode</Czech>
-		</Key>
-		<Key ID="STR_TK_MODE_STRICT">
-			<Original>Strict - Warning + Autoban</Original>
-			<French>Strict - Warning + Autoban</French>
-			<Chinesesimp>严厉 - 警告 + 自动ban</Chinesesimp>
-			<Chinese>嚴厲 - 警告 + 自動ban</Chinese>
-			<Japanese>厳しめ - 警告 + オートキック</Japanese>
-			<Portuguese>Estrito - Aviso + Autoban</Portuguese>
-			<Czech>Přísné - Varování + Autoban</Czech>
-		</Key>
-		<Key ID="STR_TK_MODE_RELAX">
-			<Original>Relax - The Player decide</Original>
-			<French>Relax - Le Joueur choisit</French>
-			<Chinesesimp>放松 - 由玩家决定</Chinesesimp>
-			<Chinese>放鬆 - 由玩家決定</Chinese>
-			<Japanese>緩め - プレイヤー判断</Japanese>
-			<Portuguese>Relaxe - O jogador decide</Portuguese>
-			<Czech>Relax - Hráč rozhodne</Czech>
-		</Key>
-		<Key ID="STR_TK_COUNT">
-			<Original>TeamKill Warning</Original>
-			<French>TeamKill Avertissement</French>
-			<Chinesesimp>TK友伤警告</Chinesesimp>
-			<Chinese>TK友傷警告</Chinese>
-			<Japanese>チームキル警告</Japanese>
-			<Portuguese>Aviso de TeamKill</Portuguese>
-			<Czech>Varování TeamKill</Czech>
-		</Key>
 		<Key ID="STR_TK_INFO1">
 			<Original>You have been TK by %1\nUse the action menu to react !</Original>
 			<French>Vous avez été TK par %1\nUtilisez le menu d'action pour réagir !</French>
@@ -7845,8 +6769,8 @@
 	<Package name="Vehicle Appearance Manager">
 		<Key ID="STR_VAM_INITIALIZED">
 			<Original>-------- Vehicle Appearance Manager Initialized --------</Original>
-			<Chinesesimp>-------- 车辆外观管理器初始化--------</Chinesesimp>
-			<Chinese>-------- 車輛外觀管理器初始化--------</Chinese>
+			<Chinesesimp>-------- Vehicle Appearance Manager Initialized --------</Chinesesimp>
+			<Chinese>-------- Vehicle Appearance Manager Initialized --------</Chinese>
 			<Korean>차량 형상 관리자 불러오기 및 초기화 완료</Korean>
 			<Czech>--------Správce vzhledu vozidla inicializován--------</Czech>
 		</Key>

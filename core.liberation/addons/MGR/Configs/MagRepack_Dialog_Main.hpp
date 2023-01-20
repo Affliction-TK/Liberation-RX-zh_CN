@@ -1,4 +1,4 @@
-
+﻿
 class MagRepack_Dialog_Main
 {
 	idd = -1;
@@ -75,7 +75,7 @@ class MagRepack_Dialog_Main
 		{
 			idc = 1001;
 
-			text = "Mag Repack";
+			text = "重整弹夹";
 			x = 19 * GUI_GRID_W + GUI_GRID_X;
 			y = 0.75 * GUI_GRID_H + GUI_GRID_Y;
 			w = 12.5 * GUI_GRID_W;
@@ -86,7 +86,7 @@ class MagRepack_Dialog_Main
 		{
 			idc = 1000;
 
-			text = "All Magazines";
+			text = "全部弹夹";
 			x = 7.75 * GUI_GRID_W + GUI_GRID_X;
 			y = 1.25 * GUI_GRID_H + GUI_GRID_Y;
 			w = 10 * GUI_GRID_W;
@@ -156,7 +156,7 @@ class MagRepack_Dialog_Main
 			idc = 1002;
 			style = 0;
 
-			text = " Source";
+			text = " 原弹夹";
 			x = 19 * GUI_GRID_W + GUI_GRID_X;
 			y = 2.8125 * GUI_GRID_H + GUI_GRID_Y;
 			w = 17 * GUI_GRID_W;
@@ -182,7 +182,7 @@ class MagRepack_Dialog_Main
 			idc = 1004;
 			style = 1;
 
-			text = "Target ";
+			text = "目标弹夹 ";
 			x = 19 * GUI_GRID_W + GUI_GRID_X;
 			y = 11.8125 * GUI_GRID_H + GUI_GRID_Y;
 			w = 17 * GUI_GRID_W;
@@ -515,7 +515,7 @@ class MagRepack_Dialog_Main
 		{
 			idc = 2400;
 			
-			text = "Options";
+			text = "设置";
 			action = "call outlw_MR_optionsMenu;";
 			x = 18.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 16.75 * GUI_GRID_H + GUI_GRID_Y;
@@ -577,7 +577,7 @@ class MagRepack_Dialog_Main
 				{
 					idc = 9001;
 
-					text = "OPTIONS";
+					text = "设置";
 					x = 1.75 * GUI_GRID_W + GUI_GRID_X;
 					y = 0 * GUI_GRID_H + GUI_GRID_Y;
 					w = 6 * GUI_GRID_W;
@@ -593,7 +593,7 @@ class MagRepack_Dialog_Main
 				class MR_ButtonOption_Debug: outlw_MR_RscButtonMenu
 				{
 					idc = 9002;
-					text = "Debug Mode";
+					text = "调试模式";
 					action = "call outlw_MR_debugSwitch;";
 					x = 0 * GUI_GRID_W + GUI_GRID_X;
 					y = 1.125 * GUI_GRID_H + GUI_GRID_Y;
@@ -610,7 +610,7 @@ class MagRepack_Dialog_Main
 				class MR_ButtonOption_ShowFull: outlw_MR_RscButtonMenu
 				{
 					idc = 9004;
-					text = "Show Full";
+					text = "显示完整";
 					action = "call outlw_MR_showFullSwitch;";
 					x = 0 * GUI_GRID_W + GUI_GRID_X;
 					y = 2.125 * GUI_GRID_H + GUI_GRID_Y;
@@ -627,7 +627,7 @@ class MagRepack_Dialog_Main
 				class MR_ButtonOption_Keybindings: outlw_MR_RscButtonMenu
 				{
 					idc = 9003;
-					text = "Keybindings";
+					text = "按键绑定";
 					action = "call outlw_MR_openKeybindings";
 					x = 0 * GUI_GRID_W + GUI_GRID_X;
 					y = 3.125 * GUI_GRID_H + GUI_GRID_Y;
@@ -644,7 +644,7 @@ class MagRepack_Dialog_Main
 				class MR_ButtonOption_About: outlw_MR_RscButtonMenu
 				{
 					idc = 9005;
-					text = "About";
+					text = "关于";
 					action = "call outlw_MR_openAbout";
 					x = 0 * GUI_GRID_W + GUI_GRID_X;
 					y = 4.125 * GUI_GRID_H + GUI_GRID_Y;
@@ -661,7 +661,7 @@ class MagRepack_Dialog_Main
 				class MR_ButtonOption_Hide: outlw_MR_RscButtonMenu
 				{
 					idc = 9006;
-					text = "Hide";
+					text = "隐藏";
 					action = "call outlw_MR_optionsMenu;";
 					x = 4.5 * GUI_GRID_W + GUI_GRID_X;
 					y = 5.25 * GUI_GRID_H + GUI_GRID_Y;

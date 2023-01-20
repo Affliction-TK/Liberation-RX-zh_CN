@@ -1,4 +1,4 @@
-// JukeBox v1.02
+﻿// JukeBox v1.02
 // by pSiKO
 
 // Music list
@@ -81,7 +81,7 @@ addMusicEventHandler ["MusicStop", {
 		} else {
 			playMusic _classname;
 		};
-		hintSilent format ["Now Playing:\n%1", JKB_current_music splitString "-" select 0];
+		hintSilent format ["正在播放:\n%1", JKB_current_music splitString "-" select 0];
 	} else {
 		[JKB_current_sound] spawn JKB_stopMusic;
 	};

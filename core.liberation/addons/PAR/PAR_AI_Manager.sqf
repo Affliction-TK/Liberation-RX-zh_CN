@@ -1,4 +1,4 @@
-private _bros = [];
+﻿private _bros = [];
 while {true} do {
     _bros = (units group player) select {!isplayer _x && (_x getVariable ["PAR_Grp_ID","0"]) == format["Bros_%1",PAR_Grp_ID]};
     if (count _bros > 0 ) then {
@@ -55,7 +55,7 @@ while {true} do {
                     private _ai_rank = GRLIB_rank_level select (GRLIB_rank_level find (rank _x)) + 1;
                     _x setSkill (_ai_skill + 0.05);
                     _x setUnitRank _ai_rank;
-                    _msg = format ["%1 was promoted to the rank of %2 !", name _x, _ai_rank];
+                    _msg = format ["%1 晋升为 %2 !", name _x, _ai_rank];
                     [_x, _msg] call PAR_fn_globalchat;
                     _x setVariable ["PAR_AI_score", ((GRLIB_rank_level find (rank _x)) + 1) * 5, true];
                 };
