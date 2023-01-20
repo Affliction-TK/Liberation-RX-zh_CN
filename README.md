@@ -1,6 +1,6 @@
-# 解放 RX (zh_CN)
+# ARMA-3 解放 RX - 扩展版
 
-## ARMA-3 解放 RX - 扩展版
+这是一个基于[Liberation-RX](https://github.com/tbox1911/Liberation-RX)的中文版本
 
 ![alt text](https://raw.githubusercontent.com/tbox1911/Liberation-RX/master/liberation.png "解放 RX")
 
@@ -27,10 +27,10 @@
 + 还有很多很多 !!
 
 + 等级系统
-  基于玩家行为的等级系统
-  自动授予许可（build/tank/air）
-  根据等级解锁武器库/单位
-  赠送或接收玩家的弹药
+  - 基于玩家行为的等级系统
+  - 自动授予许可（build/tank/air）
+  - 根据等级解锁武器库/单位
+  - 赠送或接收玩家的弹药
 
 + 动态支线任务
 + 特殊任务
@@ -38,23 +38,21 @@
 + 管理菜单（解封/弹药/军功点/传送/跳过时间/无敌/生成）
 
 + 用户操作键：
-- (用户操作键·10) 收枪
-- (用户操作键·11) 持续奔跑
-- (用户操作键·12) 切换耳塞
-- (用户操作键·13) 切换HUD
-- (用户操作键·14) 拍摄截图（游戏引擎）
-    
-+ MULTI 6-英语、法语、德语、西班牙语、俄语、中文
+  - (用户操作键·10) 收枪
+  - (用户操作键·11) 持续奔跑
+  - (用户操作键·12) 切换耳塞
+  - (用户操作键·13) 切换HUD
+  - (用户操作键·14) 拍摄截图（游戏引擎）
+  
++ MULTI 6-中文、英语、法语、德语、西班牙语、俄语
 
-该任务旨在避免需要指挥官，即使在首次启动时，也可以进行适当的权限管理，并自动授予玩家权限。
++ 该任务旨在避免需要指挥官，即使在首次启动时，也可以进行适当的权限管理，并自动授予玩家权限。
 
-大多数重要选项可以通过“参数”菜单（在大厅）进行配置
++ 大多数重要选项可以通过“参数”菜单（在大厅）进行配置，他们可以从根本上改变任务体验。
 
-他们可以从根本上改变任务体验。
++ 当您既是服务器管理员，又以指挥官身份登录时，可以使用Zeus模式。
 
-当您既是服务器管理员，又以指挥官身份登录时，可以使用Zeus模式。
-
-玩得高兴
++ 玩得高兴！
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -67,7 +65,7 @@
 + Tanoa
 + Enoch
 
-CUP地图：
+CUP 地图：
 
 + Chernarus (+ Winter)
 + Takistan
@@ -91,19 +89,17 @@ Operation Trebuchet 地图：
 ## 安装
 
 + 直接游玩：
-      将pbo文件复制到“Steam\SteamApps\common\Arm3\MPMMissions\”目录
-      启动Arma 3，主机MP游戏，选择岛屿和解放RX任务，开始
+  - 将pbo文件复制到“Steam\SteamApps\common\Arm3\MPMMissions\”目录
+  - 启动Arma 3，主机MP游戏，选择岛屿和解放RX任务，开始
 
 + 从源代码构建：
-      在构建目录中启动“build.bat”以构建PBO
-      或者将"core.liberation"文件夹与"island"任务文件夹合并来自己构建pbo
+  - 在构建目录中启动“build.bat”以构建PBO
+  - 或者将"core.liberation"文件夹与"island"任务文件夹合并来自己构建pbo
 
 + 专用服务器：
-      将pbo文件复制到“Steam\SteamApps\common\Arma3 Server\MPMMissions\”目录
-
-      编辑/创建服务器配置文件（查看：<https://community.bistudio.com/wiki/server.cfg>)
-
-      并添加以下内容：
+  - 将pbo文件复制到“Steam\SteamApps\common\Arma3 Server\MPMMissions\”目录
+  - 编辑/创建服务器配置文件（查看：<https://community.bistudio.com/wiki/server.cfg>)
+  - 并添加以下内容：
 
             // MISSIONS CYCLE
             class Missions
@@ -122,12 +118,10 @@ Operation Trebuchet 地图：
                   };
             };
 
-      + 所有任务的参数都可以在文件“mission_param.cfg”中找到
+      + 所有任务的参数都可以在文件“mission_param.cfg”中找到（建议先修改此文件来确定任务参数设置）
 
-      启动服务器
-            arma3server_x64.exe -high -name=server -nosound -port=2302 -config=server.cfg
-            arma3server -high -name=server -nosound -port=2302 -config=server.cfg
+   - 启动服务器
 
 ## 感谢
-      我要感谢：Zbug，他做得很好，AgentRev和Larrow以及[波希米亚互动论坛]的所有撰稿人(https://forums.bohemia.net/). 
-      感谢我从他们那里读到的无数信息，并给我上了一堂真正的代码课！
+   - 我要感谢：Zbug，他做得很好，AgentRev和Larrow以及[波希米亚互动论坛]的所有撰稿人(https://forums.bohemia.net/)
+   - 感谢我从他们那里读到的无数信息，并给我上了一堂真正的代码课！
