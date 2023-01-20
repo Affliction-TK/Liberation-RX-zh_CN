@@ -10,7 +10,7 @@ private ["_nbUnits", "_vehicleName", "_vehiclePos", "_smoke", "_chopper_only"];
 
 _setupVars =
 {
-	_missionType = "Helicopter Capture";
+	_missionType = "捕获直升机";
 	_locationsArray = [SpawnMissionMarkers] call checkSpawn;
 	_nbUnits = [] call getNbUnits;
 };
@@ -43,7 +43,7 @@ _setupObjects =
 
 	_missionPicture = getText (configOf _vehicle >> "picture");
 	_vehicleName = getText (configOf _vehicle >> "displayName");
-	_missionHintText = format ["A <t color='%2'>%1</t> has been immobilized, go repair it and take it for your team!", _vehicleName, sideMissionColor];
+	_missionHintText = format ["一架 <t color='%2'>%1</t> 被攻击，失去了行动能力,去修理它，把它送给你的团队！", _vehicleName, sideMissionColor];
 	A3W_sectors_in_use = A3W_sectors_in_use + [_missionLocation];
 	true;
 };
@@ -64,7 +64,7 @@ _successExec = {
 	_vehicle setVariable ["GRLIB_vehicle_owner", nil, true];
 	_vehicle setVehicleLock "UNLOCKED";
 	deleteVehicle _smoke;
-	_successHintMessage = format ["The %1 has been captured, well done.", _vehicleName];
+	_successHintMessage = format ["%1 已被捕获，做得很好。", _vehicleName];
 	[_missionPos] call showlandmines;
 	A3W_sectors_in_use = A3W_sectors_in_use - [_missionLocation];
 };

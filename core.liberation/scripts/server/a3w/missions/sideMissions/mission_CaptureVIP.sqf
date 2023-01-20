@@ -11,7 +11,7 @@ private [ "_citylist", "_vehicleClass", "_vip", "_vehicle1", "_vehicle2", "_vehi
 
 _setupVars =
 {
-	_missionType = "Capture VIP";
+	_missionType = "捕获VIP";
 	_citylist = [] call cityList;
 	_locationsArray = nil; // locations are generated on the fly from towns
 };
@@ -82,7 +82,7 @@ _setupObjects =
 	_missionPos = getPosATL leader _aiGroup;
 	_missionPicture = getText (configFile >> "CfgVehicles" >> (_vehicleClass param [0,""]) >> "picture");
 	_vehicleName = getText (configFile >> "CfgVehicles" >> (_vehicleClass param [0,""]) >> "displayName");
-	_missionHintText = format ["An important <t color='%1'>V.I.P</t> is travelling the island. Intercept his convoy and capture him <t color='%1'>ALIVE</t>!", sideMissionColor];
+	_missionHintText = format ["一位重要的 <t color='%1'>V.I.P</t> 正在岛上旅行. 拦截他的车队并抓获他 <t color='%1'>要活的</t>!", sideMissionColor];
 	_numWaypoints = count waypoints _aiGroup;
 	_convoy_attacked = false;
 	_disembark_troops = false;
@@ -144,14 +144,14 @@ _waitUntilSuccessCondition = { side group _vip == GRLIB_side_friendly };
 
 _failedExec = {
 	// Mission failed
-	_failedHintMessage = format ["The V.I.P is <br/><t color='%1'>DEAD</t>!!.<br/>We have lost a valuable source of information.<br/><br/>Better luck next time!", sideMissionColor];
+	_failedHintMessage = format ["V.I.P 已经 <br/><t color='%1'>死亡</t>!!.<br/>我们失去了宝贵的信息来源<br/><br/>祝你下次好运！", sideMissionColor];
 	deleteVehicle _vip;
 };
 
 _successExec =
 {
 	// Mission completed
-	_successHintMessage = "Congratulation the V.I.P has been captured!<br/>Bring him back to any FOB for interrogation.";
+	_successHintMessage = "恭喜V.I.P被捕<br/>将他带回任何FOB进行审讯。";
 };
 
 _this call sideMissionProcessor;

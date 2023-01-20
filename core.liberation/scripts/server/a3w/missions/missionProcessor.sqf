@@ -21,7 +21,7 @@ _aiGroup = grpNull;
 if (!isNil "_setupVars") then { call _setupVars };
 
 ["lib_secondary_a3w_mission", [_missionType]] remoteExec ["bis_fnc_shownotification", 0];
-diag_log format ["%1 Mission%2 started: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
+diag_log format ["%1 任务 %2 开始: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
 
 _missionTimeout = MISSION_PROC_TIMEOUT;
 
@@ -42,7 +42,7 @@ if (!isNil "_locationsArray") then {
 _continue_mission = true;
 if (!isNil "_setupObjects") then { _continue_mission = call _setupObjects };
 if (!_continue_mission) exitWith {
-	diag_log format ["%1 Mission%2 failed to setup: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
+	diag_log format ["%1 任务 %2 失败: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
 };
 
 sleep 5;
@@ -60,7 +60,7 @@ if (isNil "_missionPicture") then { _missionPicture = "" };
 	MISSION_PROC_COLOR_DEFINE
 ] call missionHint;
 
-diag_log format ["%1 Mission%2 waiting to be finished: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
+diag_log format ["%1 任务 %2 等待完成: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
 
 _failed = false;
 _complete = false;
@@ -122,7 +122,7 @@ if (_failed) then {
 	if (!isNil "_vehicles") then { [_vehicles, 5, true] spawn cleanMissionVehicles };
 
 	[
-		"Objective Failed",
+		"目标失败",
 		_missionType,
 		_missionPicture,
 		if (!isNil "_failedHintMessage") then { _failedHintMessage } else { "Better luck next time!" },
@@ -130,7 +130,7 @@ if (_failed) then {
 	] call missionHint;
 
 	["lib_secondary_a3w_mission_fail", [_missionType]] remoteExec ["bis_fnc_shownotification", 0];
-	diag_log format ["%1 Mission%2 failed: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
+	diag_log format ["%1 任务 %2 失败: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
 } else {
 	// Mission completed
 
@@ -155,7 +155,7 @@ if (_failed) then {
 	};
 
 	[
-		"Objective Complete",
+		"目标完成",
 		_missionType,
 		_missionPicture,
 		_successHintMessage,
@@ -163,7 +163,7 @@ if (_failed) then {
 	] call missionHint;
 
 	["lib_secondary_a3w_mission_success", [_missionType]] remoteExec ["bis_fnc_shownotification", 0];
-	diag_log format ["%1 Mission%2 complete: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
+	diag_log format ["%1 任务 %2 完成: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
 };
 
 deleteGroup _aiGroup;

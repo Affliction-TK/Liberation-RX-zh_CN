@@ -71,7 +71,7 @@ private _disabled_controls = [1606,1607,1608,1609,1610,1613,1614,1620];
 (_display displayCtrl 1615) ctrlSetText getMissionPath "res\ui_arsenal.paa";
 (_display displayCtrl 1615) ctrlSetToolTip "增加弹药";
 (_display displayCtrl 1616) ctrlSetText getMissionPath "res\ui_rotation.paa";
-(_display displayCtrl 1616) ctrlSetToolTip "使玩家重新加入";
+(_display displayCtrl 1616) ctrlSetToolTip "传送至玩家";
 (_display displayCtrl 1619) ctrlSetToolTip "要添加的弹药或经验点数";
 (_display displayCtrl 1621) ctrlSetText getMissionPath "res\ui_redeploy.paa";
 (_display displayCtrl 1621) ctrlSetToolTip "踢出玩家!";
@@ -149,7 +149,7 @@ while { alive player && dialog } do {
 		_uid = _score_combo lbData (lbCurSel _score_combo);
 		_amount = parseNumber (ctrlText _ammount_edit);
 		[_uid, _amount] remoteExec ["F_addPlayerScore", 2];
-		_msg = format ["Add %1 XP to player: %2.", _amount, _name];
+		_msg = format ["增加 %1 XP 到玩家: %2.", _amount, _name];
 		hint _msg;
 		systemchat _msg;
 		sleep 1;

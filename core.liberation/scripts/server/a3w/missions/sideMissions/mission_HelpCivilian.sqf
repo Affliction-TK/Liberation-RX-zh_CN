@@ -10,7 +10,7 @@ private ["_nbUnits", "_outpost", "_objects"];
 
 _setupVars =
 {
-	_missionType = "Help Civilians";
+	_missionType = "帮助平民";
 	_locationsArray = MissionSpawnMarkers;
 	_nbUnits = AI_GROUP_MEDIUM;
 };
@@ -19,7 +19,7 @@ _setupObjects =
 {
 	_missionPos = markerPos _missionLocation;
 
-	//_missionHintText = format ["An armed <t color='%1'>outpost</t> containing weapon crates has been spotted near the marker, go capture it!", sideMissionColor]
+	//_missionHintText = format ["一个武装的 <t color='%1'>哨站</t> 在标记附近发现了装有武器的板条箱，快去抓住它！", sideMissionColor]
 };
 
 _waitUntilMarkerPos = nil;
@@ -36,7 +36,7 @@ _successExec =
 {
 	// Mission complete
 
-	_successHintMessage = "All the civilians has been helped, good work.";
+	_successHintMessage = "所有的平民都得到了帮助，干得好。";
 };
 
 _this call sideMissionProcessor;

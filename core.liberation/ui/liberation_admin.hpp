@@ -1,4 +1,4 @@
-class liberation_admin {
+﻿class liberation_admin {
   idd = 5204;
 	movingEnable = false;
 	controlsBackground[] = {};
@@ -293,7 +293,7 @@ class liberation_admin {
 		x = 0.58 * safezoneW + safezoneX;
     y = ((BASE_Y + 0.32) * safezoneH) + safezoneY;
 		w = ((0.2 * safezoneW) / 5) - BORDERSIZE;
-		text = "OK";
+		text = "确定";
 		action = "input_save = ctrlText 527;";
 	};
 	class Input_ButtonName_Abort : StdButton {
@@ -301,7 +301,7 @@ class liberation_admin {
 		x = 0.58 * safezoneW + safezoneX;
     y = ((BASE_Y + 0.36) * safezoneH) + safezoneY;
 		w = ((0.2 * safezoneW) / 5) - BORDERSIZE;    
-		text = "Cancel";
+		text = "取消";
 		action = "input_save = 'null';";
 	};
 	class Input_TextField : StdButton {
@@ -348,7 +348,7 @@ class liberation_admin {
 		x = 0.58 * safezoneW + safezoneX;
     y = ((BASE_Y + 0.32) * safezoneH) + safezoneY;
 		w = ((0.2 * safezoneW) / 5) - BORDERSIZE;
-		text = "OK";
+		text = "确定";
 		action = "closeDialog 0;";
 	};
 	class Output_TextField : StdButton {
@@ -382,7 +382,7 @@ class liberation_admin {
   };
   class teleport_cb_text: GREUH_RscStructuredText {
     idc = 1606;
-    text = "<t size='0.7'>[ ALT + LMB ] on Map = Teleport :</t>";
+    text = "<t size='0.7'>按[ ALT + LMB ]在地图上传送 :</t>";
     x = 0.2 * safezoneW + safezoneX;
     y = 0.68 * safezoneH + safezoneY;
     w = 0.125 * safezoneW;
@@ -404,7 +404,7 @@ class liberation_admin {
   };
   class godmod_cb_text: GREUH_RscStructuredText {
     idc = 1608;
-    text = "<t size='0.7'>GodMode :</t>";
+    text = "<t size='0.7'>上帝模式 :</t>";
     x = 0.3625 * safezoneW + safezoneX;
     y = 0.68 * safezoneH + safezoneY;
     w = 0.05 * safezoneW;
@@ -413,7 +413,7 @@ class liberation_admin {
   class CancelButton: StdButton {
     idc = 1605;
     action = "closeDialog 0";
-    text = "EXIT";
+    text = "退出";
     x = 0.269271 * safezoneW + safezoneX;
     y = 0.71 * safezoneH + safezoneY;
     w = 0.09 * safezoneW;
