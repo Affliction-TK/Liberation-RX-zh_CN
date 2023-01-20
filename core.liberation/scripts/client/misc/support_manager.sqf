@@ -1,4 +1,4 @@
-waitUntil { sleep 1; !isNil "blufor_sectors" };
+ï»¿waitUntil { sleep 1; !isNil "blufor_sectors" };
 private ["_near_arsenal", "_primary_weapon", "_near_medic", "_needammo1", "_needammo2", "_maxpri", "_minpri", "_needmedic", "_magType", "_list_vehicles", "_guid", "_static_ai"];
 
 private _distarsenal = 30;           // minimal distance from source (ammo/repair)
@@ -41,7 +41,7 @@ while { true } do {
 					if ( _primary_weapon find "LMG" >= 0 || _primary_weapon find "MMG" >= 0 || _primary_weapon find "RPK12" >= 0 ) then { _minpri = 1; _maxpri = 3 };
 					_needammo1 = [_x, _primary_weapon, _minpri] call F_UnitNeedAmmo;
 					if (_needammo1) then {
-						_x groupchat "ÖØĞÂÎä×°Ö÷ÎäÆ÷.";
+						_x groupchat "é‡æ–°æ­¦è£…ä¸»æ­¦å™¨.";
 						[_x, _primary_weapon, _maxpri] call F_UnitAddAmmo;
 					};
 
@@ -50,7 +50,7 @@ while { true } do {
 						_needammo2 = [_x, secondaryWeapon _x, _minsec_def] call F_UnitNeedAmmo;
 						if (_needammo2) then {
 							//clearAllItemsFromBackpack _x;
-							_x groupchat "ÖØĞÂÎä×°¸±ÎäÆ÷.";
+							_x groupchat "é‡æ–°æ­¦è£…å‰¯æ­¦å™¨.";
 							[_x, secondaryWeapon _x, _maxsec_def] call F_UnitAddAmmo;
 						};
 					};
@@ -62,7 +62,7 @@ while { true } do {
 				if (_near_medic) then {
 					if (damage _x > 0.1 && (behaviour _x) != "COMBAT") then {
 						_needmedic = true;
-						_x groupchat format ["ÕıÔÚÖÎÁÆ."];						
+						_x groupchat format ["æ­£åœ¨æ²»ç–—."];						
 					};
 				};
 
@@ -105,7 +105,7 @@ while { true } do {
 						hintSilent _screenmsg;
 					} else {
 						if ( _unit == player || ((uavControl _vehicle select 0) == player) ) then {
-							_screenmsg = format [ "%1\nÖØĞÂÎä×°ÀäÈ´ÖĞ (%2 sec), ÇëµÈ´ı...", _vehicle_class_text, round (_timer - time) ];
+							_screenmsg = format [ "%1\né‡æ–°æ­¦è£…å†·å´ä¸­ (%2 sec), è¯·ç­‰å¾…...", _vehicle_class_text, round (_timer - time) ];
 							titleText [ _screenmsg, "PLAIN DOWN" ];
 						};
 					};
@@ -126,7 +126,7 @@ while { true } do {
 						hintSilent _screenmsg;
 					} else {
 						if ( _unit == player || ((uavControl _vehicle select 0) == player) ) then {
-							_screenmsg = format [ "%1\nĞŞÀíÀäÈ´ÖĞ (%2 sec), ÇëµÈ´ı...", _vehicle_class_text, round (_timer - time) ];
+							_screenmsg = format [ "%1\nä¿®ç†å†·å´ä¸­ (%2 sec), è¯·ç­‰å¾…...", _vehicle_class_text, round (_timer - time) ];
 							titleText [ _screenmsg, "PLAIN DOWN" ];
 						};
 					};
@@ -139,7 +139,7 @@ while { true } do {
 	// Show Hint
 	private _neartower = ((sectors_allSectors select {_x select [0,6] == "tower_" && !(_x in blufor_sectors) && player distance2D (getMarkerPos _x) <= 20})) select 0;
 	if (!isNil "_neartower") then {
-		_msg = format ["Ê¹ÓÃ <t color='#FF0000'>Õ¨Ò©</t> À´´İ»Ù<br/>Õâ¸ö <t color='#0000FF'>ÎŞÏßµçËş</t>."];
+		_msg = format ["ä½¿ç”¨ <t color='#FF0000'>ç‚¸è¯</t> æ¥æ‘§æ¯<br/>è¿™ä¸ª <t color='#0000FF'>æ— çº¿ç”µå¡”</t>."];
 		[_msg, 0, 0, 5, 0, 0, 90] spawn BIS_fnc_dynamicText;
 	};
 

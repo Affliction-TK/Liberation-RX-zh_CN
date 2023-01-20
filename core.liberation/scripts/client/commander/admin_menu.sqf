@@ -1,4 +1,4 @@
-// the LRX Admin Tool by pSiKO
+﻿// the LRX Admin Tool by pSiKO
 //
 // godmode / teleport
 // import / export save game
@@ -67,16 +67,16 @@ private _button_controls = [1600,1601,1602,1603,1604,1609,1610,1611,1612,1613,16
 private _disabled_controls = [1606,1607,1608,1609,1610,1613,1614,1620];
 
 (_display displayCtrl 1603) ctrlSetText getMissionPath "res\ui_confirm.paa";
-(_display displayCtrl 1603) ctrlSetToolTip "Add XP Score";
+(_display displayCtrl 1603) ctrlSetToolTip "增加等级经验";
 (_display displayCtrl 1615) ctrlSetText getMissionPath "res\ui_arsenal.paa";
-(_display displayCtrl 1615) ctrlSetToolTip "Add Ammo credit";
+(_display displayCtrl 1615) ctrlSetToolTip "增加弹药";
 (_display displayCtrl 1616) ctrlSetText getMissionPath "res\ui_rotation.paa";
-(_display displayCtrl 1616) ctrlSetToolTip "Rejoin player";
-(_display displayCtrl 1619) ctrlSetToolTip "Amount of Ammo or Experience Points to add";
+(_display displayCtrl 1616) ctrlSetToolTip "使玩家重新加入";
+(_display displayCtrl 1619) ctrlSetToolTip "要添加的弹药或经验点数";
 (_display displayCtrl 1621) ctrlSetText getMissionPath "res\ui_redeploy.paa";
-(_display displayCtrl 1621) ctrlSetToolTip "Kick player!";
+(_display displayCtrl 1621) ctrlSetToolTip "踢出玩家!";
 (_display displayCtrl 1622) ctrlSetText getMissionPath "res\skull.paa";
-(_display displayCtrl 1622) ctrlSetToolTip "BAN player!";
+(_display displayCtrl 1622) ctrlSetToolTip "禁封玩家!";
 
 // Build Banned
 [_ban_combo] call _getBannedUID;
@@ -159,7 +159,7 @@ while { alive player && dialog } do {
 		do_spawn = 0;
 		_veh_text = _build_combo lbText (lbCurSel _build_combo);
 		_veh_class = _build_combo lbData (lbCurSel _build_combo);
-		_msg = format ["Build Vehicle: %1", _veh_text];
+		_msg = format ["生成载具: %1", _veh_text];
 		hint _msg;
 		systemchat _msg;
 		buildtype = 9;
@@ -175,7 +175,7 @@ while { alive player && dialog } do {
 		_uid = _score_combo lbData (lbCurSel _score_combo);
 		_amount = parseNumber (ctrlText _ammount_edit);
 		[_uid, _amount] remoteExec ["F_addPlayerAmmo", 2];
-		_msg = format ["Add %1 Ammo to player: %2.", _amount, _name];
+		_msg = format ["增加 %1 弹药 到玩家: %2.", _amount, _name];
 		hint _msg;
 		systemchat _msg;
 		sleep 1;
@@ -187,7 +187,7 @@ while { alive player && dialog } do {
 		_uid = _score_combo lbData (lbCurSel _score_combo);
 		_player = _uid call BIS_fnc_getUnitByUID;
 		if (!isNull _player) then {
-			hint format ["Teleport to player: %1.", _name];
+			hint format ["传送至玩家: %1.", _name];
 			player setPos (_player getRelPos [3, 0]);
 			closeDialog 0;
 		} else {
@@ -201,7 +201,7 @@ while { alive player && dialog } do {
 			{if ([_x] call F_getScore > 20) then { [_x] call save_context }} foreach (AllPlayers - (entities "HeadlessClient_F"));
 			[] call save_game_mp;
 			copyToClipboard str (profileNamespace getVariable GRLIB_save_key);
-			_msg = format ["Savegame %1 Exported to clipboard.", GRLIB_save_key];
+			_msg = format ["保存游戏 %1 已导出到剪贴板.", GRLIB_save_key];
 			hint _msg;
 		} else {
 			{ ctrlEnable  [_x, false] } foreach _button_controls;
@@ -211,7 +211,7 @@ while { alive player && dialog } do {
 				{if ([_x] call F_getScore > 20) then { [_x] call save_context }} foreach (AllPlayers - (entities "HeadlessClient_F"));
 				[] call save_game_mp;
 				[missionNamespace, ["output_save", greuh_liberation_savegame]] remoteExec ["setVariable", owner _this];
-				["Copy the Savegame from Text Field."] remoteExec ["hint", owner _this];
+				["从文本字段复制保存游戏."] remoteExec ["hint", owner _this];
 			}] remoteExec ["bis_fnc_call", 2];
 			waitUntil {uiSleep 0.3; ((count output_save > 0) || !(dialog) || !(alive player))};
 			ctrlSetText [ 536, str output_save ];
@@ -240,7 +240,7 @@ while { alive player && dialog } do {
 			}] remoteExec ["bis_fnc_call", 2];
 			hint format ["Import Savegame in %1, Exiting now!", GRLIB_save_key];
 			closeDialog 0;
-		} else { systemchat "Error: Invalid data!" };
+		} else { systemchat "错误：数据无效！" };
 		{ ctrlShow [_x, false] } foreach _input_controls;
 		{ ctrlEnable  [_x, true] } foreach _button_controls;
 	};
@@ -252,7 +252,7 @@ while { alive player && dialog } do {
 			_player = _this call BIS_fnc_getUnitByUID;
 			if (isPlayer _player) then {
 				["LOSER"] remoteExec ["endMission", owner _player];
-				_msg = format ["Admin kick player %1.", name _player];				
+				_msg = format ["管理员踢出玩家 %1.", name _player];				
 				[_msg] remoteExec ["systemchat", -2];
 				serverCommand format ["#kick %1", name _player];
 			};
@@ -268,7 +268,7 @@ while { alive player && dialog } do {
 			if (isPlayer _player) then {
 				BTC_logic setVariable [_this, 99, true];
 				[_player] remoteExec ["LRX_tk_actions", owner _player];
-				_msg = format ["Admin BAN player %1.", name _player];
+				_msg = format ["管理员禁封玩家 %1.", name _player];
 				[_msg] remoteExec ["systemchat", -2];
 			};
 		}] remoteExec ["bis_fnc_call", 2];

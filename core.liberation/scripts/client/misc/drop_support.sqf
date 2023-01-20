@@ -1,6 +1,6 @@
-private ["_class","_cost","_AirDrop_1_cost","_AirDrop_2_cost","_AirDrop_3_cost","_AirDrop_4_cost","_AirDrop_5_cost","_AirDrop_6_cost","_AirDrop_7_cost"];
+ï»¿private ["_class","_cost","_AirDrop_1_cost","_AirDrop_2_cost","_AirDrop_3_cost","_AirDrop_4_cost","_AirDrop_5_cost","_AirDrop_6_cost","_AirDrop_7_cost"];
 private _timer = player getVariable ["AirCoolDown", 0];
-if (_timer > time) exitWith {hint format ["¿ÕÖĞÖ§Ô®ÕıÔÚÖØÕû !\nÊ£ÓàµÈ´ıÊ±¼ä %1 min\n\nÇëµÈ´ı...", round ((_timer - time)/60)]};
+if (_timer > time) exitWith {hint format ["ç©ºä¸­æ”¯æ´æ­£åœ¨é‡æ•´ !\nå‰©ä½™ç­‰å¾…æ—¶é—´ %1 min\n\nè¯·ç­‰å¾…...", round ((_timer - time)/60)]};
 
 do_action = 0;
 air_type = 0;

@@ -1,6 +1,6 @@
-params ["_target"];
+ï»¿params ["_target"];
 //add limit ?
-if (time < GRLIB_taxi_cooldown) exitWith { hintSilent "ÇëµÈ´ı..." };
+if (time < GRLIB_taxi_cooldown) exitWith { hintSilent "è¯·ç­‰å¾…..." };
 
 openMap true;
 hintSilent localize "STR_TAXI_SELECT";
