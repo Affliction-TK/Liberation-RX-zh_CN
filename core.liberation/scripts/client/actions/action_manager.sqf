@@ -1,4 +1,4 @@
-private _distfob = 100;
+ï»¿private _distfob = 100;
 private _distarsenal = 10;
 private _distredeploy = 20;
 private _distvehclose = 5;
@@ -442,7 +442,7 @@ while { true } do {
 		// FOB Sign Actions
 		if (!_near_lhd && _fobdistance < _distfob && cursorObject isKindof FOB_sign) then {
 			if (count (actionIDs cursorObject) == 0) then {
-				cursorObject addAction ["<t color='#FFFFFF'>" + "-= ÅÅÐÐ°ñ =-" + "</t>",{([] call F_hof_msg) spawn BIS_fnc_dynamicText},"",999,true,true,"","[] call is_menuok",5];
+				cursorObject addAction ["<t color='#FFFFFF'>" + "-= æŽ’è¡Œæ¦œ =-" + "</t>",{([] call F_hof_msg) spawn BIS_fnc_dynamicText},"",999,true,true,"","[] call is_menuok",5];
 				cursorObject addAction ["<t color='#FFFFFF'>" + localize "STR_READ_ME" + "</t>",{createDialog "liberation_notice"},"",998,true,true,"","[] call is_menuok",5];
 				cursorObject addAction ["<t color='#FFFFFF'>" + localize "STR_TIPS" + "</t>",{createDialog "liberation_tips"},"",997,true,true,"","[] call is_menuok",5];
 			};
