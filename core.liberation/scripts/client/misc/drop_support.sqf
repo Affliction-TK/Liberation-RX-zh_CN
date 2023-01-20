@@ -1,6 +1,6 @@
 private ["_class","_cost","_AirDrop_1_cost","_AirDrop_2_cost","_AirDrop_3_cost","_AirDrop_4_cost","_AirDrop_5_cost","_AirDrop_6_cost","_AirDrop_7_cost"];
 private _timer = player getVariable ["AirCoolDown", 0];
-if (_timer > time) exitWith {hint format ["Air Support not ready !\nNext call in %1 min\n\nPlease wait...", round ((_timer - time)/60)]};
+if (_timer > time) exitWith {hint format ["空中支援正在重整 !\n剩余等待时间 %1 min\n\n请等待...", round ((_timer - time)/60)]};
 
 do_action = 0;
 air_type = 0;

@@ -69,7 +69,7 @@ while { dialog && alive player } do {
 	};
 
 	if ( !isNil "GRLIB_garage_in_use" ) then { 
-		hintSilent "Garage is busy !!\nPlease wait...";
+		hintSilent "车库繁忙 !!\n请稍后重试...";
 		_refresh = true;
 	} else {
 		hintSilent "";
@@ -94,10 +94,10 @@ while { dialog && alive player } do {
 				if (load_veh == 1) then {
 					private _vehicle = _myveh_lst select _selected_item;
 					private _timer = _vehicle getVariable ["GREUH_rearm_timer", 0];
-					private _msg = format [ "%1\nRearming Cooldown (%2 sec)\nPlease Wait...", _vehicle_name, round (_timer - time) ];
+					private _msg = format [ "%1\n重新武装冷却中 (%2 sec)\n请等待...", _vehicle_name, round (_timer - time) ];
 
 					if (count ([_myveh_info, {(_guid == _x select 3)}] call BIS_fnc_conditionalSelect) >= _max_vehicle) exitWith { hintSilent (format [localize "STR_FULL_GARAGE", _max_vehicle]); sleep 2 };
-					if (damage _vehicle != 0) exitWith { hintSilent "Damaged Vehicles cannot be Parked !"; sleep 2 };
+					if (damage _vehicle != 0) exitWith { hintSilent "损坏的车辆不能存放 !"; sleep 2 };
 					if (count (_vehicle getVariable ["GRLIB_ammo_truck_load", []]) > 0) exitWith { hintSilent localize "STR_CANT_PARK"; sleep 2 };
 					if (count (crew _vehicle) > 0 && !(typeOf _vehicle in uavs)) exitWith { hintSilent localize "STR_CANT_PARKUAV"; sleep 2 };
 					if (_timer >= time) exitWith { hintSilent _msg; sleep 2 };
@@ -130,7 +130,7 @@ while { dialog && alive player } do {
 					waitUntil {sleep 0.3; dobuild == 0};
 					if (build_confirmed == 0) then {
 						[_vehicle, load_veh, _guid] remoteExec ["vehicle_garage_remote_call", 2];
-						hintSilent (format ["Vehicle %1\nUnloaded from Garage.", getText (configFile >> "cfgVehicles" >> _veh_class >> "displayName")]);
+						hintSilent (format ["载具： %1\n从车库中取出.", getText (configFile >> "cfgVehicles" >> _veh_class >> "displayName")]);
 					};
 				};
 				sleep 2;

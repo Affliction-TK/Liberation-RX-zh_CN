@@ -41,7 +41,7 @@ while { true } do {
 					if ( _primary_weapon find "LMG" >= 0 || _primary_weapon find "MMG" >= 0 || _primary_weapon find "RPK12" >= 0 ) then { _minpri = 1; _maxpri = 3 };
 					_needammo1 = [_x, _primary_weapon, _minpri] call F_UnitNeedAmmo;
 					if (_needammo1) then {
-						_x groupchat "Rearming Primary Weapon.";
+						_x groupchat "重新武装主武器.";
 						[_x, _primary_weapon, _maxpri] call F_UnitAddAmmo;
 					};
 
@@ -50,7 +50,7 @@ while { true } do {
 						_needammo2 = [_x, secondaryWeapon _x, _minsec_def] call F_UnitNeedAmmo;
 						if (_needammo2) then {
 							//clearAllItemsFromBackpack _x;
-							_x groupchat "Rearming Secondary Weapon.";
+							_x groupchat "重新武装副武器.";
 							[_x, secondaryWeapon _x, _maxsec_def] call F_UnitAddAmmo;
 						};
 					};
@@ -62,7 +62,7 @@ while { true } do {
 				if (_near_medic) then {
 					if (damage _x > 0.1 && (behaviour _x) != "COMBAT") then {
 						_needmedic = true;
-						_x groupchat format ["Healing myself."];						
+						_x groupchat format ["正在治疗."];						
 					};
 				};
 
@@ -105,7 +105,7 @@ while { true } do {
 						hintSilent _screenmsg;
 					} else {
 						if ( _unit == player || ((uavControl _vehicle select 0) == player) ) then {
-							_screenmsg = format [ "%1\nRearming Cooldown (%2 sec), Please Wait...", _vehicle_class_text, round (_timer - time) ];
+							_screenmsg = format [ "%1\n重新武装冷却中 (%2 sec), 请等待...", _vehicle_class_text, round (_timer - time) ];
 							titleText [ _screenmsg, "PLAIN DOWN" ];
 						};
 					};
@@ -126,7 +126,7 @@ while { true } do {
 						hintSilent _screenmsg;
 					} else {
 						if ( _unit == player || ((uavControl _vehicle select 0) == player) ) then {
-							_screenmsg = format [ "%1\nRepairing Cooldown (%2 sec), Please Wait...", _vehicle_class_text, round (_timer - time) ];
+							_screenmsg = format [ "%1\n修理冷却中 (%2 sec), 请等待...", _vehicle_class_text, round (_timer - time) ];
 							titleText [ _screenmsg, "PLAIN DOWN" ];
 						};
 					};
@@ -139,7 +139,7 @@ while { true } do {
 	// Show Hint
 	private _neartower = ((sectors_allSectors select {_x select [0,6] == "tower_" && !(_x in blufor_sectors) && player distance2D (getMarkerPos _x) <= 20})) select 0;
 	if (!isNil "_neartower") then {
-		_msg = format ["Use <t color='#FF0000'>Explosives</t> to destroy<br/>the <t color='#0000FF'>Radio Tower</t>."];
+		_msg = format ["使用 <t color='#FF0000'>炸药</t> 来摧毁<br/>这个 <t color='#0000FF'>无线电塔</t>."];
 		[_msg, 0, 0, 5, 0, 0, 90] spawn BIS_fnc_dynamicText;
 	};
 
