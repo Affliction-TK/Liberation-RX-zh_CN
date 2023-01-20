@@ -1,4 +1,4 @@
-// LRX Trader Shop
+﻿// LRX Trader Shop
 // by pSiKO
 
 createDialog "Traders_Shop";
@@ -63,7 +63,7 @@ lbClear 111;
 	};
 } foreach _buy_list_dlg;
 
-gamelogic globalChat "Welcome to my shop, stranger";
+gamelogic globalChat "欢迎来到我的商店，陌生人";
 shop_action = 0;
 private _refresh = true;
 
@@ -155,4 +155,4 @@ while { dialog && alive player } do {
 
 	sleep 0.3;
 };
-gamelogic globalChat "Have a nice day...";
+gamelogic globalChat "祝你一天过得愉快...";

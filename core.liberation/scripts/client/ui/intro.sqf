@@ -1,8 +1,8 @@
-waituntil {(time > 2) && (getClientStateNumber >= 10) && (getClientState == "BRIEFING READ")};
+ï»¿waituntil {(time > 2) && (getClientStateNumber >= 10) && (getClientState == "BRIEFING READ")};
 while {	(player getVariable ["GRLIB_score_set", 0] == 0) } do {
-	titleText ["... ÕıÔÚ¼ÓÔØÍæ¼ÒÊı¾İ ...", "BLACK FADED", 100];
+	titleText ["... æ­£åœ¨åŠ è½½ç©å®¶æ•°æ® ...", "BLACK FADED", 100];
 	uIsleep 2;
-	titleText ["... ÇëµÈ´ı ...", "BLACK FADED", 100];
+	titleText ["... è¯·ç­‰å¾… ...", "BLACK FADED", 100];
 	uIsleep 2;
 };
 
