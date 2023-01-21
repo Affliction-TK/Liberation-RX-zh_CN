@@ -1,4 +1,4 @@
-// *** GLOBAL DEFINITIOON ***
+﻿// *** GLOBAL DEFINITIOON ***
 
 markers_reset = [99999,99999,0];
 zeropos = [0,0,0];
@@ -130,6 +130,7 @@ if (!GRLIB_enable_arsenal) then {
 support_vehicles = support_vehicles + [
 	[medicalbox_typename,5,25,0,0],
 	[mobile_respawn,10,50,0,0],
+	[playerbox_typename,0,0,0,0],
 	[canister_fuel_typename,0,25,10,0],
 	[Respawn_truck_typename,15,150,5,GRLIB_perm_log],
 	["Land_RepairDepot_01_civ_F",10,300,0,GRLIB_perm_log],
@@ -510,6 +511,7 @@ GRLIB_ignore_colisions = [
 // Ammobox you want keep contents
 GRLIB_Ammobox_keep = [
 	A3W_BoxWps,
+	playerbox_typename,
 	medicalbox_typename,
 	"Box_NATO_Wps_F",
 	"Box_NATO_Ammo_F",
