@@ -1,5 +1,4 @@
-﻿waituntil {(time > 2) && (getClientStateNumber >= 10) && (getClientState == "BRIEFING READ")};
-while {	(player getVariable ["GRLIB_score_set", 0] == 0) } do {
+﻿while {	(player getVariable ["GRLIB_score_set", 0] == 0) } do {
 	titleText ["... 正在加载玩家数据 ...", "BLACK FADED", 100];
 	uIsleep 2;
 	titleText ["... 请等待 ...", "BLACK FADED", 100];
