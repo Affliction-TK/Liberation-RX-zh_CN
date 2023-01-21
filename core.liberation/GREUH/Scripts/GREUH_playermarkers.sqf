@@ -1,4 +1,4 @@
-private _marked_players = [];
+﻿private _marked_players = [];
 private _marked_vehicles = [];
 private _marked_squadmates = [];
 private _marker_objs = [];
@@ -143,7 +143,7 @@ while { true } do {
 				_vehiclename = _vehiclename + " ";
 			} foreach  _datcrew;
 
-			_vehiclename = _vehiclename + "(" + getText (_cfg >> typeOf _nextvehicle >> "displayName") + ")";
+			_vehiclename = _vehiclename + "(" + [_nextvehicle] call get_lrx_name + ")";
 			_marker setMarkerTextLocal _vehiclename;
 		} foreach _marked_vehicles;
 

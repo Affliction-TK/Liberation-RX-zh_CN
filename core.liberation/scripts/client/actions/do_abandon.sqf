@@ -1,4 +1,4 @@
-params ["_vehicle"];
+﻿params ["_vehicle"];
 if (isNil "_vehicle") exitWith {};
 
 [_vehicle, "UNLOCKED"] remoteExec ["setVehicleLock", 0];
@@ -11,5 +11,4 @@ if (!isNil "_texture") then {
 };
 [_vehicle] call RPT_fnc_CompoVehicle;
 
-_text = getText (configOf _vehicle >> "displayName");
-hintSilent format [localize "STR_DO_ABANDON", _text];
+hintSilent format [localize "STR_DO_ABANDON", [typeOf _vehicle] call get_lrx_name];
