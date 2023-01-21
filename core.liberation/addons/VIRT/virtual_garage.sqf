@@ -40,7 +40,7 @@ while { dialog && alive player } do {
 			if (_guid == _x select 3) then {
 				_myveh pushBack [(_x select 0), 1, _i];
 				_myveh_info pushBack _x;
-				_i = _i + 1;			
+				_i = _i + 1;
 			};
 		} forEach GRLIB_garage;  // veh list inside
 
@@ -67,7 +67,7 @@ while { dialog && alive player } do {
 		} foreach _myveh;
 	};
 
-	if ( !isNil "GRLIB_garage_in_use" ) then { 
+	if ( !isNil "GRLIB_garage_in_use" ) then {
 		hintSilent "车库繁忙 !!\n请稍后重试...";
 		_refresh = true;
 	} else {

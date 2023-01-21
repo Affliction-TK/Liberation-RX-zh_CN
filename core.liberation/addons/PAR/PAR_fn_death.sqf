@@ -1,4 +1,4 @@
-params ["_unit"];
+﻿params ["_unit"];
 private ["_pos", "_grave", "_grave_box", "_old_graves", "_uniform", "_vest", "_backpack" ];
 
 _unit connectTerminalToUAV objNull;
@@ -33,7 +33,7 @@ if (_unit == player) then {
 		_old_graves = _unit getVariable ["GRLIB_grave", []];
 		if (count _old_graves > 0) then {
 			{ deleteVehicle _x } forEach (attachedObjects (_old_graves select (count _old_graves)-1));
-			if (count _old_graves >= _old_graves_max) then { 
+			if (count _old_graves >= _old_graves_max) then {
 				deleteVehicle (_old_graves select 0);
 				_old_graves deleteAt 0;
 			};
