@@ -1,4 +1,4 @@
-private [  "_built_object_remote", "_unit", "_pos", "_grp", "_classname", "_idx", "_unitrank", "_posfob", "_ghost_spot", "_vehicle", "_dist", "_actualdir", "_near_objects", "_near_objects_25"];
+﻿private [  "_built_object_remote", "_unit", "_pos", "_grp", "_classname", "_idx", "_unitrank", "_posfob", "_ghost_spot", "_vehicle", "_dist", "_actualdir", "_near_objects", "_near_objects_25"];
 
 build_confirmed = 0;
 build_unit = [];
@@ -425,6 +425,12 @@ while { true } do {
 						};
 					};
 
+					// Personal Box
+					if ( _classname == playerbox_typename ) then {
+						_vehicle allowDamage false;
+						_vehicle setMaxLoad playerbox_cargospace;
+					};
+
 					// Static Weapon
 					if (_classname in static_vehicles_AI) then {
 						_vehicle setMass 5000;
@@ -438,7 +444,7 @@ while { true } do {
 					// FOB
 					if(buildtype == 99) then {
 						_vehicle addEventHandler ["HandleDamage", {0}];
-						[_vehicle, false] remoteExec ["allowDamage", 0];
+						_vehicle allowDamage false;
 						[(getpos _vehicle), false] remoteExec ["build_fob_remote_call", 0];
 
 						// Add owner sign
