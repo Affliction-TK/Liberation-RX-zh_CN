@@ -12,14 +12,16 @@ if (!isNil "_unit") then {
 switch (true) do {
 	case (_kill < GRLIB_tk_count) : {
 		waitUntil {!(isNull (findDisplay 46))};
-		private _msg = "STOP TEAMKILLING !!";
+		private _msg = format ["停止友军误击行为!!<br/><br/>剩余警告次数： %1", (GRLIB_tk_count - _kill)];
 		[_msg, 0, 0, 5, 0, 0, 90] spawn BIS_fnc_dynamicText;
+		player setDamage 0.7;
 	};
 
 	case (_kill == GRLIB_tk_count) : {
 		waitUntil {!(isNull (findDisplay 46))};
-		private _msg = format ["STOP TEAMKILLING, <t color='#ff0000'>LAST WARNING...</t>"];
+		private _msg = format ["停止友军误击行为, <t color='#ff0000'>这是最后一次警告！</t>"];
 		[_msg, 0, 0, 5, 0, 0, 90] spawn BIS_fnc_dynamicText;
+		player setDamage 0.7;
 	};
 
 	case (_kill > GRLIB_tk_count) : {
