@@ -1,4 +1,4 @@
-//--- LRX Save player context (Stuff + Ais)
+﻿//--- LRX Save player context (Stuff + Ais)
 if (!isServer) exitWith {};
 params ["_player","_uid"];
 
@@ -7,7 +7,7 @@ if (isNil "_uid") then { _uid = getPlayerUID _player };
 
 private _score = 0; 
 {if ((_x select 0) == _uid) exitWith {_score = (_x select 1)}} forEach GRLIB_player_scores; 
-if (_score < 20)  exitWith {};
+if (_score < GRLIB_min_score_player)  exitWith {};
 
 private _puid = _player getVariable ["PAR_Grp_ID","1"];
 private _loaded = _player getVariable ["GRLIB_squad_context_loaded", false];

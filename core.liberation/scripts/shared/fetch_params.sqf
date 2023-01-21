@@ -1,4 +1,4 @@
-//--- LRX Fetch Misson Parameters ----------------------------------------
+﻿//--- LRX Fetch Misson Parameters ----------------------------------------
 GRLIB_introduction = ["Introduction",1] call bis_fnc_getParamValue;
 GRLIB_deployment_cinematic = ["DeploymentCinematic",1] call bis_fnc_getParamValue;
 GRLIB_unitcap = ["Unitcap",1] call bis_fnc_getParamValue;
@@ -59,6 +59,7 @@ GRLIB_force_load = ["ForceLoading", 0] call bis_fnc_getParamValue;
 
 // Define constant
 [] call compileFinal preprocessFileLineNUmbers "gameplay_constants.sqf";
+GRLIB_min_score_player = 20;
 
 // Classename MOD source
 [] call compileFinal preprocessFileLineNUmbers "mod_template\mod_init.sqf";
@@ -72,13 +73,13 @@ GRLIB_r3 = "&#76;&#82;&#88;&#32;&#73;&#110;&#102;&#111;";
 if (GRLIB_force_load == 0 && GRLIB_mod_west == GRLIB_mod_east) then { abort_loading = true };
 if (abort_loading) exitWith { abort_loading_msg = format [
 	"********************************\n
-	FATAL! - Invalid Side selection !\n\n
-	side West (%1) conflict with side East (%2)\n\n
-	Loading Aborted to protect data integrity.\n
-	Correct the Side selection.\n
+	致命错误！-无效的阵营选择!\n\n
+	蓝方阵营 (%1) 与红方阵营 (%2) 发生冲突\n\n
+	加载中止以保护数据完整性.\n
+	请更正阵营选择.\n
 	*********************************", GRLIB_mod_west, GRLIB_mod_east];
 };
-diag_log format ["--- LRX Mod Detection: %1 vs %2", GRLIB_mod_west, GRLIB_mod_east];
+diag_log format ["--- LRX Mod 检测: %1 vs %2", GRLIB_mod_west, GRLIB_mod_east];
 
 // Detect Addons
 GRLIB_ACE_enabled = isClass(configFile >> "cfgPatches" >> "ace_main"); // Returns true if ACE is enabled
@@ -112,10 +113,10 @@ if ( !GRLIB_3CB_enabled && ["3CB", [GRLIB_mod_west, GRLIB_mod_east]] call F_star
 
 if (abort_loading) exitWith { abort_loading_msg = format [
 	"********************************\n
-	FATAL! - Invalid Side selection !\n\n
-	Missing MOD Addons for side West (%1) or side East (%2)\n\n
-	Loading Aborted to protect data integrity.\n
-	Correct the Side selection.\n
+	致命错误！-无效的阵营选择 !\n\n
+	缺少模组 蓝方： (%1) 红方： (%2)\n\n
+	加载中止以保护数据完整性.\n
+	请更正阵营选择.\n
 	*********************************", GRLIB_mod_west, GRLIB_mod_east];
 };
 
