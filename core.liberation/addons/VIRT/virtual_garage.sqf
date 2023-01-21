@@ -46,7 +46,7 @@ while { dialog && alive player } do {
 
 		lbClear 110;
 		{
-			__entrytext = [(_x select 0)] call get_lrx_name;
+			_entrytext = [(_x select 0)] call F_getLRXName;
 			_loctext = "车库中";
 			if (_x select 1 == 0 ) then {_loctext = "在外" };
 			(_display displayCtrl (110)) lnbAddRow [_entrytext, _loctext];
@@ -129,7 +129,7 @@ while { dialog && alive player } do {
 					waitUntil {sleep 0.3; dobuild == 0};
 					if (build_confirmed == 0) then {
 						[_vehicle, load_veh, _guid] remoteExec ["vehicle_garage_remote_call", 2];
-						hintSilent (format ["车辆 %1\n从车库中取出.", [_veh_class] call get_lrx_name]);
+						hintSilent (format ["载具 %1\n从车库中取出.", [_veh_class] call F_getLRXName]);
 					};
 				};
 				sleep 2;
