@@ -1,4 +1,4 @@
-// *** LRX DEFAULT CLASSNAMES ***
+﻿// *** LRX DEFAULT CLASSNAMES ***
 if ( isNil "huron_typename" ) then { huron_typename = "B_Heli_Transport_03_unarmed_F" };
 
 FOB_typename = "Land_Cargo_HQ_V1_F";
@@ -21,6 +21,8 @@ medic_sling_typename = "B_Slingload_01_Medevac_F";
 mobile_respawn = "Land_TentDome_F";
 mobile_respawn_bag = "B_Kitbag_Base";
 medicalbox_typename = "Box_B_UAV_06_medical_F";
+playerbox_typename = "Land_PlasticCase_01_medium_olive_CBRN_F";
+playerbox_cargospace = 2000;
 ammobox_b_typename = "Box_NATO_AmmoVeh_F";
 ammobox_o_typename = "Box_East_AmmoVeh_F";
 ammobox_i_typename = "Box_IND_AmmoVeh_F";

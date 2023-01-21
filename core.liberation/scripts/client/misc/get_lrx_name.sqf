@@ -1,4 +1,4 @@
-params ["_class"];
+﻿params ["_class"];
 
 if (isNil"_class") exitWith {};
 if (typeName _class != "STRING") exitWith {};
@@ -24,21 +24,24 @@ if ( _class == huron_typename ) then {
 	_text = format ["%1 %2", localize "STR_RESPAWN_TRUCK", "(Heli)"];
 };
 if ( _class == canister_fuel_typename ) then {
-	_text = "Fuel Jerican";
+	_text = "油箱";
 };
 if ( _class == waterbarrel_typename ) then {
-	_text = "Water Barrel";
+	_text = "水桶";
 };
 if ( _class == fuelbarrel_typename ) then {
-	_text = "Fuel Barrel";
+	_text = "燃料桶";
 };
 if ( _class == foodbarrel_typename ) then {
-	_text = "Food Pallet";
+	_text = "食品托盘";
 };
 if ( _class == fireworks_typename ) then {
-	_text = "Fireworks Box";
+	_text = "烟花盒";
 };
 if ( _class == FOB_box_outpost ) then {
 	_text = localize "STR_OUTPOSTBOX";
+};
+if ( _class == playerbox_typename ) then {
+	_text = "玩家个人箱";
 };
 _text;

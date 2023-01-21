@@ -1,4 +1,4 @@
-F_nearestPosition = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_nearestPosition.sqf";
+﻿F_nearestPosition = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_nearestPosition.sqf";
 F_calcUnitsCost = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_calcUnitsCost.sqf";
 F_addPlayerScore = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_addPlayerScore.sqf";
 F_addScore = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_addScore.sqf";
@@ -73,3 +73,5 @@ is_abandoned = compileFinal preprocessFileLineNumbers "scripts\shared\functions\
 F_invertArray = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_invertArray.sqf";
 F_startAnimMP = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_startAnimMP.sqf";
 F_deathSound = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_deathSound.sqf";
+F_getCargo = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_getCargo.sqf";
+F_setCargo = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_setCargo.sqf";
