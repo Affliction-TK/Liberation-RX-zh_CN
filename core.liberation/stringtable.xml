@@ -6527,6 +6527,7 @@
 	</Package>
 
 	<!-- pSiKO TK Protect -->
+	<Package name="LRX_TK">
 		<Key ID="STR_TK_INFO1">
 			<Original>You have been TK by %1\nUse the action menu to react !</Original>
 			<French>Vous avez été TK par %1\nUtilisez le menu d'action pour réagir !</French>
@@ -6768,11 +6769,11 @@
 	<!-- Vehicle Appearance Manager -->
 	<Package name="Vehicle Appearance Manager">
 		<Key ID="STR_VAM_INITIALIZED">
-			<Original>-------- Vehicle Appearance Manager Initialized --------</Original>
-			<Chinesesimp>-------- Vehicle Appearance Manager Initialized --------</Chinesesimp>
-			<Chinese>-------- Vehicle Appearance Manager Initialized --------</Chinese>
-			<Korean>차량 형상 관리자 불러오기 및 초기화 완료</Korean>
-			<Czech>--------Správce vzhledu vozidla inicializován--------</Czech>
+			<Original>-------- VAM Initialized --------</Original>
+			<Chinesesimp>-------- VAM Initialized --------</Chinesesimp>
+			<Chinese>-------- VAM Initialized --------</Chinese>
+			<Korean>-------- VAM 초기화 완료--------</Korean>
+			<Czech>-------- VAM inicializován--------</Czech>
 		</Key>
 		<Key ID="STR_VAM_MAIN_MENU_NAME">
 			<Original>Vehicle Appearance Manager</Original>
@@ -6889,5 +6890,6 @@
 			<Czech>Tmavozelený</Czech>
 		</Key>
 	</Package>
+
 
 </Project>
