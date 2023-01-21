@@ -368,7 +368,7 @@
 	class AutoSave{
 		title = "自动保存计时器";
 		values[] = {0,300,900,1800,3600,7200};
-		texts[] = { "禁用", "5 minutes", $STR_CLEANUP_PARAM1, $STR_CLEANUP_PARAM2, $STR_CLEANUP_PARAM3, $STR_CLEANUP_PARAM4 };
+		texts[] = { "禁用", "5分钟", "15分钟", "30分钟", "1小时", "2小时" };
 		default = 3600;
 	};
 	class Whitelist {
