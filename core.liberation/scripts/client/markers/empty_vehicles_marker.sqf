@@ -1,4 +1,4 @@
-private [ "_vehmarkers", "_markedveh", "_vehtomark", "_supporttomark", "_marker", "_loaded" ];
+﻿private [ "_vehmarkers", "_markedveh", "_vehtomark", "_supporttomark", "_marker", "_loaded" ];
 
 _vehmarkers = [];
 _beacmarkers = [];
@@ -7,7 +7,7 @@ _markedbeac = [];
 _enemy_faction = "OPF_F";
 if (GRLIB_side_friendly == east) then { _enemy_faction = "BLU_F" };
 
-private _no_marker_classnames = [];
+private _no_marker_classnames = [playerbox_typename];
 { _no_marker_classnames pushback (_x select 0) } foreach buildings;
 
 private _force_marker_classnames = [
