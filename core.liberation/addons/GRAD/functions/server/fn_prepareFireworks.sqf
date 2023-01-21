@@ -1,4 +1,4 @@
-/*
+﻿/*
 
 FIREWORKS SCRIPT by nomisum for Gruppe Adler
 http://www.gruppe-adler.de
@@ -17,7 +17,7 @@ CREDITS go to j1987, MrAuralization, soundscalpel.com and Quistard of freesound.
 
 */
 
-if (!(isServer || isDedicated)) exitWith { diag_log format ["Error in GRAD_fireworks, call script on server only"]; };
+if (!(isServer || isDedicated)) exitWith { diag_log format ["在 GRAD_fireworks 中发生错误, 只能在服务端上运行此脚本"]; };
 
 params ["_firing_position", "_type", "_color"];
 // [x,y,z], fizzer/normal/rain/random, green/red/blue/white/random

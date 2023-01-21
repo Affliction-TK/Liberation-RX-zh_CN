@@ -1,4 +1,4 @@
-if (isDedicated || !hasInterface) exitWith { diag_log format ["Error in GRAD_fireworks, call script on client only"]; };
+﻿if (isDedicated || !hasInterface) exitWith { diag_log format ["在 GRAD_fireworks 中发生错误, 只能在客户端上运行此脚本"]; };
 
 params [
 	"_firing_position", // where rocket starts

@@ -1,4 +1,4 @@
-// JukeBox v1.02
+﻿// JukeBox v1.02
 // by pSiKO
 
 private ["_title","_time","_selected","_classname"];
@@ -37,7 +37,7 @@ if(!isNull (findDisplay 2306)) then {
 			};
 			JKB_current_music = _title;
 			JKB_last_music = _selected;
-			hintSilent format ["Now Playing:\n%1", JKB_current_music splitString "-" select 0];
+			hintSilent format ["正在播放:\n%1", JKB_current_music splitString "-" select 0];
 			play_music = 0;
 		};
 
