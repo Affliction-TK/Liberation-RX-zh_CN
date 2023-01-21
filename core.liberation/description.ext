@@ -27,6 +27,7 @@ class CfgFunctions {
 	#include "addons\LARs\blacklistArsenal\functions\blacklistArsenal.fncs"
 	#include "addons\GRAD\cfgFunctions.hpp"
 	#include "addons\SDB_DALE\CfgFunctions.hpp"
+	#include "addons\KFD\cfgfunctions.hpp"
 };
 
 class cfgSounds {
