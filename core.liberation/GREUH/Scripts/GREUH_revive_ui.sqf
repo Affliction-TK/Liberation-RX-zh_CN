@@ -1,4 +1,4 @@
-createDialog "GREUH_respawn";
+﻿createDialog "GREUH_respawn";
 waitUntil { dialog };
 private _noesckey = (findDisplay 5566) displayAddEventHandler ["KeyDown", "if ((_this select 1) == 1) then { true }"];
 
@@ -34,7 +34,7 @@ while { dialog && alive player } do {
 
 	};
 	if ( _tick % 4 == 0 && _tick < _respawn_delay) then {
-		ctrlSetText [677, format ["Wait %1 sec", (_respawn_delay - round(_tick))/4 ]];
+		ctrlSetText [677, format ["请等待 %1 秒", (_respawn_delay - round(_tick))/4 ]];
 	};
 	if (_tick == _respawn_delay && GRLIB_endgame == 0) then {
 		ctrlSetText [677, "Respawn"];
