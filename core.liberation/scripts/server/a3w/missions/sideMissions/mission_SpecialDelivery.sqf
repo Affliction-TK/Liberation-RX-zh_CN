@@ -1,4 +1,4 @@
-// ******************************************************************************************
+﻿// ******************************************************************************************
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Name: mission_SpecialDelivery.sqf
@@ -11,7 +11,7 @@ private ["_missionPos", "_missionPos2", "_missionPos3", "_missionPosEnd", "_miss
 
 _setupVars =
 {
-	_missionType = localize "STR_SPECIALDELI";
+	_missionType = "特快专递";
 	_ignoreAiDeaths = true;
 	_locationsArray = nil;
 };

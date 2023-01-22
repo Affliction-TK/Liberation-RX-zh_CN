@@ -52,7 +52,7 @@ while {true} do {
                     private _ai_rank = GRLIB_rank_level select (GRLIB_rank_level find (rank _x)) + 1;
                     _x setSkill (_ai_skill + 0.05);
                     _x setUnitRank _ai_rank;
-                    _msg = format ["%1 was promoted to the rank of %2 !", name _x, _ai_rank];
+                    _msg = format ["%1 晋升成为 %2 !", name _x, _ai_rank];
                     [_x, _msg] call PAR_fn_globalchat;
                     _x setVariable ["PAR_AI_score", ((GRLIB_rank_level find (rank _x)) + 1) * 5, true];
                 };

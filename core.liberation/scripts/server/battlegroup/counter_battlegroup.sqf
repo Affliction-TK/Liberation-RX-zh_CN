@@ -1,4 +1,4 @@
-private [ "_sleeptime", "_target_lst", "_target_player" ];
+﻿private [ "_sleeptime", "_target_lst", "_target_player" ];
 
 if ( isNil "infantry_weight" ) then { infantry_weight = 33 };
 if ( isNil "armor_weight" ) then { armor_weight = 33 };
@@ -25,11 +25,11 @@ while { GRLIB_endgame == 0 } do {
 
 	if ( count _target_lst > 1 ) then {
 		_target_player = selectRandom _target_lst;
-		_msg = format ["<img size='1' image='%2'/> - <img size='1' image='%2'/> - <img size='1' image='%2'/><br/><t color='#0000FF'>%1</t> is now the <t color='#808080'>'Bete Noire'</t> of the <t color='#F00000'>OPFor</t>!<br/><br/>You better take cover...<br/><img size='1' image='%2'/> - <img size='1' image='%2'/> - <img size='1' image='%2'/>", name _target_player, getMissionPath "res\skull.paa"];
+		_msg = format ["<img size='1' image='%2'/> - <img size='1' image='%2'/> - <img size='1' image='%2'/><br/><t color='#0000FF'>%1</t> 成为了 <t color='#F00000'>OPFor</t><t color='#808080'>'的眼中钉'</t>!<br/><br/>你最好小心行事...<br/><img size='1' image='%2'/> - <img size='1' image='%2'/> - <img size='1' image='%2'/>", name _target_player, getMissionPath "res\skull.paa"];
 		[_msg, 0, 0, 10, 0, 0, 90] remoteExec ["BIS_fnc_dynamicText", 0];
 
 		waitUntil {sleep 2; isNull objectParent _target_player};
-		diag_log format [ "Spawn Attack on player %1 at %2", name _target_player, time ];
+		diag_log format [ "生成对玩家 %1 的进攻 | %2", name _target_player, time ];
 		[getPosATL _target_player, GRLIB_side_enemy] spawn spawn_air;
 		sleep 10;
 		[getPosATL _target_player] spawn send_paratroopers;

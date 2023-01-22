@@ -1,4 +1,4 @@
-if (!isServer && hasInterface) exitWith {};
+﻿if (!isServer && hasInterface) exitWith {};
 params [ "_intel_object", "_unit_owner" ];
 if ( isNil "_intel_object" ) exitWith {};
 
@@ -11,6 +11,6 @@ resources_intel = resources_intel + (floor (_intel_yield + (random _intel_yield)
 if (isPlayer _unit_owner) then {
 	private _bonus = 5;
 	[_unit_owner, _bonus] call F_addScore;
-	private _msg = format ["%1\nBonus Score + %2 Pts!", name _unit_owner, _bonus];
+	private _msg = format ["%1\n奖励 + %2 军功点!", name _unit_owner, _bonus];
 	[_msg] remoteExec ["hint", owner _unit_owner];
 };

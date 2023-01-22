@@ -1,4 +1,4 @@
-// ******************************************************************************************
+﻿// ******************************************************************************************
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Name: mission_HostileHelicopter.sqf
@@ -10,7 +10,7 @@ private [ "_citylist", "_vehicleClass", "_leader", "_speedMode", "_waypoint", "_
 
 _setupVars =
 {
-	_missionType = localize "STR_HOSSTILE_HELI";
+	_missionType = "敌军直升机";
 	_citylist = [] call cityList;
 	_locationsArray = nil; // locations are generated on the fly from towns
 };

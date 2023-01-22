@@ -5637,29 +5637,6 @@
 
 	<!-- LRX Side Missions -->
 	<Package name="LRX_SIDE_MISSIONS">
-		<!-- mission_AirWreck.sqf  -->
-		<Key ID="STR_AIRWRECK">
-			<Original>Aircraft Wreck</Original>
-			<Japanese>航空機の残骸</Japanese>
-			<Chinesesimp>飞机残骸</Chinesesimp>
-			<Chinese>飛機殘骸</Chinese>
-			<Czech>Vrak letadla</Czech>
-		</Key>
-		<Key ID="STR_AIRWRECK_MESSAGE1">
-			<Original>A helicopter has come down under enemy fire!</Original>
-			<Japanese>ヘリが敵の攻撃で墜落した！</Japanese>
-			<Chinesesimp>一架直升机在敌人的炮火下坠毁了！</Chinesesimp>
-			<Chinese>一架直升機在敵人的砲火下墜毀了！</Chinese>
-			<Czech>Pod nepřátelskou palbou se zřítil vrtulník!</Czech>
-		</Key>
-		<Key ID="STR_AIRWRECK_MESSAGE2">
-			<Original>The airwreck supplies have been collected, well done.</Original>
-			<Japanese>ヘリの残骸は回収された。よくやった！</Japanese>
-			<Chinesesimp>空难物资已收集，干得好！</Chinesesimp>
-			<Chinese>空難物資已收集，幹得好！</Chinese>
-			<Czech>Zásoby vraků byly shromážděny, moc dobře.</Czech>
-		</Key>
-
 		<!-- mission_FoodDelivery.sqf -->
 		<Key ID="STR_FOODDELI">
 			<Original>Food Delivery</Original>
@@ -5761,32 +5738,6 @@
 			<Chinesesimp>送水&lt;br/&gt;&lt;t color='%1'&gt;送达&lt;/t&gt;！&lt;br/&gt;&lt;br/&gt;水已经交付，做得很好！</Chinesesimp>
 			<Chinese>送水&lt;br/&gt;&lt;t color='%1'&gt;送達&lt;/t&gt;！ &lt;br/&gt;&lt;br/&gt;水已經交付，做得很好！</Chinese>
 			<Czech>Dodávka vody&lt;br/&gt;&lt;t color='%1'&gt;ÚSPĚCH&lt;/t&gt; !!&lt;br/&gt;&lt;br/&gt;Sudy s vodou byly doručeny.</Czech>
-		</Key>
-
-		<!-- mission_AmmoDelivery.sqf -->
-		<Key ID="STR_AMMODELI">
-			<Original>Ammo Delivery</Original>
-			<Chinesesimp>运送弹药</Chinesesimp>
-			<Chinese>運送彈藥</Chinese>
-			<Czech>Dodávka munice</Czech>
-		</Key>
-		<Key ID="STR_AMMODELI_MESSAGE1">
-			<Original>Ammo Delivery at &lt;br/&gt;&lt;t size='1.25' color='%1'&gt;%2&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t color='#00F000'&gt;Talk&lt;/t&gt; to the &lt;t color='#0000F0'&gt;Marshal&lt;/t&gt; to get information.</Original>
-			<Chinesesimp>弹药运输： &lt;br/&gt;&lt;t size='1.25' color='%1'&gt;%2&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t color='#00F000'&gt;通过&lt;/t&gt; 对话 &lt;t color='#0000F0'&gt;将军&lt;/t&gt; 来获得信息.</Chinesesimp>
-			<Chinese>彈藥運輸： &lt;br/&gt;&lt;t size='1.25' color='%1'&gt;%2&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t color='#00F000'&gt;通過&lt;/t&gt; 對話 &lt;t color='#0000F0'&gt;將軍&lt;/t&gt; 來獲得資訊.</Chinese>
-			<Czech>Dodávka munice v &lt;br/&gt;&lt;t size='1.25' color='%1'&gt;%2&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t color='#00F000'&gt;Talk&lt;/t&gt; k &lt;t color='#0000F0'&gt;Marshal&lt;/t&gt; získat informace.</Czech>
-		</Key>
-		<Key ID="STR_AMMODELI_MESSAGE2">
-			<Original>Ammo Delivery has...&lt;br/&gt;&lt;t color='%1'&gt;FAILED&lt;/t&gt; !!&lt;br/&gt;&lt;br/&gt;The local Population is unhappy...</Original>
-			<Chinesesimp>弹药运输...&lt;br/&gt;&lt;t color='%1'&gt;失败了&lt;/t&gt; !!&lt;br/&gt;&lt;br/&gt;当地居民很不高兴......</Chinesesimp>
-			<Chinese>彈藥運輸...&lt;br/&gt;&lt;t color='%1'&gt;失敗了&lt;/t&gt; !!&lt;br/&gt;&lt;br/&gt;當地居民很不高興......</Chinese>
-			<Czech>Dodávka munice je...&lt;br/&gt;&lt;t color='%1'&gt;FAILED&lt;/t&gt; !!&lt;br/&gt;&lt;br/&gt;Místní obyvatelstvo je nešťastné...</Czech>
-		</Key>
-		<Key ID="STR_AMMODELI_MESSAGE3">
-			<Original>Ammo Delivery&lt;br/&gt;&lt;t color='%1'&gt;SUCCESS&lt;/t&gt; !!&lt;br/&gt;&lt;br/&gt;The boxes of Ammo have been delivered, Well done.</Original>
-			<Chinesesimp>弹药运输&lt;br/&gt;&lt;t color='%1'&gt;成功&lt;/t&gt; !!&lt;br/&gt;&lt;br/&gt;弹药箱已经交付，干得好。</Chinesesimp>
-			<Chinese>彈藥運輸&lt;br/&gt;&lt;t color='%1'&gt;成功&lt;/t&gt; !!&lt;br/&gt;&lt;br/&gt;彈藥箱已經交付，幹得好。</Chinese>
-			<Czech>Dodávka munice&lt;br/&gt;&lt;t color='%1'&gt;ÚSPĚCH&lt;/t&gt; !!&lt;br/&gt;&lt;br/&gt;Krabice munice byly doručeny, výborně.</Czech>
 		</Key>
 
 		<!-- mission_HostileHelicopter.sqf -->

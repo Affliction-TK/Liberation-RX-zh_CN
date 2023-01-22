@@ -1,4 +1,4 @@
-params [ "_liberated_sector" ];
+﻿params [ "_liberated_sector" ];
 diag_log format ["Sector %1 liberated", _liberated_sector];
 private _combat_readiness_increase = 0;
 
@@ -44,7 +44,7 @@ if ( _liberated_sector in sectors_tower ) then {
 	params ["_sector"];
 	private _rwd_ammo = (100 + floor(random 100)) * GRLIB_resources_multiplier;
 	private _rwd_fuel = (10 + floor(random 10)) * GRLIB_resources_multiplier;
-	private _text = format ["Reward Received: %1 Ammo and %2 Fuel", _rwd_ammo, _rwd_fuel];
+	private _text = format ["收到奖励: %1 弹药 | %2 燃油", _rwd_ammo, _rwd_fuel];
 
 	{
 		if (_x distance2D (markerpos _sector) < GRLIB_sector_size ) then {

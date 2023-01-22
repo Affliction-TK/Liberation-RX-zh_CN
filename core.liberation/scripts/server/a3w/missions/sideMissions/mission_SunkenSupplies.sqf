@@ -1,4 +1,4 @@
-// ******************************************************************************************
+﻿// ******************************************************************************************
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Name: mission_SunkenSupplies.sqf
@@ -10,7 +10,7 @@ private ["_nbUnits", "_box1", "_box2", "_boxPos"];
 
 _setupVars =
 {
-	_missionType = localize "STR_SUNKEN";
+	_missionType = "沉船物资";
 	_locationsArray = [SunkenMissionMarkers] call checkSpawn;
 	_nbUnits = [] call getNbUnits;
 };

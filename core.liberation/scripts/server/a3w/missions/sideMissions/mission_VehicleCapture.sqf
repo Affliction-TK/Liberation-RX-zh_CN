@@ -1,4 +1,4 @@
-// ******************************************************************************************
+﻿// ******************************************************************************************
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Name: mission_VehicleCapture.sqf
@@ -10,7 +10,7 @@ private ["_nbUnits", "_vehicleName", "_vehiclePos", "_smoke"];
 
 _setupVars =
 {
-	_missionType = localize "STR_VEHICLECAP";
+	_missionType = "车辆抢夺";
 	_locationsArray = [SpawnMissionMarkers] call checkSpawn;
 	_nbUnits = [] call getNbUnits;
 };

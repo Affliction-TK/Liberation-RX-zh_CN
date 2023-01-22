@@ -1,4 +1,4 @@
-// ******************************************************************************************
+﻿// ******************************************************************************************
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Name: mission_AmmoDelivery.sqf
@@ -11,7 +11,7 @@ private ["_nbUnits", "_townName","_buildingpositions", "_man1", "_marker_zone"];
 
 _setupVars =
 {
-	_missionType = localize "STR_AMMODELI";
+	_missionType = "运送弹药";
 	_missionLocation = [sectors_military] call getMissionLocation;
 	_townName = markerText _missionLocation;
 	_ignoreAiDeaths = true;
@@ -33,7 +33,7 @@ _setupObjects =
 	_marker_zone setMarkerBrush "FDiagonal";
 	_marker_zone setMarkerSize [20,20];
 
-	_missionHintText = format [localize "STR_AMMODELI_MESSAGE1", sideMissionColor, _townName];
+	_missionHintText = format ["弹药运输： &lt;br/&gt;&lt;t size='1.25' color='%1'&gt;%2&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t color='#00F000'&gt;通过&lt;/t&gt; 对话 &lt;t color='#0000F0'&gt;将军&lt;/t&gt; 来获得信息.", sideMissionColor, _townName];
 	A3W_sectors_in_use = A3W_sectors_in_use + [_missionLocation];
 	true;
 };
@@ -58,7 +58,7 @@ _failedExec = {
 	// Mission failed
 	deleteVehicle _man1;
 	deleteMarker _marker_zone;
-	_failedHintMessage = format [localize "STR_AMMODELI_MESSAGE2", sideMissionColor, _townName];
+	_failedHintMessage = format ["弹药运输...&lt;br/&gt;&lt;t color='%1'&gt;失败了&lt;/t&gt; !!&lt;br/&gt;&lt;br/&gt;当地居民很不高兴......", sideMissionColor, _townName];
 	A3W_delivery_failed = A3W_delivery_failed + 1;
 	A3W_sectors_in_use = A3W_sectors_in_use - [_missionLocation];
 };
@@ -66,7 +66,7 @@ _failedExec = {
 _successExec = {
 	sleep 3;
 	// Mission completed
-	_successHintMessage = format [localize "STR_AMMODELI_MESSAGE3", sideMissionColor];
+	_successHintMessage = format ["弹药运输&lt;br/&gt;&lt;t color='%1'&gt;成功&lt;/t&gt; !!&lt;br/&gt;&lt;br/&gt;弹药箱已经交付，干得好。", sideMissionColor];
 	[ammobox_i_typename, _missionPos, false] call boxSetup;
 	deleteVehicle _man1;
 	deleteMarker _marker_zone;

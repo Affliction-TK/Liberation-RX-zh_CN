@@ -1,4 +1,4 @@
-// ******************************************************************************************
+﻿// ******************************************************************************************
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Name: mission_TownInsurgency.sqf
@@ -10,7 +10,7 @@ private ["_nbUnits", "_townName", "_buildingpositions"];
 
 _setupVars =
 {
-	_missionType = localize "STR_INSURGENCY";
+	_missionType = "城镇叛乱";
 	_nbUnits = [] call getNbUnits;
 
 	// settings for this mission
@@ -63,7 +63,7 @@ _successExec = {
 	// Mission completed
 	private _rwd_ammo = (100 + floor(random 100));
 	private _rwd_fuel = (10 + floor(random 10));
-	private _text = format ["Reward Received: %1 Ammo and %2 Fuel", _rwd_ammo, _rwd_fuel];
+	private _text = format ["收到奖励: %1 弹药 | %2燃油", _rwd_ammo, _rwd_fuel];
 	{
 		if (_x distance2D _missionPos < GRLIB_sector_size ) then {
 			[_x, _rwd_ammo, _rwd_fuel] call ammo_add_remote_call;

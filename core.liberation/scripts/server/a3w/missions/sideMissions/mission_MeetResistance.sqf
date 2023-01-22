@@ -1,4 +1,4 @@
-// ******************************************************************************************
+﻿// ******************************************************************************************
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Name: mission_MeetResistance.sqf
@@ -15,7 +15,7 @@ private ["_nbUnits", "_townName",
 
 _setupVars =
 {
-	_missionType = localize "STR_RESISTANCE";
+	_missionType = "抵抗组织";
 	_nbUnits = 10;
 
 	// settings for this mission

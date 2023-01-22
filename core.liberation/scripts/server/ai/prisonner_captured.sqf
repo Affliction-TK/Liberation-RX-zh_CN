@@ -1,4 +1,4 @@
-params [ "_unit", "_unit_owner" ];
+﻿params [ "_unit", "_unit_owner" ];
 
 private _yield = 6;
 if ( (typeof _unit) in all_resistance_troops ) then { _yield = 3 };
@@ -20,6 +20,6 @@ if (isPlayer _unit_owner) then {
 	if ( rank _unit == "COLONEL") then { _bonus = 50 };
 	_bonus = _bonus + (round (random _bonus));
 	[_unit_owner, _bonus] call F_addScore;
-	private _msg = format ["Well done %1!\n\nIntel Stars + %2\nBonus Score + %3 XP", name _unit_owner, _yield, _bonus];
+	private _msg = format ["干得漂亮 %1!\n\n军功点 + %2\n经验 + %3 XP", name _unit_owner, _yield, _bonus];
 	[_msg] remoteExec ["hint", owner _unit_owner];
 };

@@ -1,4 +1,4 @@
-// ******************************************************************************************
+﻿// ******************************************************************************************
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Version: 1.0
@@ -10,7 +10,7 @@ if (!isServer) exitwith {};
 private ["_grpdefenders", "_grpsentry"];
 
 _setupVars = {
-	_missionType = localize "STR_OUTPOST";
+	_missionType = "敌军前哨";
 	_locationsArray = [SpawnMissionMarkers] call checkSpawn;
 };
 

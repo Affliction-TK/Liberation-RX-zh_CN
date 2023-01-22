@@ -1,4 +1,4 @@
-// ******************************************************************************************
+﻿// ******************************************************************************************
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Name: mission_WaterDelivery.sqf
@@ -11,7 +11,7 @@ private ["_nbUnits", "_townName","_buildingpositions", "_man1", "_marker_zone"];
 
 _setupVars =
 {
-	_missionType = localize "STR_WATERDELI";
+	_missionType = "送水";
 	_missionLocation = [sectors_capture] call getMissionLocation;
 	_townName = markerText _missionLocation;
 	_ignoreAiDeaths = true;

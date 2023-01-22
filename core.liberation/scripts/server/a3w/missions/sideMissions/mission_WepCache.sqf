@@ -1,4 +1,4 @@
-// ******************************************************************************************
+﻿// ******************************************************************************************
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Name: mission_WepCache.sqf
@@ -10,7 +10,7 @@ private ["_nbUnits", "_box1", "_box2", "_box3"];
 
 _setupVars =
 {
-	_missionType = localize "STR_WEAPCACHE";
+	_missionType = "武器藏匿点";
 	_locationsArray = [ForestMissionMarkers] call checkSpawn;
 	_nbUnits = [] call getNbUnits;
 };
