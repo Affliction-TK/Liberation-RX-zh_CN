@@ -78,9 +78,9 @@ PAR_public_EH = {
 	if (_EH == "PAR_deathMessage") then {
 		if (isPlayer _killed) then {
 			if (isNull _killer) then {
-				gamelogic globalChat format ["%1 was injured for an unknown reason", name _killed];
+				gamelogic globalChat format ["%1 因未知原因负伤", name _killed];
 			} else {
-				gamelogic globalChat format ["%1 was injured by %2", name _killed, name _killer];
+				gamelogic globalChat format ["%1 被 %2 击倒", name _killed, name _killer];
 			};
 		};
 	};
@@ -112,7 +112,7 @@ PAR_show_marker = {
 	_mk1 = createMarker [format ["PAR_marker_%1", name player], position player];
 	_mk1 setMarkerType "loc_Hospital";
 	_mk1 setMarkerColor "ColorRed";
-	_mk1 setMarkerText format ["%1 Injured", name player];
+	_mk1 setMarkerText format ["%1 负伤", name player];
 };
 PAR_del_marker = {
 	deletemarker format ["PAR_marker_%1", name player];

@@ -120,7 +120,7 @@ while { dialog && alive player } do {
 			if (_result && !(isNull _vehicle) && alive _vehicle) then {
 				[_vehicle] remoteExec ["deleteVehicle", 2];
 				[player, _price, 0] remoteExec ["ammo_add_remote_call", 2];
-				hintSilent format ["%1 Sold for %2 AMMO !", _vehicle_name, _price];
+				hintSilent format ["%1 卖了 %2 弹药 !", _vehicle_name, _price];
 				ctrlEnable [120, false];
 				playSound "taskSucceeded";
 			};

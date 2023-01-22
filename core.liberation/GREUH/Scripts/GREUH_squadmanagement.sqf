@@ -1,4 +1,4 @@
-groups_list = [];
+﻿groups_list = [];
 squadaction = "";
 squadname = "";
 if (isNil "global_group_ids") then { global_group_ids = [] };
@@ -125,7 +125,7 @@ while { true } do {
 	if ( count global_new_leader != 0 ) then {
 		if ( group player == global_new_leader select 0 ) then {
 			(global_new_leader select 0) selectLeader (global_new_leader select 1);
-			hint format ["%1 is your new squad leader.",name (global_new_leader select 1)];
+			hint format ["%1 成为了新的队长.",name (global_new_leader select 1)];
 			global_new_leader = [];
 		};
 	};
