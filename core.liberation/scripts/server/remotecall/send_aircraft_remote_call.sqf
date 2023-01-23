@@ -4,6 +4,8 @@ params ["_unit"];
 _targetsector = [sectors_allSectors, _unit] call F_nearestPosition;
 [getMarkerPos _targetsector, GRLIB_side_friendly] spawn spawn_air;
 
+["airsupport"] remoteExec ["playSound"];
+
 _msg = format ["指挥官 <t color='#00008f'>%1</t>, 请求了<br/><br/>
 <t color='#F00000'>空中支援</t><br/><br/>
 位于: <t color='#008000'>%2</t><br/>
