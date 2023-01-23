@@ -1,4 +1,4 @@
-//--- A3W_Missions
+﻿//--- A3W_Missions
 // Stolen from A3 Wasteland by AgenRev
 // tweaked to fit in Liberation
 

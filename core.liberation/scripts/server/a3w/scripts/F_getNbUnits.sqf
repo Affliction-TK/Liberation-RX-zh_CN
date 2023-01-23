@@ -1,4 +1,4 @@
-#define AI_GROUP_SMALL 8
+﻿#define AI_GROUP_SMALL 8
 #define AI_GROUP_MEDIUM 12
 #define AI_GROUP_LARGE 16
 

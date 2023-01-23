@@ -1,4 +1,4 @@
-GRLIB_secondary_starting = false; publicVariable "GRLIB_secondary_starting";
+﻿GRLIB_secondary_starting = false; publicVariable "GRLIB_secondary_starting";
 GRLIB_secondary_in_progress = -1; publicVariable "GRLIB_secondary_in_progress";
 GRLIB_secondary_used_positions = [];
 

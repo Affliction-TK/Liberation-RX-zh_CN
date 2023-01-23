@@ -1,4 +1,4 @@
-// Mission spawn trop proche d'un secteur capture
+﻿// Mission spawn trop proche d'un secteur capture
 params ['_markers'];
 private _list=[];
 

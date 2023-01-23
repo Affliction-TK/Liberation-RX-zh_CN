@@ -1,4 +1,4 @@
-params [["_vehicles",[]], ["_wait", 5], ["_force", false]];
+﻿params [["_vehicles",[]], ["_wait", 5], ["_force", false]];
 
  if (typeName _vehicles != "ARRAY") then {
     _vehicles = [_vehicles];
