@@ -1,4 +1,4 @@
-if ( GRLIB_endgame == 1 ) exitWith {};
+﻿if ( GRLIB_endgame == 1 ) exitWith {};
 params ["_liberated_sector"];
 diag_log format ["Spawn BattlegGroup at %1", time];
 

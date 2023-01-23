@@ -1,4 +1,4 @@
-// LRX Diag Tools - pSiKO
+﻿// LRX Diag Tools - pSiKO
 // [0] execVM "scripts\shared\diag_debug.sqf";
 //
 // [0] : Dump process 

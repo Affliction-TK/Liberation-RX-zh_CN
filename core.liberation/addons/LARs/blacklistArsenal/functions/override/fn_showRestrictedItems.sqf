@@ -1,4 +1,4 @@
-#include "\A3\ui_f\hpp\defineDIKCodes.inc"
+﻿#include "\A3\ui_f\hpp\defineDIKCodes.inc"
 #include "\A3\Ui_f\hpp\defineResinclDesign.inc"
 #include "macros.hpp"
 
@@ -77,7 +77,7 @@ if ( _show ) then {
 				_endTime = time + _delay;
 				_ctrlTemplate = _display displayCtrl IDC_RSCDISPLAYARSENAL_TEMPLATE_TEMPLATE;
 				while { time < _endTime } do {
-					( _display displayCtrl IDC_RSCDISPLAYARSENAL_TEMPLATE_TITLE ) ctrlSetText format[ "Restricted Items ...%1", floor ( _endTime - time ) ];
+					( _display displayCtrl IDC_RSCDISPLAYARSENAL_TEMPLATE_TITLE ) ctrlSetText format[ "限制物品 ...%1", floor ( _endTime - time ) ];
 					uiSleep 0.5;
 				};
 				with uiNamespace do {

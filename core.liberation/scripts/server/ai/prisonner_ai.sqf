@@ -1,4 +1,4 @@
-params [ "_unit", ["_friendly", false], ["_canmove", false] ];
+﻿params [ "_unit", ["_friendly", false], ["_canmove", false] ];
 if (_unit skill "courage" == 1) exitWith {};
 sleep 3;
 if (!alive _unit) exitWith {};
@@ -76,7 +76,7 @@ while {alive _unit} do {
 	private _is_near_blufor = count ([units GRLIB_side_friendly, { (isNil {_x getVariable "GRLIB_is_prisonner"}) && (_x distance2D _unit) < 100 }] call BIS_fnc_conditionalSelect);
 	if ( _is_near_blufor == 0 && !_friendly ) then {
 		if (side group _unit == GRLIB_side_friendly) then {
-			private _text = format ["Alert! prisonner %1 is escaping!", name _unit];
+			private _text = format ["注意! 犯人 %1 正在逃跑!", name _unit];
 			[gamelogic, _text] remoteExec ["globalChat", (owner _unit)];
 		};
 

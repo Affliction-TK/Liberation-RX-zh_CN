@@ -1,4 +1,4 @@
-// Here you can allow people to use the commander slot. It will only be enforced if you activate the related mission option.
+﻿// Here you can allow people to use the commander slot. It will only be enforced if you activate the related mission option.
 // When editing be careful with quotes and commas
 
 // Allowed individual players based on their SteamID64. This is the most secure way to do.

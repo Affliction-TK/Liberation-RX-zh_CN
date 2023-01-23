@@ -1,4 +1,4 @@
-params ["_unit", "_selection", "_amountOfDamage", "_killer", "_projectile", "_hitPartIndex", "_instigator"];
+﻿params ["_unit", "_selection", "_amountOfDamage", "_killer", "_projectile", "_hitPartIndex", "_instigator"];
 
 if (isNull _unit) exitWith {0};
 if (!isNull _instigator) then {
@@ -19,7 +19,7 @@ if (!isNull _killer && _unit != _killer) then {
 	// OpFor in vehicle
 	if (isPlayer _killer && side group _unit == GRLIB_side_enemy && _unit != _killer && _veh_unit != _unit && _veh_killer == _killer && round (_killer distance2D _unit) <= 2) then {
 		if ( _unit getVariable ["GRLIB_isProtected", 0] < time ) then {
-			private _msg = format ["%1 Stop Cheating !!", name _killer];
+			private _msg = format ["%1 请停止作弊 !!", name _killer];
 			[gamelogic, _msg] remoteExec ["globalChat", owner _killer];
 			(group _unit) reveal _killer;
 			(gunner _veh_unit) doTarget _killer;

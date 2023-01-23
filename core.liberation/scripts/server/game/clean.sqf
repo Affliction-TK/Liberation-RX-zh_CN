@@ -1,4 +1,4 @@
-/*
+﻿/*
 File: clean.sqf
 Author:
 

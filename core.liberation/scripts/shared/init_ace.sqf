@@ -1,4 +1,4 @@
-// Initialize ACE
+﻿// Initialize ACE
 
 R3F_LOG_CFG_can_tow = [];
 R3F_LOG_CFG_can_be_towed = [];

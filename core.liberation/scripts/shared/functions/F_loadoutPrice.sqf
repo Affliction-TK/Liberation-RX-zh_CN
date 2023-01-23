@@ -1,4 +1,4 @@
-params [ "_unit" ];
+﻿params [ "_unit" ];
 if (isNull _unit) exitWith {0};
 if (isNil "GRLIB_Ammobox_keep") then {GRLIB_Ammobox_keep = []};
 

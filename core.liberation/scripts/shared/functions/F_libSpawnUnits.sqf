@@ -1,4 +1,4 @@
-params [
+﻿params [
     "_spawnpos",                    // position to spawn
     ["_classname", []],             // array of classname to create
     ["_side", GRLIB_side_enemy],    // side of units group

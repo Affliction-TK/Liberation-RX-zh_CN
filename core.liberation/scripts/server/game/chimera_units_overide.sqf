@@ -1,4 +1,4 @@
-if (!isServer) exitWith {};
+﻿if (!isServer) exitWith {};
 if (GRLIB_mod_west == "A3_BLU") exitWith {};
 
 private [ "_unit_model", "_cloth", "_items", "_weapon", "_mag", "_src_class", "_dst_class", "_veh_lst", "_veh", "_src_pos", "_src_dir" ];

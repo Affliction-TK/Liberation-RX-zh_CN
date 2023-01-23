@@ -1,4 +1,4 @@
-params ["_vehicle"];
+﻿params ["_vehicle"];
 if (isNull _vehicle) exitWith {};
 if (!isNull (_vehicle getVariable ["R3F_LOG_est_transporte_par", objNull])) exitWith {};
 

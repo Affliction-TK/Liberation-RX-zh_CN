@@ -1,4 +1,4 @@
-params [ "_unit", "_killer", "_instigator"];
+﻿params [ "_unit", "_killer", "_instigator"];
 private [ "_nearby_bigtown","_msg" ];
 
 if ( isServer ) then {
@@ -71,7 +71,7 @@ if ( isServer ) then {
 			_isPrisonner = _unit getVariable ["GRLIB_is_prisonner", false];
 			_isKamikaz = _unit getVariable ["GRLIB_is_kamikaze", false];
 			if ( _isKamikaz ) then { 
-				_msg = format ["%1 kill a Kamikaze !! +10 XP", name _killer] ;
+				_msg = format ["%1 杀死一个自杀炸弹客 !! +10 XP", name _killer] ;
 				[gamelogic, _msg] remoteExec ["globalChat", 0];
 				[_killer, 11] call F_addScore;
 			};
@@ -102,7 +102,7 @@ if ( isServer ) then {
 					if (_owner_id != "0") then {
 						_owner_player = _owner_id call BIS_fnc_getUnitByUID;
 						[_owner_player, -GRLIB_civ_killing_penalty] call F_addScore;
-						_msg = format ["%1, Your AI kill Civilian !!", name _owner_player] ;
+						_msg = format ["%1, 你的AI杀死了一个平民 !!", name _owner_player] ;
 						[gamelogic, _msg] remoteExec ["globalChat", 0];
 						[name _unit, GRLIB_civ_killing_penalty, _owner_player] remoteExec ["remote_call_civ_penalty", 0];
 					};
@@ -189,7 +189,7 @@ if ( isServer ) then {
 			_owner_id = getPlayerUID _killer;
 			if ( !(_unit getVariable ["GRLIB_vehicle_owner", ""] in ["", "public", "server", _owner_id]) ) then {
 				_penalty = 50;
-				_msg = format ["Penalty of %1 to %2 for killing a Friendly vehicle !!", _penalty, name _killer] ;
+				_msg = format ["惩罚 %1.因为 %2 击毁了友军载具 !!", _penalty, name _killer] ;
 				[gamelogic, _msg] remoteExec ["globalChat", 0];
 				[_killer, -_penalty] call F_addScore;
 			};

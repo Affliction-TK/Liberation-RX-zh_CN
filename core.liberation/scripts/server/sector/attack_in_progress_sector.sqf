@@ -115,7 +115,7 @@ if ( _ownership == GRLIB_side_enemy ) then {
 
 			if (time > ((attack_in_progress select 1) + 300)) then {
 				private _rwd_xp = round (15 + random 10);
-				private _text = format ["Glory to the Defendes! +%1 XP", _rwd_xp];
+				private _text = format ["保卫者的荣耀! +%1 XP", _rwd_xp];
 				{
 					if (_x distance2D (markerpos _sector) < GRLIB_sector_size ) then {
 						[_x, _rwd_xp] call F_addScore;

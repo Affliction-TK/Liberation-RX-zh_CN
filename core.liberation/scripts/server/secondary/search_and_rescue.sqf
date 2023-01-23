@@ -1,4 +1,4 @@
-params [ ["_mission_cost", 0] ];
+﻿params [ ["_mission_cost", 0] ];
 
 diag_log format ["--- LRX call static mission: SAR at %1", time];
 

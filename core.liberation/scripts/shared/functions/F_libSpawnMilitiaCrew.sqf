@@ -1,4 +1,4 @@
-params [ "_vehicle" ];
+﻿params [ "_vehicle" ];
 
 diag_log format [ "Spawn militia crew at %1", time ];
 

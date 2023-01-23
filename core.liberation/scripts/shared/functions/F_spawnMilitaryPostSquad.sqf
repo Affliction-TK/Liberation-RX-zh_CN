@@ -1,4 +1,4 @@
-params [ "_squadpos" ];
+﻿params [ "_squadpos" ];
 private [ "_grp", "_building_positions", "_unitclass", "_unit", "_totalx2", "_totaly2", "_avgx2", "_avgy2", "_vd2", "_newdir2" ];
 
 private _posts_classname = [

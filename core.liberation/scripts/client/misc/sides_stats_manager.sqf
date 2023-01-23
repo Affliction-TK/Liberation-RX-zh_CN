@@ -1,4 +1,4 @@
-private ["_msg", "_sector", "_opf", "_res", "_last_man", "_default"];
+﻿private ["_msg", "_sector", "_opf", "_res", "_last_man", "_default"];
 private	_cleanup_counter = 0;
 
 while { true } do {
@@ -12,7 +12,7 @@ while { true } do {
 		if ( _sector find "Resistance" > 0 && !isnil "GRLIB_A3W_Mission_MR" && !isnil "GRLIB_A3W_Mission_MRR" ) then {
 			{_opf = _opf + count (units _x select {alive _x})} forEach GRLIB_A3W_Mission_MR;
 			_res = count (units GRLIB_A3W_Mission_MRR select {alive _x});
-			_msg = format ["Status:\nResistance: %1\nEnemy squad: %2", _res, _opf];
+			_msg = format ["状态:\n反抗: %1\n敌方小队: %2", _res, _opf];
 			_default = false;
 		};
 
@@ -20,14 +20,14 @@ while { true } do {
 		if ( _sector find "A3W_Mission_SD" > 0 && !isnil "GRLIB_A3W_Mission_SD" ) then {
 			_last_man = GRLIB_A3W_Mission_SD select (count GRLIB_A3W_Mission_SD) - 1;
 			_opf = [(getPos _last_man) nearEntities ["Man", (GRLIB_sector_size/2)], {(alive _x) && (side _x == GRLIB_side_enemy)}] call BIS_fnc_conditionalSelect;
-			if (count _opf > 0) then {_msg = format ["Status:\nEnemy squad: %1", count _opf]};
+			if (count _opf > 0) then {_msg = format ["战况:\n剩余敌方: %1", count _opf]};
 			_default = false;
 		};
 
 		// Others
 		if ( _default ) then {
 			_opf = [(getMarkerPos _sector) nearEntities ["Man", (GRLIB_sector_size/2)], {(alive _x) && (side _x == GRLIB_side_enemy)}] call BIS_fnc_conditionalSelect;
-			if (count _opf > 0) then {_msg = format ["Status:\nEnemy squad: %1", count _opf]};
+			if (count _opf > 0) then {_msg = format ["战况:\n剩余敌方: %1", count _opf]};
 		};
 
 		hintSilent _msg;
@@ -35,7 +35,7 @@ while { true } do {
 	};
 
 	if (underwater vehicle player) then {
-		hintSilent format ["Oxygen Remaining: %1%2", round(100 * getOxygenRemaining player), "%"];
+		hintSilent format ["剩余氧气: %1%2", round(100 * getOxygenRemaining player), "%"];
 		_cleanup_counter = 2;
 	};
 

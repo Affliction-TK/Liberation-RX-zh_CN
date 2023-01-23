@@ -1,4 +1,4 @@
-params [ "_sector", "_infsquad", "_squadies_to_spawn" ];
+﻿params [ "_sector", "_infsquad", "_squadies_to_spawn" ];
 
 diag_log format [ "Spawn regular squad type %1 (%2) at %3", _infsquad, count _squadies_to_spawn, time ];
 private _grp = [markerPos _sector, _squadies_to_spawn, GRLIB_side_enemy, _infsquad] call F_libSpawnUnits;

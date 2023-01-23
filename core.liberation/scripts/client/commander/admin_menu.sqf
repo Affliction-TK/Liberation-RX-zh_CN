@@ -108,7 +108,7 @@ _i = 0;
 {
 	_strname = [(_x select 0)] call F_getLRXName;
 	if (_strname == "") then {
-		diag_log format ["--- LRX 错误: Classname 未找到: %1", (_x select 0)];
+		diag_log format ["--- LRX Error: Classname 未找到: %1", (_x select 0)];
 	} else {
 		_build_combo lbAdd format["%1", _strname];
 		_build_combo lbSetData [_i, ( _x select 0 )];
@@ -135,7 +135,7 @@ while { alive player && dialog } do {
 		_dst_id = _ban_combo lbText (lbCurSel _ban_combo);
 		if (_dst_id != "") then {
 			BTC_logic setVariable [_dst_id, 0, true];
-			_msg = format ["Unban player UID: %1", _dst_id];
+			_msg = format ["解封玩家 UID: %1", _dst_id];
 			hint _msg;
 			systemchat _msg;
 			lbClear _ban_combo;
@@ -238,7 +238,7 @@ while { alive player && dialog } do {
 				sleep 3;
 				["END"] remoteExec ["endMission", 0];
 			}] remoteExec ["bis_fnc_call", 2];
-			hint format ["Import Savegame in %1, Exiting now!", GRLIB_save_key];
+			hint format ["加载游戏数据 %1, 执行中!", GRLIB_save_key];
 			closeDialog 0;
 		} else { systemchat "错误：数据无效！" };
 		{ ctrlShow [_x, false] } foreach _input_controls;

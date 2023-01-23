@@ -139,7 +139,7 @@ while { true } do {
 	// Show Hint
 	private _neartower = ((sectors_allSectors select {_x select [0,6] == "tower_" && !(_x in blufor_sectors) && player distance2D (getMarkerPos _x) <= 20})) select 0;
 	if (!isNil "_neartower") then {
-		_msg = format ["使用 <t color='#FF0000'>炸药</t> 来摧毁<br/>这个 <t color='#0000FF'>无线电塔</t>."];
+		_msg = format ["使用<br/><t color='#FF0000'>炸药</t><br/> 来摧毁这个 <t color='#0000FF'>无线电塔</t>"];
 		[_msg, 0, 0, 5, 0, 0, 90] spawn BIS_fnc_dynamicText;
 	};
 

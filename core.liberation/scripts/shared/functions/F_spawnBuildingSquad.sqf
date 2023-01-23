@@ -1,4 +1,4 @@
-params [ "_infsquad", "_building_ai_max", "_buildingpositions", "_sectorpos", [ "_sector", "" ] ];
+﻿params [ "_infsquad", "_building_ai_max", "_buildingpositions", "_sectorpos", [ "_sector", "" ] ];
 private [ "_unitclass", "_infsquad_classnames", "_grp", "_position_indexes", "_position_count", "_idxposit" ];
 diag_log format ["Spawn building squad type %1 at %2", _infsquad, time];
 

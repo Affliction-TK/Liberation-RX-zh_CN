@@ -229,7 +229,7 @@
   };
   class UnlockButton: StdButton {
     idc = 1609;
-    action = "_x = cursorobject;if (isNull _x) exitWith {};_x setvariable ['R3F_LOG_disabled', false, true];_x setvariable ['GRLIB_vehicle_owner', '', true];hint format ['%1 Unlocked.',typeOf _x]";
+    action = "_x = cursorobject;if (isNull _x) exitWith {};_x setvariable ['R3F_LOG_disabled', false, true];_x setvariable ['GRLIB_vehicle_owner', '', true];hint format ['%1 已解锁.',typeOf _x]";
     text = $STR_ADMIN_UNLOCK;
     x = 0.2275 * safezoneW + safezoneX;
     y = 0.572 * safezoneH + safezoneY;

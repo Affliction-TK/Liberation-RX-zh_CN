@@ -1,4 +1,4 @@
-params ["_base_position", "_enable_objectives", "_enable_defenders"];
+﻿params ["_base_position", "_enable_objectives", "_enable_defenders"];
 
 private _fob_templates = [
     "scripts\fob_templates\template5.sqf",

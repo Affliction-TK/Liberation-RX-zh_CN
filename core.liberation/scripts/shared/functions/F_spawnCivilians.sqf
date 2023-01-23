@@ -1,4 +1,4 @@
-params [ "_sector" ];
+﻿params [ "_sector" ];
 private _sectorpos = getMarkerPos _sector;
 private _units_civ = { alive _x && !(typeOf _x in [SHOP_Man, SELL_Man])} count units GRLIB_side_civilian;
 if (_units_civ >= (GRLIB_civilians_amount * 3)) exitWith {};

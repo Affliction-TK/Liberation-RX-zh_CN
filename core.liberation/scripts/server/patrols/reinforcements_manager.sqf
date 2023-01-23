@@ -1,4 +1,4 @@
-params [ "_targetsector" ];
+﻿params [ "_targetsector" ];
 
 if (combat_readiness < 35 || GRLIB_csat_aggressivity < 1 || diag_fps < 35) exitWith {};
 

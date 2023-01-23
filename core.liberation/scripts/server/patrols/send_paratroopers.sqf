@@ -1,4 +1,4 @@
-params [ "_targetpos" ];
+﻿params [ "_targetpos" ];
 
 private _spawnsector = ( [ sectors_airspawn , [ _targetpos ] , { (markerpos _x) distance2D _input0 }, "ASCEND"] call BIS_fnc_sortBy ) select 0;
 

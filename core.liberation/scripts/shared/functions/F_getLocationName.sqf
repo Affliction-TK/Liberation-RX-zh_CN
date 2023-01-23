@@ -1,4 +1,4 @@
-params [ "_attacked_position" ];
+﻿params [ "_attacked_position" ];
 
 private _attacked_string = [ _attacked_position ] call F_getFobName;
 if ( _attacked_string == "" ) then {

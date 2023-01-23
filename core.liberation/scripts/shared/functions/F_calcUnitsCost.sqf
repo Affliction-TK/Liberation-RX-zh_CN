@@ -1,4 +1,4 @@
-private ["_unit", "_unit_class", "_unit_mp", "_unit_cost", "_unit_rank"];
+﻿private ["_unit", "_unit_class", "_unit_mp", "_unit_cost", "_unit_rank"];
 
 infantry_units = [];
 {

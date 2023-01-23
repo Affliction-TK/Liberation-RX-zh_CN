@@ -1,4 +1,4 @@
-private [ "_sourcestr", "_position", "_myfpsmarker", "_myfps", "_units_blu", "_units_opf", "_units_civ"];
+﻿private [ "_sourcestr", "_position", "_myfpsmarker", "_myfps", "_units_blu", "_units_opf", "_units_civ"];
 
 if ( isServer ) then {
 	_sourcestr = "Server";
@@ -49,7 +49,7 @@ while { true } do {
 	if ( _myfps < 20 ) then { _myfpsmarker setMarkerColor "ColorORANGE"; };
 	if ( _myfps < 10 ) then { _myfpsmarker setMarkerColor "ColorRED"; };
 
-	_myfpsmarker setMarkerText format [ "%1: %2 fps - Up: %9 - civ:%3 blu:%4 red:%5",
+	_myfpsmarker setMarkerText format [ "%1: %2 fps - Up: %9 - 平民:%3 蓝方:%4 红方:%5",
 		_sourcestr, ( round ( _myfps * 100.0 ) ) / 100.0 ,
 		_units_civ,_units_blu,_units_opf,
 		[time/3600,"HH:MM:SS"] call BIS_fnc_timeToString];

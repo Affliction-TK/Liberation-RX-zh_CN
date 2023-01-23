@@ -1,4 +1,4 @@
-params [ "_sector" ];
+﻿params [ "_sector" ];
 
 private _sectorpos = getmarkerpos _sector;
 private _stopit = false;

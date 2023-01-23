@@ -1,4 +1,4 @@
-params ["_first_objective", "_side"];
+﻿params ["_first_objective", "_side"];
 
 if (isNil "_side") then {_side = GRLIB_side_enemy};
 private _planeType = opfor_air;

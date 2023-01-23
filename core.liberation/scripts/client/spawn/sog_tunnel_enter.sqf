@@ -1,4 +1,4 @@
-// Enter SoG tunnel
+﻿// Enter SoG tunnel
 
 private _tunnel_marker = [(allMapMarkers select {_x select [0,20] == "side_mission_sog_tun" && markerPos _x distance2D player <= GRLIB_capture_size}), player] call F_nearestPosition;
 private _tunnel_name = format ["LRX%1", (_tunnel_marker select [12, 11])];
@@ -28,10 +28,10 @@ if (_ai_follow) then {
 { doStop _x } foreach (units group player);
 
 private _position = (_tunnel getVariable ["tunnel_position", 0]) + 1;
-private _msg = format ["You enter in the <t color='#008f00'>Guerrilla</t> tunnel no <t color='#008f00'>%1</t> !<br/><br/>
-Expect NO <t color='#00008f'>Support</t>,  NO <t color='#00008f'>Help</t>. <br/>
-...Expect NO <t color='#8f0000'>Mercy</t> !!<br/><br/>
-You are on your own....", _position];
+private _msg = format ["你进入了 <t color='#008f00'>游击队</t> 隧道 <t color='#008f00'>%1</t> !<br/><br/>
+你现在 <t color='#00008f'>孤立无援</t><br/>
+...不要祈求 <t color='#8f0000'>宽恕</t> !!<br/><br/>
+你现在只能靠你自己了....", _position];
 [_msg, 0, 0, 10, 0, 0, 90] spawn BIS_fnc_dynamicText;
 
 showMap false;

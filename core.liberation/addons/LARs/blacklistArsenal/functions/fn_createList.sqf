@@ -1,4 +1,4 @@
-private [ "_init", "_dataTypes" ];
+﻿private [ "_init", "_dataTypes" ];
 
 //If params fails ( we have not sent _newList ) then we are initialising a new list
 if !( params[ "_listType", "_list", [ "_newList", [] ] ] ) then {
@@ -131,7 +131,7 @@ switch ( toLower _listType ) do {
 					isClass( configFile >> "CfgWeapons" >> _item ) ||
 					isClass( configFile >> "CfgGlasses" >> _item )
 				) then {
-					format[ "VirtualCargo Index for %1 not found", _item ] call BIS_fnc_error;
+					format[ "找不到 %1 的Virtual Cargo索引", _item ] call BIS_fnc_error;
 					diag_log format[ "VirtualCargo Index for %1 not found", _item ];
 				};
 			};

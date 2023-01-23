@@ -1,4 +1,4 @@
-params ["_unit", "_id", "_uid", "_name"];
+﻿params ["_unit", "_id", "_uid", "_name"];
 if (_name in ["HC1","HC2","HC3" ]) exitWith {
 	deleteMarker "fpsmarkerHC1";
 	deleteMarker "fpsmarkerHC2";

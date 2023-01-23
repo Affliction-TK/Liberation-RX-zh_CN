@@ -1,4 +1,4 @@
-active_sectors = [];
+﻿active_sectors = [];
 
 waitUntil {sleep 1; !isNil "blufor_sectors" };
 waitUntil {sleep 1; !isNil "sectors_allSectors" };

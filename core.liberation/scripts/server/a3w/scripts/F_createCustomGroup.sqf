@@ -1,4 +1,4 @@
-if (!isServer) exitWith {};
+﻿if (!isServer) exitWith {};
 params [
 	"_grp",
 	"_pos",

@@ -1,4 +1,4 @@
-waitUntil {sleep 1; !isNil "sectors_allSectors" };
+﻿waitUntil {sleep 1; !isNil "sectors_allSectors" };
 waitUntil {sleep 1; GRLIB_player_spawned};
 
 while { GRLIB_endgame == 0 } do {
@@ -22,6 +22,6 @@ while { GRLIB_endgame == 0 } do {
 		};
 
 		{ deleteVehicle _x } forEach _managed_units;
-		diag_log format [ "Done Delete wildlife at %1", time ];
+		diag_log format [ "完成删除野生动物，位于 %1", time ];
 	};
 };

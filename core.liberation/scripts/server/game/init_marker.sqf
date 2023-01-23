@@ -1,4 +1,4 @@
-if (!isServer) exitWith {};
+﻿if (!isServer) exitWith {};
 
 waituntil {sleep 1; !isNil "GRLIB_sectors_init"};
 

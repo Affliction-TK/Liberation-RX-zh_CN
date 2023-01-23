@@ -1,4 +1,4 @@
-waitUntil { !isNil "save_is_loaded" };
+﻿waitUntil { !isNil "save_is_loaded" };
 waitUntil { !isNil "blufor_sectors" };
 private [ "_spawnsector", "_newbox"];
 
@@ -55,7 +55,7 @@ while { GRLIB_endgame == 0 } do {
 				{
 					[_x, _income, 0] call ammo_add_remote_call;
 				} forEach (AllPlayers - (entities "HeadlessClient_F"));
-				_text = format ["Passive Income Received: + %1 Ammo.", _income];
+				_text = format ["收到的被动收入: + %1 Ammo.", _income];
 				[gamelogic, _text] remoteExec ["globalChat", 0];
 			} else {
 				if ( ([ammobox_b_typename] call _countAllBox) <= _AmmoBox_cap ) then {	

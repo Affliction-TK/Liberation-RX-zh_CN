@@ -1,4 +1,4 @@
-params [ "_sector" ];
+﻿params [ "_sector" ];
 private [ "_crates_amount", "_spawnpos", "_i", "_spawnclass", "_nearbuildings", "_intel_range", "_building_positions", "_used_positions", "_buildingposition", "_nbintel", "_compatible_classnames" ];
 
 _debug = false;

@@ -1,4 +1,4 @@
-sectors_allSectors = [];
+﻿sectors_allSectors = [];
 sectors_capture = [];
 sectors_bigtown = [];
 sectors_factory = [];

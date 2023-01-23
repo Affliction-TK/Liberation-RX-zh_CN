@@ -1,4 +1,4 @@
-// make local units aware of other (remote) friendly units around them
+﻿// make local units aware of other (remote) friendly units around them
 sleep 120;
 
 private ["_local_units", "_remote_units"];

@@ -1,4 +1,4 @@
-params ["_troup_transport"];
+﻿params ["_troup_transport"];
 private [ "_unit" ];
 
 diag_log format [ "Spawn Troop in vehicle %1 at %2", typeOf _troup_transport, time ];

@@ -1,4 +1,4 @@
-// Setup Ammo Box
+﻿// Setup Ammo Box
 
 if (!isServer) exitWith {};
 params ["_type", "_pos", "_locked"];

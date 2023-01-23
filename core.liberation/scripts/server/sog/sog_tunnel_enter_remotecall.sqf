@@ -1,4 +1,4 @@
-if (!isServer && hasInterface) exitWith {};
+﻿if (!isServer && hasInterface) exitWith {};
 params [ "_player", "_tunnel_name" ];
 diag_log format ["--- LRX SoG: Tunnel %1 started", _tunnel_name];
 

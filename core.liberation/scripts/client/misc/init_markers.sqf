@@ -1,4 +1,4 @@
-private ["_marker"];
+﻿private ["_marker"];
 _marker_debug = false;
 
 // Game markers
@@ -50,7 +50,7 @@ waituntil {sleep 1; !isNil "GRLIB_marker_init"};
   _marker setMarkerColorLocal "ColorBlue";
   _marker setMarkerTypeLocal "mil_dot";
     if (_marker_debug) then {
-    _marker setMarkerTextLocal format ["SELL %1", _x];
+    _marker setMarkerTextLocal format ["商店 %1", _x];
   } else {
     _marker setMarkerTextLocal "SELL";
   };
@@ -63,7 +63,7 @@ waituntil {sleep 1; !isNil "GRLIB_marker_init"};
   _marker setMarkerColorLocal "ColorYellow";
   _marker setMarkerTypeLocal "mil_dot";
   if (_marker_debug) then {
-    _marker setMarkerTextLocal format ["FUEL %1", _x];
+    _marker setMarkerTextLocal format ["燃料 %1", _x];
   } else {    
     _marker setMarkerTextLocal "FUEL";
   };
@@ -76,7 +76,7 @@ waituntil {sleep 1; !isNil "GRLIB_marker_init"};
   _marker setMarkerColorLocal "ColorPink";
   _marker setMarkerTypeLocal "mil_dot";
   if (_marker_debug) then {
-    _marker setMarkerTextLocal format ["SHOP %1", _x];
+    _marker setMarkerTextLocal format ["商店 %1", _x];
   } else {    
     _marker setMarkerTextLocal "SHOP";
   };

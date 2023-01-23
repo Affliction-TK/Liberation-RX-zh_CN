@@ -1,4 +1,4 @@
-params ["_unit"];
+﻿params ["_unit"];
 if (isDedicated || (!hasInterface && !isServer)) exitWith {};
 if (lifestate player == "INCAPACITATED") exitWith {};
 if (player distance2D _unit > 300) exitWith {};

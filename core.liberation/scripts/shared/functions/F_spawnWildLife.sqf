@@ -1,4 +1,4 @@
-params [ "_pos" ];
+﻿params [ "_pos" ];
 
 private _createdcivs = [];
 private _spawnpos = [_pos, 80, 300] call BIS_fnc_findSafePos;

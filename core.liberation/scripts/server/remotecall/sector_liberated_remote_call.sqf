@@ -1,5 +1,5 @@
 ﻿params [ "_liberated_sector" ];
-diag_log format ["Sector %1 liberated", _liberated_sector];
+diag_log format ["防区 %1 已解放", _liberated_sector];
 private _combat_readiness_increase = 0;
 
 if ( _liberated_sector in sectors_bigtown ) then {

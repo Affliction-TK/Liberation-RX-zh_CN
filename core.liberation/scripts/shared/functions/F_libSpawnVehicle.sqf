@@ -1,4 +1,4 @@
-params [
+﻿params [
 	"_sectorpos",
 	"_classname",
 	[ "_precise_position", false ],

@@ -1,4 +1,4 @@
-/*
+﻿/*
 	Taru Pod's mod script by Halv - inspired by XENO Taru Pod Mod
 
 	Copyright (C) 2015  Halvhjearne
@@ -163,11 +163,11 @@ while {true} do {
 					_pos = getPosATL _vehicle;
 					if (surfaceIsWater _pos) then {_pos = getPosASL _vehicle;};
 					if (_pos select 2 < 25 && _changed) then {
-						_vehicle setUserActionText [_tarudetachAction,format["<img size='1.5'image='\a3\Ui_f\data\map\Markers\Military\end_ca.paa'/> Drop: %1",_txt]];
+						_vehicle setUserActionText [_tarudetachAction,format["<img size='1.5'image='\a3\Ui_f\data\map\Markers\Military\end_ca.paa'/> 投放: %1",_txt]];
 						_changed = false;
 					};
 					if (_pos select 2 > 25 && !_changed) then {
-						_vehicle setUserActionText [_tarudetachAction,format["<img size='1.5'image='\a3\Ui_f\data\map\VehicleIcons\iconparachute_ca.paa'/> Para Drop: %1",_txt]];
+						_vehicle setUserActionText [_tarudetachAction,format["<img size='1.5'image='\a3\Ui_f\data\map\VehicleIcons\iconparachute_ca.paa'/> 空投伞兵: %1",_txt]];
 						_changed = true;
 					};
 				};
