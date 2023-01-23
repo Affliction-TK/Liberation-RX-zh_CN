@@ -25,7 +25,7 @@ while { GRLIB_endgame == 0 } do {
 
 	if ( count _target_lst > 1 ) then {
 		_target_player = selectRandom _target_lst;
-		_msg = format ["<img size='1' image='%2'/> - <img size='1' image='%2'/> - <img size='1' image='%2'/><br/><t color='#0000FF'>%1</t> 成为了 <t color='#F00000'>OPFor</t><t color='#808080'>'的眼中钉'</t>!<br/><br/>你最好小心行事...<br/><img size='1' image='%2'/> - <img size='1' image='%2'/> - <img size='1' image='%2'/>", name _target_player, getMissionPath "res\skull.paa"];
+		_msg = format ["<img size='1' image='%2'/> - <img size='1' image='%2'/> - <img size='1' image='%2'/><br/><t color='#0000FF'>%1</t> 成为了 <t color='#F00000'>OPFor</t> 的 <t color='#808080'>'眼中钉'</t>!<br/><br/>你最好小心行事...<br/><img size='1' image='%2'/> - <img size='1' image='%2'/> - <img size='1' image='%2'/>", name _target_player, getMissionPath "res\skull.paa"];
 		[_msg, 0, 0, 10, 0, 0, 90] remoteExec ["BIS_fnc_dynamicText", 0];
 
 		waitUntil {sleep 2; isNull objectParent _target_player};

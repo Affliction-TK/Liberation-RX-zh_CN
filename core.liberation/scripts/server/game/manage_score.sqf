@@ -1,4 +1,4 @@
-private [ "_cur", "_last", "_msg", "_msg2", "_rank", "_new_rank", "_uid", "_firework" ];
+﻿private [ "_cur", "_last", "_msg", "_msg2", "_rank", "_new_rank", "_uid", "_firework" ];
 
 waitUntil { !isNil "GRLIB_player_scores" };
 waitUntil { !isNil "save_is_loaded" };
@@ -28,11 +28,11 @@ while { true } do {
 				if (_cur <= GRLIB_perm_ban || !([] call F_getValid)) exitWith {
 					BTC_logic setVariable [_uid, 99, true];
 					[_x] remoteExec ["LRX_tk_actions", owner _x];
-					diag_log format ["--- LRX TK: BAN for player %1 - UID: %2", name _x,  _uid];
+					diag_log format ["--- LRX TK: 禁封玩家 %1 - UID: %2", name _x,  _uid];
 				};
 
 				if (_new_rank == "None" && _cur < _last) exitWith {
-					_msg = format ["Warning <t color='#00ff00'>%1</t> !!<br />You Play Wrong !! <t color='#ff0000'>Read the Manual</t>.<br /><br />%2", name _x, localize "STR_RANK_LVL0"];
+					_msg = format ["警告 <t color='#00ff00'>%1</t> !!<br />你操作错误 !! <t color='#ff0000'>请阅读手册</t>.<br /><br />%2", name _x, localize "STR_RANK_LVL0"];
 					[_msg, 0, 0, 5, 0, 0, 90] remoteExec ["BIS_fnc_dynamicText", owner _x];
 					[_uid, [false,false,false,false,false,false]] call CHG_Perm;
 					_x setVariable ["GRLIB_Rank", "None", true];
@@ -74,9 +74,16 @@ while { true } do {
 						};
 					};
 
-					_msg = format ["Congratulation <t color='#00ff00'>%1</t> !!<br />You have been promoted to : <t color='#ff0000'>%2</t>.<br /><br />%3", name _x,  _new_rank, _msg2];
-					[_msg, 0, 0, 5, 0, 0, 90] remoteExec ["BIS_fnc_dynamicText", owner _x];
-					["FD_Finish_F"] remoteExec ["playSound", owner _x];
+					if (_x getVariable ["GRLIB_player_last_notif", 0] < time) then {
+						_msg = format ["恭喜 <t color='#00ff00'>%1</t> !!<br />你晋升成为 : <t color='#ff0000'>%2</t>.<br /><br />%3", name _x, _new_rank, _msg2];
+						[_msg, 0, 0, 5, 0, 0, 90] remoteExec ["BIS_fnc_dynamicText", owner _x];
+						["FD_Finish_F"] remoteExec ["playSound", owner _x];
+					} else {
+						_msg = format ["你晋升成为 %1.", _new_rank];
+						[gamelogic, _msg] remoteExec ["globalChat", owner _x];
+						_firework = false;
+					};
+					_x setVariable ["GRLIB_player_last_notif", round (time + 5*60)];
 
 					// set player rank
 					[] remoteExec ["set_rank", owner _x];
@@ -85,11 +92,11 @@ while { true } do {
 					// if rank colonel global greet
 					if (_new_rank == "Colonel") then {
 						["FD_Finish_F"] remoteExec ["playSound", 0];
-						_text = "Good news soldiers...";
+						_text = "好消息...";
 						[gamelogic, _text] remoteExec ["globalChat", 0];
-						_text = "We have a new Colonel !!";
+						_text = "我们有了新上校 !!";
 						[gamelogic, _text] remoteExec ["globalChat", 0];
-						_text = format ["Congratulation to %1 for his fight !!", name _x];
+						_text = format ["祝贺 %1 !!", name _x];
 						[gamelogic, _text] remoteExec ["globalChat", 0];
 						_text = "Over.";
 						[gamelogic, _text] remoteExec ["globalChat", 0];
