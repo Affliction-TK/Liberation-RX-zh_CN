@@ -4762,6 +4762,16 @@
 			<Portuguese>-- REMOVER O CORPO</Portuguese>
 			<Czech>-- ODSTRAŇTE TĚLO</Czech>
 		</Key>
+		<Key ID="STR_HALO_VEH">
+			<Original>-- HALO DROP VEHICLE</Original>
+			<Chinesesimp>-- 载具空投</Chinesesimp>
+			<Chinese>-- 載具空投</Chinese>
+		</Key>
+		<Key ID="STR_HALO_VEH_ASK">
+			<Original>&lt;t align='center'&gt;HALO for vehicle cost: %1 Ammo&lt;br/&gt;Are you sure ?&lt;/t&gt;</Original>
+			<Chinesesimp>&lt;t align='center'&gt;载具空投将花费: %1 弹药&lt;br/&gt;你确定吗 ?&lt;/t&gt;</Chinesesimp>
+			<Chinese>&lt;t align='center'&gt;載具空投將花費: %1 彈藥&lt;br/&gt;你確定嗎 ?&lt;/t&gt;</Chinese>
+		</Key>
 
 		<!-- recycle_manager.sqf -->
 		<Key ID="STR_RECYCLE_MANAGER">

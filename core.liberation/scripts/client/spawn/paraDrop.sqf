@@ -1,4 +1,4 @@
-params ["_unit", "_pos"];
+﻿params ["_unit", "_pos"];
 private [ "_backpack", "_backpack_contents", "_is_mobile_respawn" ];
 
 _unit allowDamage false;
@@ -10,7 +10,7 @@ if ( _backpack != "" && _backpack != "B_Parachute" ) then {
 	sleep 0.1;
 };
 _unit addBackpack "B_Parachute";
-_unit setpos _pos vectorAdd [floor(random 20), floor(random 20), 0];
+_unit setPos _pos vectorAdd [floor(random 20), floor(random 20), 0];
 sleep 3;
 _unit allowDamage true;
 halojumping = false;

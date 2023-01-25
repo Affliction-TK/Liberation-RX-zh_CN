@@ -5,11 +5,13 @@ params [ "_unit", "_class" ];
 } forEach (AllPlayers - (entities "HeadlessClient_F"));
 
 ["airdrop"] remoteExec ["playSound"];
-_pos = (getPosATL _unit) vectorAdd [0, 0, 400];
-_veh = createVehicle [_class, _pos, [], 0, "NONE"];
-_veh addMPEventHandler ["MPKilled", { _this spawn kill_manager }];
-_veh setdir (random 360);
-_text = format ["玩家 %1 呼叫了空中支援.  正在投放: %2 !", name _unit, ([_class] call F_getLRXName)];
+
+private _pos = (getPosATL _unit) vectorAdd [0, 0, 400];
+private _vehicle = createVehicle [_class, _pos, [], 0, "NONE"];
+_vehicle addMPEventHandler ["MPKilled", { _this spawn kill_manager }];
+[_vehicle, objNull] spawn F_addParachute;
+
+private _text = format ["玩家 %1 呼叫了空中支援.  正在空投: %2 !", name _unit, ([_class] call F_getLRXName)];
 [gamelogic, _text] remoteExec ["globalChat", 0];
-[_veh, objNull] spawn F_addParachute;
-diag_log format [ "空投车辆 %1 | 位于 %2", _class , time ];
+
+diag_log format [ "Done Airdrop vehicle %1 at %2", _class , time ];
