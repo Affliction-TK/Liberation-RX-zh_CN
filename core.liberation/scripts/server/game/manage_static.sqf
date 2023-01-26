@@ -1,4 +1,4 @@
-private [ "_all_static", "_static" ];
+﻿private [ "_all_static", "_static" ];
 
 while { true } do {
     _all_static = [vehicles, { alive _x && typeOf _x in (list_static_weapons - static_vehicles_AI)}] call BIS_fnc_conditionalSelect;
@@ -34,21 +34,22 @@ while { true } do {
             sleep 1;
         };
 
-        // Keep gunner
-        private _gunner = gunner _static;
-        private _gunner_list = _static getVariable ["GRLIB_vehicle_gunner", []];
-        if (isNull _gunner) then {
-            {
-                if (alive _x) exitWith {
-                    _x assignAsGunner _static;
-                    [_x] orderGetIn true ;
-                };
-            } forEach _gunner_list;
-        } else {
-            // Nearest enemy
-            [_gunner] call F_getNearestEnemy;
+        if (side group _static == GRLIB_side_enemy) then {
+            // Keep gunner
+            private _gunner = gunner _static;
+            private _gunner_list = _static getVariable ["GRLIB_vehicle_gunner", []];
+            if (isNull _gunner) then {
+                {
+                    if (alive _x) exitWith {
+                        _x assignAsGunner _static;
+                        [_x] orderGetIn true ;
+                    };
+                } forEach _gunner_list;
+            } else {
+                // Nearest enemy
+                [_gunner] call F_getNearestEnemy;
+            };
         };
-
         sleep 1;
     } forEach _all_static;
 
