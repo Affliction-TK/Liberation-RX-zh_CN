@@ -1,4 +1,4 @@
-params [ "_startpos" ];
+﻿params [ "_startpos" ];
 
 private _currentnearest = [];
 private _refdistance = 99999;
@@ -16,7 +16,7 @@ if ( count GRLIB_all_fobs > 0 || count blufor_sectors > 0 ) then {
 	} foreach _tpositions;
 
 	// if nearset FOB too far, search sectors
-	if ( _refdistance > GRLIB_spawn_max ) then {
+	if ( _refdistance > (GRLIB_sector_size * 3) ) then {
 		{ _tpositions pushback (markerpos _x); } foreach blufor_sectors;
 
 		{
