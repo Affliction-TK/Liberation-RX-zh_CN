@@ -1,4 +1,4 @@
-// *** CIVILIAN ***
+﻿// *** CIVILIAN ***
 
 civilians = [
 	"C_man_1_2_F",

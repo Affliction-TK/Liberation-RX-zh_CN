@@ -1,4 +1,4 @@
-_unit = _this select 0;
+﻿_unit = _this select 0;
 
 _unit addWeapon "launch_MRAWS_green_F";
 _unit addSecondaryWeaponItem "MRAWS_HEAT_F";

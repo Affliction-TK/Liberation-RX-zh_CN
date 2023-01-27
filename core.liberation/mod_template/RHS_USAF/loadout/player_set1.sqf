@@ -1,4 +1,4 @@
-_unit = _this select 0;
+﻿_unit = _this select 0;
 
 //  "Remove existing items";
 removeAllWeapons _unit;

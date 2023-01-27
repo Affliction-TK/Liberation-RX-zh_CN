@@ -1,4 +1,4 @@
-//Blacklist Items
+﻿//Blacklist Items
 blacklisted_bag = [
 	"RHS_Podnos_Bipod_Bag",
 	"RHS_Podnos_Gun_Bag",
