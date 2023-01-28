@@ -28,6 +28,13 @@ class CfgFunctions {
 	#include "addons\GRAD\cfgFunctions.hpp"
 	#include "addons\SDB_DALE\CfgFunctions.hpp"
 	#include "addons\KFD\cfgfunctions.hpp"
+	class DESTINY {
+		class DESTINY_SCRIPT {
+			class Launch {file = "addons\CMS\destiny_script\Launch.sqf";};
+			class createMenu {file = "addons\CMS\destiny_script\createMenu.sqf";};
+			class readLaunch {file = "addons\CMS\destiny_script\readLaunch.sqf";};
+		};
+	};
 };
 
 class cfgSounds {
@@ -79,3 +86,4 @@ class CfgDebriefing {
 #include "addons\VAM\defines.hpp"
 #include "addons\VAM\VAM_GUI_controls.hpp"
 #include "addons\VAM\VAM_GUI_classes.hpp"
+#include "addons\CMS\ControlpanelUI.cpp"
