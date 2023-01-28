@@ -1,12 +1,12 @@
-GRLIB_save_key = "GREUH_LIBERATION_SARALITE_SAVEGAME_PSK"; // change this value if you want different savegames on different map
+﻿GRLIB_save_key = "GREUH_LIBERATION_SARALITE_SAVEGAME_PSK"; // change this value if you want different savegames on different map
 GRLIB_side_resistance = RESISTANCE;
 GRLIB_side_civilian = CIVILIAN;
 GRLIB_respawn_marker = "respawn_west";
 GRLIB_sector_size = 500;
 GRLIB_capture_size = 175;
-GRLIB_radiotower_size = 2500;
-GRLIB_spawn_min = 1500;
-GRLIB_spawn_max = 3000;
+GRLIB_radiotower_size = 2000;
+GRLIB_spawn_min = 500;
+GRLIB_spawn_max = 1500;
 GRLIB_recycling_percentage = 0.75;
 GRLIB_endgame = 0;
 GRLIB_vulnerability_timer = 900;
